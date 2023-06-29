@@ -31,7 +31,9 @@ class NfcTileService: TileService() {
     // Called when the user taps on your tile in an active or inactive state.
     override fun onClick() {
         super.onClick()
-        startActivity(Intent(Settings.ACTION_NFC_SETTINGS))
+        var intent = Intent(Settings.ACTION_NFC_SETTINGS);
+        intent.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+        startActivityAndCollapse(Intent(intent))
     }
     // Called when the user removes your tile.
     override fun onTileRemoved() {
