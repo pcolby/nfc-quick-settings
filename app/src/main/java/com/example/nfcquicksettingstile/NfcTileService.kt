@@ -1,3 +1,5 @@
+package com.example.nfcquicksettingstile
+
 import android.content.Intent
 import android.nfc.NfcAdapter
 import android.provider.Settings
@@ -16,6 +18,8 @@ class NfcTileService: TileService() {
         var adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
             if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+        qsTile.subtitle = if (adapter == null) null else
+            getText(if (adapter.isEnabled) R.string.on else R.string.off)
         qsTile.updateTile()
     }
 
