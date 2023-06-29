@@ -33,7 +33,10 @@ class NfcTileService: TileService() {
         super.onClick()
         var intent = Intent(Settings.ACTION_NFC_SETTINGS);
         intent.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
-        startActivityAndCollapse(Intent(intent))
+        startActivityAndCollapse(intent)
+        /// \todo When Android 14 is officially released:
+        //if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
+        //else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE)
     }
     // Called when the user removes your tile.
     override fun onTileRemoved() {
