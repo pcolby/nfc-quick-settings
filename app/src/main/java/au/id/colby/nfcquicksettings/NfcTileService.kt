@@ -10,13 +10,6 @@ import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 
 class NfcTileService : TileService() {
-
-    // Called when the user adds your tile.
-    override fun onTileAdded() {
-        super.onTileAdded()
-    }
-
-    // Called when your app can update your tile.
     override fun onStartListening() {
         super.onStartListening()
         var adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
@@ -25,11 +18,6 @@ class NfcTileService : TileService() {
         qsTile.subtitle = if (adapter == null) null else
             getText(if (adapter.isEnabled) R.string.on else R.string.off)
         qsTile.updateTile()
-    }
-
-    // Called when your app can no longer update your tile.
-    override fun onStopListening() {
-        super.onStopListening()
     }
 
     // Called when the user taps on your tile in an active or inactive state.
@@ -41,10 +29,5 @@ class NfcTileService : TileService() {
         /// \todo When Android 14 is officially released:
         //if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         //else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE)
-    }
-
-    // Called when the user removes your tile.
-    override fun onTileRemoved() {
-        super.onTileRemoved()
     }
 }
