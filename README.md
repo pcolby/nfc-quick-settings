@@ -1,6 +1,6 @@
-# Quick NFC Settings
+# NFC Quick Settings
 
-Quick NFC Setting is a really basic Android app with no GUI of it's own, that simply adds an NFC
+NFC Quick Settings is a really basic Android app with no GUI of it's own, that simply adds an NFC
 tile to the tiles available to the [Quick Settings panel].
 
 *Screenshots go here...*
