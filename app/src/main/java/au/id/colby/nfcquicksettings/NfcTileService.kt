@@ -9,12 +9,13 @@ import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 
-class NfcTileService: TileService() {
+class NfcTileService : TileService() {
 
     // Called when the user adds your tile.
     override fun onTileAdded() {
         super.onTileAdded()
     }
+
     // Called when your app can update your tile.
     override fun onStartListening() {
         super.onStartListening()
@@ -41,6 +42,7 @@ class NfcTileService: TileService() {
         //if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         //else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE)
     }
+
     // Called when the user removes your tile.
     override fun onTileRemoved() {
         super.onTileRemoved()
