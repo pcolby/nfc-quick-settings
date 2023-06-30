@@ -1,7 +1,7 @@
 // SPDX-FileCopyrightText: 2023 Paul Colby <git@colby.id.au>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-package com.example.nfcquicksettingstile
+package au.id.colby.nfcquicksettings
 
 import android.content.Intent
 import android.nfc.NfcAdapter

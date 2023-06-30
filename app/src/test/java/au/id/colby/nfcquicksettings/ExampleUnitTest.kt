@@ -1,4 +1,7 @@
-package com.example.nfcquicksettingstile
+// SPDX-FileCopyrightText: 2023 Paul Colby <git@colby.id.au>
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+package au.id.colby.nfcquicksettings
 
 import org.junit.Test
 

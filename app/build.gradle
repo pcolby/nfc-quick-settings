@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.nfcquicksettingstile'
+    namespace 'au.id.colby.nfcquicksettings'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.nfcquicksettingstile"
+        applicationId "au.id.colby.nfcquicksettings"
         minSdk 24
         targetSdk 33
         versionCode 1
