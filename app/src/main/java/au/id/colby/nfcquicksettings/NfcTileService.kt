@@ -5,6 +5,7 @@ package au.id.colby.nfcquicksettings
 
 import android.content.Intent
 import android.nfc.NfcAdapter
+import android.os.Build
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
@@ -15,8 +16,10 @@ class NfcTileService : TileService() {
         var adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
             if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-        qsTile.subtitle = if (adapter == null) null else
-            getText(if (adapter.isEnabled) R.string.on else R.string.off)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            qsTile.subtitle = if (adapter == null) null else
+                getText(if (adapter.isEnabled) R.string.on else R.string.off)
+        }
         qsTile.updateTile()
     }
 
