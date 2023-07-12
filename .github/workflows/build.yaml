@@ -27,6 +27,7 @@ jobs:
       with:
         name: build-outputs-${{ env.BUILD_ID }}
         path: app/build/outputs/
+        if-no-files-found: error
     - run: |
         echo "DEBUG_APK=$(jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' 'app/build/outputs/apk/debug/output-metadata.json')" >> "$GITHUB_ENV"
         echo "RELEASE_APK=$(jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' 'app/build/outputs/apk/release/output-metadata.json')" >> "$GITHUB_ENV"
@@ -36,8 +37,10 @@ jobs:
       with:
         name: ${{ env.DEBUG_APK }}
         path: app/build/outputs/debug/${{ env.DEBUG_APK }}*.apk
+        if-no-files-found: error
     - name: Upload release APK
       uses: actions/upload-artifact@v3
       with:
         name: ${{ env.RELEASE_APK }}
-        path: app/build/outputs/debug/${{ env.RELEASE_APK }}*.apk
+        path: app/build/outputs/release/${{ env.RELEASE_APK }}*.apk
+        if-no-files-found: error
