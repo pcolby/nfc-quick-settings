@@ -26,6 +26,9 @@ jobs:
       with:
         name: build-outputs-${{ env.BUILD_ID }
         path: app/build/outputs/
+    - run:
+        jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' app/build/outputs/apk/debug/output-metadata.json
+        jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' app/build/outputs/apk/release/output-metadata.json
     - uses: actions/upload-artifact@v3
       with:
         name: apks
