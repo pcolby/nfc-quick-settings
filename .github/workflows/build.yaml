@@ -17,18 +17,20 @@ jobs:
         java-version: '17'
     - uses: gradle/gradle-build-action@v2
     - run: |
-        osName="${RUNNER_OS,,}}"
-        [[ "$osName" == 'linux' ]] || osName="${osName:0:3}"
+        [[ "$MATRIX_OS" == ubuntu* ]] && osName=linux || osName="${MATRIX_OS:0:3}"
         echo "BUILD_ID=$GITHUB_RUN_NUMBER.$osName" >> "$GITHUB_ENV"
       shell: bash
+      env:
+        MATRIX_OS: ${{ matrix.os }}
     - run: ./gradlew build
     - uses: actions/upload-artifact@v3
       with:
         name: build-outputs-${{ env.BUILD_ID }}
         path: app/build/outputs/
-    - run:
+    - run: |
         jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' app/build/outputs/apk/debug/output-metadata.json
         jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' app/build/outputs/apk/release/output-metadata.json
+      shell: bash
     - uses: actions/upload-artifact@v3
       with:
         name: apks
