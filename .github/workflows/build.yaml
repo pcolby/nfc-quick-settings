@@ -25,12 +25,6 @@ jobs:
       env:
         MATRIX_OS: ${{ matrix.os }}
     - run: ./gradlew build
-    - name: Upload app build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: app-build-outputs-${{ env.BUILD_ID }}
-        path: app/build/outputs/
-        if-no-files-found: error
     - name: Setup APK artifact names
       run: |
         echo "DEBUG_APK=$(jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' 'app/build/outputs/apk/debug/output-metadata.json')" >> "$GITHUB_ENV"
@@ -47,4 +41,12 @@ jobs:
       with:
         name: ${{ env.RELEASE_APK }}
         path: app/build/outputs/apk/release/*.apk
+        if-no-files-found: error
+    - name: Upload build metadata
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-metadata-${{ env.BUILD_ID }}
+        path: |
+          app/build/outputs/
+          !**/*.apk
         if-no-files-found: error
