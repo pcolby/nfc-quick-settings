@@ -12,8 +12,8 @@ android {
         minSdk 24
         targetSdk 33
         versionCode 1
-        versionName "1.0"
-
+        versionName "1.0.0"
+        archivesBaseName = "${applicationId.replaceFirst("^.*\\.", "")}-$versionName+$versionCode.${System.env.BUILD_ID ?: "local"}"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
