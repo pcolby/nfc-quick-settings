@@ -18,7 +18,12 @@ jobs:
     - uses: gradle/gradle-build-action@v2
     - run: ./gradlew build
       env:
-        BUILD_ID: ${{ github.run_number }}.${{ matrix.os }}
+        BUILD_ID: ${{ github.run_number }}.${{ runner.os }}
     - uses: actions/upload-artifact@v3
       with:
+        name: all-build-outputs-${{ runner.os }}
         path: app/build/outputs/
+    - uses: actions/upload-artifact@v3
+      with:
+        name: apks
+        path: app/build/outputs/*/*.apk
