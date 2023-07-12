@@ -15,20 +15,24 @@ jobs:
       with:
         distribution: 'temurin'
         java-version: '17'
-    - uses: gradle/gradle-build-action@v2
-    - run: |
+    - name: Setup Gradle
+      uses: gradle/gradle-build-action@v2
+    - name: Setup Build ID
+      run: |
         [[ "$MATRIX_OS" == ubuntu* ]] && osName=linux || osName="${MATRIX_OS:0:3}"
         echo "BUILD_ID=$GITHUB_RUN_NUMBER.$osName" >> "$GITHUB_ENV"
       shell: bash
       env:
         MATRIX_OS: ${{ matrix.os }}
     - run: ./gradlew build
-    - uses: actions/upload-artifact@v3
+    - name: Upload app build artifacts
+      uses: actions/upload-artifact@v3
       with:
-        name: build-outputs-${{ env.BUILD_ID }}
+        name: app-build-outputs-${{ env.BUILD_ID }}
         path: app/build/outputs/
         if-no-files-found: error
-    - run: |
+    - name: Setup APK artifact names
+      run: |
         echo "DEBUG_APK=$(jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' 'app/build/outputs/apk/debug/output-metadata.json')" >> "$GITHUB_ENV"
         echo "RELEASE_APK=$(jq -er '.elements[].outputFile|sub("(-unsigned)?(\\.apk)?$";"")' 'app/build/outputs/apk/release/output-metadata.json')" >> "$GITHUB_ENV"
       shell: bash
