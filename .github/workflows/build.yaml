@@ -17,3 +17,8 @@ jobs:
         java-version: '17'
     - uses: gradle/gradle-build-action@v2
     - run: ./gradlew build
+      env:
+        BUILD_ID: ${{ github.run_number }}.${{ matrix.os }}
+    - uses: actions/upload-artifact@v3
+      with:
+        path: app/build/outputs/
