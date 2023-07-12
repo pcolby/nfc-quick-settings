@@ -16,12 +16,15 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
     - uses: gradle/gradle-build-action@v2
+    - run: |
+        osName="${RUNNER_OS,,}}"
+        [[ "$osName" == 'linux' ]] || osName="${osName:0:3}"
+        echo "BUILD_ID=$GITHUB_RUN_NUMBER.$osName" >> "$GITHUB_ENV"
+      shell: bash
     - run: ./gradlew build
-      env:
-        BUILD_ID: ${{ github.run_number }}.${{ runner.os }}
     - uses: actions/upload-artifact@v3
       with:
-        name: all-build-outputs-${{ runner.os }}
+        name: build-outputs-${{ env.BUILD_ID }
         path: app/build/outputs/
     - uses: actions/upload-artifact@v3
       with:
