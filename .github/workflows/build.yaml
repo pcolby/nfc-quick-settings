@@ -72,8 +72,8 @@ jobs:
       env:
         JAVA_KEYSTORE: ${{ secrets.JAVA_KEYSTORE }}
     - name: Sign APKs
-      run:
+      run: |
         mkdir -p "$RUNNER_TEMP/apks"
-        find "$GITHUB_WORKSPACE" -name '*-unsigned.apk'
+        find "$GITHUB_WORKSPACE" -name '*.apk'
       env:
         JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
