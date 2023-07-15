@@ -81,6 +81,7 @@ jobs:
             --ks "$RUNNER_TEMP/keystore.jks" --ks-pass 'env:JAVA_KEYSTORE_PASSWORD' \
             --in "$srcApkPathName" --out "$RUNNER_TEMP/signed-apks/$dstApkFileName"
         done < <(find "$GITHUB_WORKSPACE" -name '*.apk' -print0)
-        which apksigner
+        find "$ANDROID_SDK_ROOT" -name 'apksigner'
+        apksigner --version || true
       env:
         JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
