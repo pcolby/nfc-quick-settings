@@ -47,9 +47,26 @@ jobs:
         mkdir -p "$RUNNER_TEMP/build-outputs"
         mv 'app/build/outputs' "$RUNNER_TEMP/build-outputs/$MATRIX_OS"
       shell: bash
+      env:
+        MATRIX_OS: ${{ matrix.os }}
     - name: Upload build outputs
       uses: actions/upload-artifact@v3
       with:
         name: build-outputs
-        path: "$RUNNER_TEMP/build-outputs"
+        path: ${{ runner.temp }}/build-outputs
         if-no-files-found: error
+
+  sign:
+    environment: Release
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Download build artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: my-artifact
+    - name: Take a look around
+      run: ls -R
