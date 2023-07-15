@@ -42,11 +42,14 @@ jobs:
         name: ${{ env.RELEASE_APK }}
         path: app/build/outputs/apk/release/*.apk
         if-no-files-found: error
-    - name: Upload build metadata
+    - name: Prep consolidated build outputs
+      run: |
+        mkdir -p "$RUNNER_TEMP/build-outputs"
+        mv 'app/build/outputs' "$RUNNER_TEMP/build-outputs/$MATRIX_OS"
+      shell: bash
+    - name: Upload build outputs
       uses: actions/upload-artifact@v3
       with:
-        name: build-metadata-${{ env.BUILD_ID }}
-        path: |
-          app/build/outputs/
-          !**/*.apk
+        name: build-outputs
+        path: "$RUNNER_TEMP/build-outputs"
         if-no-files-found: error
