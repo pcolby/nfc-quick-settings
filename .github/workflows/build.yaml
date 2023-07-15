@@ -58,6 +58,7 @@ jobs:
 
   sign:
     environment: Release
+    needs: build
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
