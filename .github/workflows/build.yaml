@@ -73,7 +73,14 @@ jobs:
         JAVA_KEYSTORE: ${{ secrets.JAVA_KEYSTORE }}
     - name: Sign APKs
       run: |
-        mkdir -p "$RUNNER_TEMP/apks"
-        find "$GITHUB_WORKSPACE" -name '*.apk'
+        mkdir -p "$RUNNER_TEMP/signed-apks"
+        while IFS= read -d '' -r srcApkPathName; do
+          srcApkFileName="${srcApkPathName##*/}"
+          dstApkFileName="${srcApkFileName//-unsigned}"
+          echo apksigner sign \
+            --ks "$RUNNER_TEMP/keystore.jks" --ks-pass 'env:JAVA_KEYSTORE_PASSWORD' \
+            --in "$srcApkPathName" --out "$RUNNER_TEMP/signed-apks/$dstApkFileName"
+        done < <(find "$GITHUB_WORKSPACE" -name '*.apk' -print0)
+        which apksigner
       env:
         JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
