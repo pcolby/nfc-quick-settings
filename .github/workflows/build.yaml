@@ -64,6 +64,16 @@ jobs:
     - name: Download build artifacts
       uses: actions/download-artifact@v3
       with:
-        name: my-artifact
+        name: build-outputs
     - name: Take a look around
       run: ls -R
+    - name: Prep Java KeyStore
+      run: base64 --decode <<< "$JAVA_KEYSTORE" > "$RUNNER_TEMP/keystore.jks"
+      env:
+        JAVA_KEYSTORE: ${{ secrets.JAVA_KEYSTORE }}
+    - name: Sign APKs
+      run:
+        mkdir -p "$RUNNER_TEMP/apks"
+        find "$GITHUB_WORKSPACE" -name '*-unsigned.apk'
+      env:
+        JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
