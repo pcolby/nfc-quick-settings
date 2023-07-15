@@ -59,11 +59,7 @@ jobs:
   sign:
     environment: Release
     needs: build
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-      fail-fast: false
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
     - name: Download build artifacts
       uses: actions/download-artifact@v3
