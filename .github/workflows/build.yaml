@@ -40,6 +40,7 @@ jobs:
         if-no-files-found: error
 
   sign:
+    if: (github.repository == 'pcolby/nfc-quick-settings') && (github.ref_name == 'main')
     environment: Release
     needs: build
     runs-on: ubuntu-latest
