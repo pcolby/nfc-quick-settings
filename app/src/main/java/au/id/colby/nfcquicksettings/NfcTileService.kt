@@ -13,7 +13,7 @@ import android.service.quicksettings.TileService
 class NfcTileService : TileService() {
     override fun onStartListening() {
         super.onStartListening()
-        var adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
+        val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
             if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -26,8 +26,8 @@ class NfcTileService : TileService() {
     // Called when the user taps on your tile in an active or inactive state.
     override fun onClick() {
         super.onClick()
-        var intent = Intent(Settings.ACTION_NFC_SETTINGS);
-        intent.setFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+        val intent = Intent(Settings.ACTION_NFC_SETTINGS)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         startActivityAndCollapse(intent)
         /// \todo When Android 14 is officially released:
         //if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
