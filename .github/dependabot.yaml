@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: github-actionn
+    directory: /
+    schedule:
+      interval: daily
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: daily
