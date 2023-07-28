@@ -13,6 +13,7 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
+    /** Example test, not doing anything meanigful yet. */
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
