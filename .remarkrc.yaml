@@ -1,5 +1,4 @@
 plugins:
-  footnotes:
   preset-lint-consistent:
   preset-lint-markdown-style-guide:
   preset-lint-recommended:
@@ -7,3 +6,5 @@ plugins:
   lint-definition-case: false
   lint-list-item-indent: space
   lint-maximum-line-length: 120
+settings:
+  footnotes: true
