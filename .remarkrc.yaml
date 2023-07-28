@@ -1,0 +1,7 @@
+plugins:
+  preset-lint-consistent:
+  preset-lint-markdown-style-guide:
+  preset-lint-recommended:
+  validate-links:
+  lint-list-item-indent: space
+  lint-maximum-line-length: 120
