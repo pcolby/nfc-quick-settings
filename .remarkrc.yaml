@@ -3,5 +3,6 @@ plugins:
   preset-lint-markdown-style-guide:
   preset-lint-recommended:
   validate-links:
+  lint-definition-case: false
   lint-list-item-indent: space
   lint-maximum-line-length: 120
