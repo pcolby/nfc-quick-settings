@@ -1,6 +1,7 @@
 # NFC Quick Settings
 
 [![Build Status](https://github.com/pcolby/nfc-quick-settings/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/pcolby/nfc-quick-settings/actions/workflows/build.yaml?query=branch%3Amain)
+[![CodeQL Analysis](https://github.com/pcolby/nfc-quick-settings/actions/workflows/codeql.yaml/badge.svg?branch=main)](https://github.com/pcolby/nfc-quick-settings/actions/workflows/codeql.yaml?query=branch%3Amain)
 
 NFC Quick Settings is a really basic Android app with no GUI of it's own, that simply adds an NFC
 tile to the tiles available to the [Quick Settings panel].
