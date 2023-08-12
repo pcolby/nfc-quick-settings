@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">অন কৰা আছে</string>
+    <string name="tile_subtitle_inactive">অফ আছে</string>
+    <string name="tile_subtitle_unavailable">উপলব্ধ নহয়</string>
+</resources>

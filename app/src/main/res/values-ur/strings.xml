@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">آن ہے</string>
+    <string name="tile_subtitle_inactive">آف ہے</string>
+    <string name="tile_subtitle_unavailable">دستیاب نہیں ہے</string>
+</resources>

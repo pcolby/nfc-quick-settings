@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">සක්‍රියයි</string>
+    <string name="tile_subtitle_inactive">අක්‍රියයි</string>
+    <string name="tile_subtitle_unavailable">නොමැත</string>
+</resources>

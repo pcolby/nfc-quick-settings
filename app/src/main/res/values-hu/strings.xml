@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Be</string>
+    <string name="tile_subtitle_inactive">Ki</string>
+    <string name="tile_subtitle_unavailable">Nem áll rendelkezésre</string>
+</resources>

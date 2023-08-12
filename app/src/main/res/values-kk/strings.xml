@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Қосулы</string>
+    <string name="tile_subtitle_inactive">Өшірулі</string>
+    <string name="tile_subtitle_unavailable">Қолжетімсіз</string>
+</resources>

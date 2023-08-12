@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Açık</string>
+    <string name="tile_subtitle_inactive">Kapalı</string>
+    <string name="tile_subtitle_unavailable">Kullanılamıyor</string>
+</resources>

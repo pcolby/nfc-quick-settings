@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">On</string>
+    <string name="tile_subtitle_inactive">Off</string>
+    <string name="tile_subtitle_unavailable">Unavailable</string>
+</resources>

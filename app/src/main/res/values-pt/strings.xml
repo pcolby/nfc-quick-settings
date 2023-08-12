@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Ativado</string>
+    <string name="tile_subtitle_inactive">Desativado</string>
+    <string name="tile_subtitle_unavailable">Indisponível</string>
+</resources>

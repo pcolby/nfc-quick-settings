@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">已开启</string>
+    <string name="tile_subtitle_inactive">已关闭</string>
+    <string name="tile_subtitle_unavailable">不可用</string>
+</resources>

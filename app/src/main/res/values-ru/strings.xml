@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Вкл.</string>
+    <string name="tile_subtitle_inactive">Откл.</string>
+    <string name="tile_subtitle_unavailable">Функция недоступна</string>
+</resources>

@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+Added localisations for 86 languages.
+
 ## [1.0.0][] (2023-07-15)
 
 Initial release.

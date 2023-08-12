@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Hidup</string>
+    <string name="tile_subtitle_inactive">Mati</string>
+    <string name="tile_subtitle_unavailable">Tidak tersedia</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">सुरू आहे</string>
+    <string name="tile_subtitle_inactive">बंद आहे</string>
+    <string name="tile_subtitle_unavailable">उपलब्ध नाही</string>
+</resources>

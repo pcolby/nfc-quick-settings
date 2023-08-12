@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">ഓണാണ്</string>
+    <string name="tile_subtitle_inactive">ഓഫാണ്</string>
+    <string name="tile_subtitle_unavailable">ലഭ്യമല്ല</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Vklopljeno</string>
+    <string name="tile_subtitle_inactive">Izklopljeno</string>
+    <string name="tile_subtitle_unavailable">Ni na voljo</string>
+</resources>

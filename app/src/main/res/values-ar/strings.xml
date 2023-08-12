@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">الميزة مفعّلة</string>
+    <string name="tile_subtitle_inactive">الميزة غير مفعّلة</string>
+    <string name="tile_subtitle_unavailable">الميزة غير متاحة</string>
+</resources>

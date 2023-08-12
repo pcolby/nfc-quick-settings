@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Միացված է</string>
+    <string name="tile_subtitle_inactive">Անջատված է</string>
+    <string name="tile_subtitle_unavailable">Հասանելի չէ</string>
+</resources>

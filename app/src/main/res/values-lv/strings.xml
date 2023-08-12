@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Ieslēgts</string>
+    <string name="tile_subtitle_inactive">Izslēgts</string>
+    <string name="tile_subtitle_unavailable">Nav pieejams</string>
+</resources>

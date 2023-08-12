@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Naka-on</string>
+    <string name="tile_subtitle_inactive">Naka-off</string>
+    <string name="tile_subtitle_unavailable">Hindi available</string>
+</resources>

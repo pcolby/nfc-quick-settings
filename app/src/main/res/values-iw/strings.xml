@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">פועל</string>
+    <string name="tile_subtitle_inactive">כבוי</string>
+    <string name="tile_subtitle_unavailable">לא זמין</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">Вклучено</string>
+    <string name="tile_subtitle_inactive">Исклучено</string>
+    <string name="tile_subtitle_unavailable">Недостапно</string>
+</resources>

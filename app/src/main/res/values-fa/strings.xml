@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tile_subtitle_active">روشن</string>
+    <string name="tile_subtitle_inactive">خاموش</string>
+    <string name="tile_subtitle_unavailable">دردسترس نیست</string>
+</resources>
