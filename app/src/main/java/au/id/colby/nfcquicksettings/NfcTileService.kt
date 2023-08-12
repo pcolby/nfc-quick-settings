@@ -9,6 +9,7 @@ import android.os.Build
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
+import au.id.colby.nfcquicksettings.R.*
 
 /**
  * A custom Quick Settings tile for NFC.
@@ -29,10 +30,10 @@ class NfcTileService : TileService() {
         val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
             if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            qsTile.subtitle = if (adapter == null) null else
-                getText(if (adapter.isEnabled) R.string.on else R.string.off)
-        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) qsTile.subtitle = getText(
+            if (adapter == null) string.tile_subtitle_unavailable else
+                if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
+        )
         qsTile.updateTile()
     }
 

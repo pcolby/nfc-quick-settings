@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">NFC Quick Settings</string>
-    <string name="tile_label">NFC</string>
-    <string name="off">Off</string>
-    <string name="on">On</string>
+    <string name="app_name" translatable="false">NFC Quick Settings</string>
+    <string name="tile_label" translatable="false">NFC</string>
+    <string name="tile_subtitle_active">On</string>
+    <string name="tile_subtitle_inactive">Off</string>
+    <string name="tile_subtitle_unavailable">Unavailable</string>
 </resources>
