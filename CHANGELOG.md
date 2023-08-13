@@ -1,5 +1,7 @@
 # Changelog[^1]
 
+## [Unreleased][]
+
 ## [1.1.0][] (2023-08-13)
 
 Added translations for 86 languages.
