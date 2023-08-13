@@ -1,14 +1,15 @@
 # Changelog[^1]
 
-## [Unreleased][]
+## [1.1.0][] (2023-08-13)
 
-Added localisations for 86 languages.
+Added translations for 86 languages.
 
 ## [1.0.0][] (2023-07-15)
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.1.0...HEAD
+[1.0.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.1.0
 [1.0.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.0.0
 
 [^1]: Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
