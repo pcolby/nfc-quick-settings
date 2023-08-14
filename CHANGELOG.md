@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+Support for Android 14.
+
 ## [1.1.0][] (2023-08-13)
 
 Added translations for 86 languages.
