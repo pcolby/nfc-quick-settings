@@ -3,9 +3,13 @@
 
 package au.id.colby.nfcquicksettings
 
+import android.app.PendingIntent
+import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.content.Intent
 import android.nfc.NfcAdapter
 import android.os.Build
+import android.os.Build.VERSION.SDK_INT
+import android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
@@ -47,9 +51,7 @@ class NfcTileService : TileService() {
         super.onClick()
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        startActivityAndCollapse(intent)
-        /// \todo When Android 14 is officially released:
-        //if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
-        //else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE)
+        if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
+        else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE))
     }
 }
