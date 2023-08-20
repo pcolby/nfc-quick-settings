@@ -5,7 +5,24 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+// Optionally, load keystore properties from a file specified via the environment.
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = System.getenv('KEYSTORE_PROPERTIES_FILE')
+if (keystorePropertiesFile) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
 android {
+    signingConfigs {
+        if (keystorePropertiesFile) {
+            release {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }
     namespace 'au.id.colby.nfcquicksettings'
     compileSdk 34
 
@@ -22,6 +39,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (signingConfigs.hasProperty("release")) signingConfig = signingConfigs.release
         }
     }
     compileOptions {
