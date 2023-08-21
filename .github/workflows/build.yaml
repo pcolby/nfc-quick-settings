@@ -28,7 +28,7 @@ jobs:
       if: github.event_name == 'push'
       run: |
         base64 --decode <<< "$JAVA_KEYSTORE_DATA" > "$JAVA_KEYSTORE_FILE"
-        envsubst < "$GITUB_WORKSPACE/.github/workflows/keystore.properties" > "$KEYSTORE_PROPERTIES_FILE"
+        envsubst < "$GITHUB_WORKSPACE/.github/workflows/keystore.properties" > "$KEYSTORE_PROPERTIES_FILE"
         echo "KEYSTORE_PROPERTIES_FILE=$KEYSTORE_PROPERTIES_FILE" >> "$GITHUB_ENV"
       shell: bash
       env:
