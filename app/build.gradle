@@ -9,7 +9,7 @@ plugins {
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = System.getenv('KEYSTORE_PROPERTIES_FILE')
 if (keystorePropertiesFile) {
-    keystoreProperties.load(new FileInputStream(file(keystorePropertiesFile)))
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 
 android {
