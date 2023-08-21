@@ -34,9 +34,9 @@ jobs:
       env:
         JAVA_KEYSTORE_ALIAS: ${{ secrets.JAVA_KEYSTORE_ALIAS }}
         JAVA_KEYSTORE_DATA: ${{ secrets.JAVA_KEYSTORE }}
-        JAVA_KEYSTORE_FILE: ${{ runner.temp/keystore.jks }}
+        JAVA_KEYSTORE_FILE: ${{ runner.temp }}/keystore.jks
         JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
-        KEYSTORE_PROPERTIES_FILE: ${{ runner.temp/keystore.properties }}
+        KEYSTORE_PROPERTIES_FILE: ${{ runner.temp }}/keystore.properties
     - run: ./gradlew build signingReport
     - name: Prep consolidated build outputs
       run: |
