@@ -24,7 +24,20 @@ jobs:
       shell: bash
       env:
         MATRIX_OS: ${{ matrix.os }}
-    - run: ./gradlew build
+    - name: Setup signing KeyStore
+      if: github.event_name == 'push'
+      run: |
+        base64 --decode <<< "$JAVA_KEYSTORE_DATA" > "$JAVA_KEYSTORE_FILE"
+        envsubst < "$GITUB_WORKSPACE/.github/workflows/keystore.properties" > "$KEYSTORE_PROPERTIES_FILE"
+        echo "KEYSTORE_PROPERTIES_FILE=$KEYSTORE_PROPERTIES_FILE" >> "$GITHUB_ENV"
+      shell: bash
+      env:
+        JAVA_KEYSTORE_ALIAS: ${{ secrets.JAVA_KEYSTORE_ALIAS }}
+        JAVA_KEYSTORE_DATA: ${{ secrets.JAVA_KEYSTORE }}
+        JAVA_KEYSTORE_FILE: ${{ runner.temp/keystore.jks }}
+        JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
+        KEYSTORE_PROPERTIES_FILE: ${{ runner.temp/keystore.properties }}
+    - run: ./gradlew build signingReport
     - name: Prep consolidated build outputs
       run: |
         mkdir -p "$RUNNER_TEMP/build-outputs"
@@ -37,42 +50,4 @@ jobs:
       with:
         name: build-outputs
         path: ${{ runner.temp }}/build-outputs
-        if-no-files-found: error
-
-  sign:
-    if: (github.repository == 'pcolby/nfc-quick-settings') && (github.ref_name == 'main')
-    environment: Release
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Download build artifacts
-      uses: actions/download-artifact@v3
-      with:
-        name: build-outputs
-    - name: Take a look around
-      run: ls -R
-    - name: Prep Java KeyStore
-      run: base64 --decode <<< "$JAVA_KEYSTORE" > "$RUNNER_TEMP/keystore.jks"
-      env:
-        JAVA_KEYSTORE: ${{ secrets.JAVA_KEYSTORE }}
-    - name: Sign APKs
-      run: |
-        mkdir -p "$RUNNER_TEMP/signed-apks"
-        while IFS= read -d '' -r srcApkPathName; do
-          echo "$srcApkPathName"
-          srcApkFileName="${srcApkPathName##*/}"
-          dstApkFileName="${srcApkFileName//-unsigned}"
-          "$ANDROID_SDK_ROOT/build-tools/34.0.0/apksigner" sign --verbose \
-            --ks "$RUNNER_TEMP/keystore.jks" --ks-pass 'env:JAVA_KEYSTORE_PASSWORD' \
-            --in "$srcApkPathName" --out "$RUNNER_TEMP/signed-apks/$dstApkFileName"
-          "$ANDROID_SDK_ROOT/build-tools/34.0.0/apksigner" verify --verbose -Werr \
-            --in "$RUNNER_TEMP/signed-apks/$dstApkFileName"
-        done < <(find "$GITHUB_WORKSPACE" -name '*.apk' -print0)
-      env:
-        JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
-    - name: Upload signed APKs
-      uses: actions/upload-artifact@v3
-      with:
-        name: signed-apks
-        path: ${{ runner.temp }}/signed-apks
         if-no-files-found: error
