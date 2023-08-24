@@ -25,7 +25,7 @@ jobs:
       env:
         MATRIX_OS: ${{ matrix.os }}
     - name: Setup signing KeyStore
-      if: github.event_name == 'push'
+      if: github.event_name == 'push' && github.actor != 'dependabot[bot]'
       run: |
         base64 --decode <<< "$JAVA_KEYSTORE_DATA" > "$JAVA_KEYSTORE_FILE"
         JAVA_KEYSTORE_FILE="${JAVA_KEYSTORE_FILE//\\/\\\\}" \
