@@ -1,3 +1,6 @@
 .gradle
 .idea
+build
+debug
 local.properties
+release
