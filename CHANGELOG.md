@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [1.2.0][] (2023-10-14)
+
 Support for Android 14.
 
 ## [1.1.0][] (2023-08-13)
@@ -12,7 +14,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.2.0
 [1.1.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.1.0
 [1.0.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.0.0
 
