@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+## [1.2.2][] (2023-10-20)
+
 Fixed potential crash when tile is added to Quick Settings menu.
 
 ## [1.2.1][] (2023-10-20)
@@ -20,7 +22,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.2.1...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.2.2...HEAD
+[1.2.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.2.2
 [1.2.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.2.1
 [1.2.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.2.0
 [1.1.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.1.0
