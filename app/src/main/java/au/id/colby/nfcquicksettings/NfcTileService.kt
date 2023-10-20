@@ -15,6 +15,8 @@ import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import android.util.Log
 import au.id.colby.nfcquicksettings.R.*
+import java.util.Timer
+import kotlin.concurrent.fixedRateTimer
 
 /**
  * A custom Quick Settings tile for NFC.
@@ -24,6 +26,7 @@ import au.id.colby.nfcquicksettings.R.*
  */
 class NfcTileService : TileService() {
     private val TAG = "NfcTileService"
+    private var updateTimer: Timer? = null
 
     /**
      * Called when this tile moves into a listening state.
@@ -34,18 +37,34 @@ class NfcTileService : TileService() {
     override fun onStartListening() {
         super.onStartListening()
         Log.d(TAG, "onStartListening")
-        if (qsTile == null) {
-            Log.i(TAG, "qsTile is null; won't update at this time.")
-            return
-        }
         val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
-        qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
-            if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) qsTile.subtitle = getText(
-            if (adapter == null) string.tile_subtitle_unavailable else
-                if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
-        )
-        qsTile.updateTile()
+        updateTimer = fixedRateTimer("default", false, 0L, 500) {
+            Log.d(TAG, "updateTimer")
+            qsTile?.apply {
+                Log.d(TAG, "Updating tile")
+                state = if (adapter == null) Tile.STATE_INACTIVE else
+                    if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
+                    if (adapter == null) string.tile_subtitle_unavailable else
+                        if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
+                )
+                updateTile()
+            }
+        }
+    }
+
+    /**
+     * Called when this tile moves out of the listening state.
+     *
+     * This override cancels the update timer, if any is running.
+     */
+    override fun onStopListening() {
+        Log.d(TAG, "onStopListening")
+        updateTimer?.apply {
+            Log.d(TAG, "Cancelling update timer")
+            cancel()
+        }
+        super.onStopListening()
     }
 
     /**
