@@ -13,6 +13,7 @@ import android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
+import android.util.Log
 import au.id.colby.nfcquicksettings.R.*
 
 /**
@@ -22,6 +23,7 @@ import au.id.colby.nfcquicksettings.R.*
  * device's NFC Settings activity.
  */
 class NfcTileService : TileService() {
+    private val TAG = "NfcTileService"
 
     /**
      * Called when this tile moves into a listening state.
@@ -31,6 +33,11 @@ class NfcTileService : TileService() {
      */
     override fun onStartListening() {
         super.onStartListening()
+        Log.d(TAG, "onStartListening")
+        if (qsTile == null) {
+            Log.i(TAG, "qsTile is null; won't update at this time.")
+            return
+        }
         val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         qsTile.state = if (adapter == null) Tile.STATE_UNAVAILABLE else
             if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
@@ -49,6 +56,7 @@ class NfcTileService : TileService() {
      */
     override fun onClick() {
         super.onClick()
+        Log.d(TAG, "onClick")
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)

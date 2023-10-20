@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+Fixed potential crash when tile is added to Quick Settings menu.
+
 ## [1.2.1][] (2023-10-20)
 
 Exclude devices without NFC hardware.
