@@ -78,6 +78,7 @@ class NfcTileService : TileService() {
         Log.d(TAG, "onClick")
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        //noinspection StartActivityAndCollapseDeprecated
         if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE))
     }
