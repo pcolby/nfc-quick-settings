@@ -2,6 +2,8 @@
 
 ## [Unreleased][]
 
+Enabled code minification and resource shrinkage.
+
 ## [1.3.0][] (2023-10-21)
 
 Added tile update timer to solve race condition.

@@ -31,14 +31,16 @@ android {
         minSdk 24
         targetSdk 34
         versionCode 8
-        versionName "1.3.0-post"
+        versionName "1.3.1-pre"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            ndk { debugSymbolLevel 'FULL' }
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
             if (signingConfigs.hasProperty("release")) signingConfig = signingConfigs.release
         }
     }
