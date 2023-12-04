@@ -18,6 +18,8 @@ import au.id.colby.nfcquicksettings.R.*
 import java.util.Timer
 import kotlin.concurrent.fixedRateTimer
 
+private const val TAG = "NfcTileService"
+
 /**
  * A custom Quick Settings tile for NFC.
  *
@@ -25,7 +27,6 @@ import kotlin.concurrent.fixedRateTimer
  * device's NFC Settings activity.
  */
 class NfcTileService : TileService() {
-    private val TAG = "NfcTileService"
     private var updateTimer: Timer? = null
 
     /**
