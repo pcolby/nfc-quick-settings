@@ -1,5 +1,7 @@
 # Changelog[^1]
 
+## [Unreleased][]
+
 ## [1.3.1][] (2023-12-04)
 
 Enabled code minification and resource shrinkage.
