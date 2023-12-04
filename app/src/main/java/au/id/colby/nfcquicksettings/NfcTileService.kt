@@ -45,7 +45,7 @@ class NfcTileService : TileService() {
                 Log.d(TAG, "Updating tile")
                 state = if (adapter == null) Tile.STATE_INACTIVE else
                     if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
+                if (SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
                     if (adapter == null) string.tile_subtitle_unavailable else
                         if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
                 )
