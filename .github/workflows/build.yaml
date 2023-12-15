@@ -49,6 +49,6 @@ jobs:
     - name: Upload build outputs
       uses: actions/upload-artifact@v3
       with:
-        name: build-outputs
+        name: build-outputs-${{ matrix.os }}
         path: ${{ runner.temp }}/build-outputs
         if-no-files-found: error
