@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Paul Colby <git@colby.id.au>
+// SPDX-FileCopyrightText: 2023-2024 Paul Colby <git@colby.id.au>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 package au.id.colby.nfcquicksettings
@@ -14,9 +14,11 @@ import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import android.util.Log
-import au.id.colby.nfcquicksettings.R.*
+import au.id.colby.nfcquicksettings.R.string
 import java.util.Timer
 import kotlin.concurrent.fixedRateTimer
+
+private const val TAG = "NfcTileService"
 
 /**
  * A custom Quick Settings tile for NFC.
@@ -25,7 +27,6 @@ import kotlin.concurrent.fixedRateTimer
  * device's NFC Settings activity.
  */
 class NfcTileService : TileService() {
-    private val TAG = "NfcTileService"
     private var updateTimer: Timer? = null
 
     /**
@@ -44,7 +45,7 @@ class NfcTileService : TileService() {
                 Log.d(TAG, "Updating tile")
                 state = if (adapter == null) Tile.STATE_INACTIVE else
                     if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
+                if (SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
                     if (adapter == null) string.tile_subtitle_unavailable else
                         if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
                 )
@@ -78,6 +79,7 @@ class NfcTileService : TileService() {
         Log.d(TAG, "onClick")
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        //noinspection StartActivityAndCollapseDeprecated
         if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE))
     }

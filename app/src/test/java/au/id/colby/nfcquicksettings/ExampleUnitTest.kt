@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023 Paul Colby <git@colby.id.au>
+// SPDX-FileCopyrightText: 2023-2024 Paul Colby <git@colby.id.au>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 package au.id.colby.nfcquicksettings
@@ -13,7 +13,7 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class ExampleUnitTest {
-    /** Example test, not doing anything meanigful yet. */
+    /** Example test, not doing anything meaningful yet. */
     @Test
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
