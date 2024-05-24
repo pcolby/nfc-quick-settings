@@ -24,12 +24,12 @@ android {
         }
     }
     namespace 'au.id.colby.nfcquicksettings'
-    compileSdk 34
+    compileSdkPreview "VanillaIceCream"
 
     defaultConfig {
         applicationId "au.id.colby.nfcquicksettings"
         minSdk 24
-        targetSdk 34
+        targetSdkPreview "VanillaIceCream"
         versionCode 9
         versionName "1.3.2-pre"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
