@@ -3,9 +3,11 @@
 
 package au.id.colby.nfcquicksettings
 
+import android.Manifest.permission.WRITE_SECURE_SETTINGS
 import android.app.PendingIntent
 import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.content.Intent
+import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.nfc.NfcAdapter
 import android.os.Build
 import android.os.Build.VERSION.SDK_INT
@@ -77,6 +79,26 @@ class NfcTileService : TileService() {
     override fun onClick() {
         super.onClick()
         Log.d(TAG, "onClick")
+
+        // Try using the WRITE_SECURE_SETTINGS permission to switch NFC on/off directly.
+        if (checkSelfPermission(WRITE_SECURE_SETTINGS) == PERMISSION_GRANTED) {
+            Log.i(TAG, "Have WRITE_SECURE_SETTINGS permission")
+            val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
+            adapter?.apply {
+                val methodName = if (adapter.isEnabled) "disable" else "enable"
+                try {
+                    Log.d(TAG, "Invoking NfcAdapter::$methodName()")
+                    val result = NfcAdapter::class.java.getMethod(methodName).invoke(adapter)
+                    Log.d(TAG, "NfcAdapter::$methodName() returned $result")
+                    if (result is Boolean && result) return // Success; return early.
+                } catch (e: Exception) {
+                    Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
+                }
+            }
+        }
+
+        // Fall back to launching the NFC Settings action (doesn't require special permissions).
+        Log.i(TAG, "Starting the ACTION_NFC_SETTINGS activity")
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         //noinspection StartActivityAndCollapseDeprecated
