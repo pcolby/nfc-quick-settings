@@ -85,11 +85,20 @@ class NfcTileService : TileService() {
             Log.i(TAG, "Have WRITE_SECURE_SETTINGS permission")
             val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
             adapter?.apply {
+                val wasEnabled = adapter.isEnabled
                 val methodName = if (adapter.isEnabled) "disable" else "enable"
                 try {
                     Log.d(TAG, "Invoking NfcAdapter::$methodName()")
                     val result = NfcAdapter::class.java.getMethod(methodName).invoke(adapter)
                     Log.d(TAG, "NfcAdapter::$methodName() returned $result")
+                    qsTile?.apply {
+                        Log.d(TAG, "Updating tile")
+                        state = if (!wasEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+                        if (SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
+                            if (!wasEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
+                        )
+                        updateTile()
+                    }
                     if (result is Boolean && result) return // Success; return early.
                 } catch (e: Exception) {
                     Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
