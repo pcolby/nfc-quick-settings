@@ -43,16 +43,7 @@ class NfcTileService : TileService() {
         val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
         updateTimer = fixedRateTimer("default", false, 0L, 500) {
             Log.d(TAG, "updateTimer")
-            qsTile?.apply {
-                Log.d(TAG, "Updating tile")
-                state = if (adapter == null) Tile.STATE_INACTIVE else
-                    if (adapter.isEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-                if (SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
-                    if (adapter == null) string.tile_subtitle_unavailable else
-                        if (adapter.isEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
-                )
-                updateTile()
-            }
+            updateTile(adapter)
         }
     }
 
@@ -79,39 +70,103 @@ class NfcTileService : TileService() {
     override fun onClick() {
         super.onClick()
         Log.d(TAG, "onClick")
+        if (!invertNfcState()) startNfcSettingsActivity()
+    }
 
-        // Try using the WRITE_SECURE_SETTINGS permission to switch NFC on/off directly.
-        if (checkSelfPermission(WRITE_SECURE_SETTINGS) == PERMISSION_GRANTED) {
-            Log.i(TAG, "Have WRITE_SECURE_SETTINGS permission")
-            val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
-            adapter?.apply {
-                val wasEnabled = adapter.isEnabled
-                val methodName = if (adapter.isEnabled) "disable" else "enable"
-                try {
-                    Log.d(TAG, "Invoking NfcAdapter::$methodName()")
-                    val result = NfcAdapter::class.java.getMethod(methodName).invoke(adapter)
-                    Log.d(TAG, "NfcAdapter::$methodName() returned $result")
-                    qsTile?.apply {
-                        Log.d(TAG, "Updating tile")
-                        state = if (!wasEnabled) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
-                        if (SDK_INT >= Build.VERSION_CODES.Q) subtitle = getText(
-                            if (!wasEnabled) string.tile_subtitle_active else string.tile_subtitle_inactive
-                        )
-                        updateTile()
-                    }
-                    if (result is Boolean && result) return // Success; return early.
-                } catch (e: Exception) {
-                    Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
-                }
-            }
+    /**
+     * Checks if [permission] has been granted to us.
+     *
+     * @return [true] if we have [permission], otherwise [false].
+     */
+    private fun permissionGranted(permission: String): Boolean {
+        val status = checkSelfPermission(permission)
+        Log.d(TAG, "$permission status: $status")
+        return status == PERMISSION_GRANTED
+    }
+
+    /**
+     * Inverts the NFC [adapter]'s current state.
+     *
+     * That is, if [adapter] is currently enbled, then disable it, and vice versa. This calls
+     * [setNfcAdapterState], which in turn, requires WRITE_SECURE_SETTINGS permission.
+     *
+     * @return [true] if the [adapter]'s new state was successfully requested.
+     */
+    private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
+        return adapter?.run { setNfcAdapterState(this, !isEnabled) } ?: false
+    }
+
+    /**
+     * Sets the [adapter] state to [enable].
+     *
+     * This uses introspection to execute either the NfcAdapter::enable() or NfcAdapter::disable()
+     * function as appropriate. These functions both require WRITE_SECURE_SETTINGS permission.
+     *
+     * @return [true] if the state change was successfully requested, otherwise [false].
+     */
+    private fun setNfcAdapterState(adapter: NfcAdapter, enable: Boolean): Boolean {
+        if (!permissionGranted(WRITE_SECURE_SETTINGS)) return false
+        val methodName = if (enable) "enable" else "disable"
+        Log.i(TAG, "Setting NFC adapter's status to ${methodName}d")
+        val success = try {
+            Log.d(TAG, "Invoking NfcAdapter::$methodName()")
+            val result = NfcAdapter::class.java.getMethod(methodName).invoke(adapter)
+            Log.d(TAG, "NfcAdapter::$methodName() returned $result")
+            result is Boolean && result
+        } catch (e: Exception) {
+            Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
+            false
         }
+        if (success) updateTile(enable)
+        return success
+    }
 
-        // Fall back to launching the NFC Settings action (doesn't require special permissions).
+    /**
+     * Starts the NFC Settings activity, then collapses the Quick Settings panel behind it.
+     */
+    private fun startNfcSettingsActivity() {
         Log.i(TAG, "Starting the ACTION_NFC_SETTINGS activity")
         val intent = Intent(Settings.ACTION_NFC_SETTINGS)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         //noinspection StartActivityAndCollapseDeprecated
         if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE))
+    }
+
+    /**
+     * Updates the Quick Settings tile with the [newState] and (if supported) [newSubTitleResId].
+     *
+     * Note [newSubTitleResId] will be ignored on devices running Android versions earlier than Q.
+     *
+     * @param newState The next state for the tile. Should be one of the Tile.STATE_* constants.
+     * @param newSubTitleResId Resource ID for the new subtitle text.
+     */
+    private fun updateTile(newState: Int, newSubTitleResId: Int) {
+        qsTile?.apply {
+            Log.d(TAG, "Updating tile")
+            this.state = newState
+            if (SDK_INT >= Build.VERSION_CODES.Q) this.subtitle = getText(newSubTitleResId)
+            updateTile()
+        }
+    }
+
+    /**
+     * Updates the Quick Settings tile to show as active or not.
+     *
+     * @param active If [true] show the tile as active, otherwise show as inactive.
+     */
+    private fun updateTile(active: Boolean) {
+        if (active) updateTile(Tile.STATE_ACTIVE, string.tile_subtitle_active)
+        else updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_inactive)
+    }
+
+    /**
+     * Updates the Quick Settings tile to reflect the [adapter]'s current state.
+     *
+     * @param adapter The adapter to reflect the state of.
+     */
+    private fun updateTile(adapter: NfcAdapter?) {
+        adapter?.apply { updateTile(isEnabled) } ?:
+            updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_unavailable)
     }
 }
