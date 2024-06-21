@@ -2,6 +2,10 @@
 
 ## [Unreleased][]
 
+Replaced timer with broadcast listener for more responsive tile updates.
+
+Added support for direct NFC toggle if granted `WRITE_SECURE_SETTINGS` permission.
+
 ## [1.3.1][] (2023-12-04)
 
 Enabled code minification and resource shrinkage.
