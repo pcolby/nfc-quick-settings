@@ -6,19 +6,21 @@ package au.id.colby.nfcquicksettings
 import android.Manifest.permission.WRITE_SECURE_SETTINGS
 import android.app.PendingIntent
 import android.app.PendingIntent.FLAG_IMMUTABLE
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.nfc.NfcAdapter
-import android.os.Build
 import android.os.Build.VERSION.SDK_INT
+import android.os.Build.VERSION_CODES
 import android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import android.util.Log
+import androidx.core.content.ContextCompat
 import au.id.colby.nfcquicksettings.R.string
-import java.util.Timer
-import kotlin.concurrent.fixedRateTimer
 
 private const val TAG = "NfcTileService"
 
@@ -29,43 +31,42 @@ private const val TAG = "NfcTileService"
  * device's NFC Settings activity.
  */
 class NfcTileService : TileService() {
-    private var updateTimer: Timer? = null
+    private val nfcBroadcastReceiver = NfcBroadcastReceiver()
 
     /**
      * Called when this tile moves into a listening state.
      *
-     * This override updates the tile's state and title to indicate the device's current NFC status
-     * (On, Off, or Unavailable).
+     * This override registers a broadcast receiver to listen for NFC adapter state changes, then
+     * updates the tile according the default adapter's current state.
      */
     override fun onStartListening() {
         super.onStartListening()
-        Log.d(TAG, "onStartListening")
-        val adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)
-        updateTimer = fixedRateTimer("default", false, 0L, 500) {
-            Log.d(TAG, "updateTimer")
-            updateTile(adapter)
-        }
+        Log.d(TAG, "onStartListening; Registering broadcast receiver")
+        ContextCompat.registerReceiver(
+            this,
+            nfcBroadcastReceiver,
+            IntentFilter(NfcAdapter.ACTION_ADAPTER_STATE_CHANGED),
+            ContextCompat.RECEIVER_EXPORTED
+        )
+        updateTile()
     }
 
     /**
      * Called when this tile moves out of the listening state.
      *
-     * This override cancels the update timer, if any is running.
+     * This override simply unregisters the broadcast receiver.
      */
     override fun onStopListening() {
-        Log.d(TAG, "onStopListening")
-        updateTimer?.apply {
-            Log.d(TAG, "Cancelling update timer")
-            cancel()
-        }
+        Log.d(TAG, "onStopListening; Unregistering broadcast receiver")
+        unregisterReceiver(nfcBroadcastReceiver)
         super.onStopListening()
     }
 
     /**
      * Called when the user clicks on this tile.
      *
-     * This override takes the user to the NFC settings, by starting the `ACTION_NFC_SETTINGS`
-     * activity, and collapsing the Quick Settings menu.
+     * This override attempts to invert the default NFC adapter's state, and if that cannot be done,
+     * launches the NFC Settings Action, where the user can toggle it themselves.
      */
     override fun onClick() {
         super.onClick()
@@ -74,9 +75,21 @@ class NfcTileService : TileService() {
     }
 
     /**
+     * Inverts the NFC [adapter]'s current state.
+     *
+     * That is, if [adapter] is currently enabled, then disable it, and vice versa. This calls
+     * [setNfcAdapterState], which in turn, requires WRITE_SECURE_SETTINGS permission.
+     *
+     * @return true if the [adapter]'s new state was successfully requested.
+     */
+    private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
+        return adapter?.run { setNfcAdapterState(this, !isEnabled) } ?: false
+    }
+
+    /**
      * Checks if [permission] has been granted to us.
      *
-     * @return [true] if we have [permission], otherwise [false].
+     * @return true if we have [permission], otherwise false.
      */
     private fun permissionGranted(permission: String): Boolean {
         val status = checkSelfPermission(permission)
@@ -85,24 +98,12 @@ class NfcTileService : TileService() {
     }
 
     /**
-     * Inverts the NFC [adapter]'s current state.
-     *
-     * That is, if [adapter] is currently enbled, then disable it, and vice versa. This calls
-     * [setNfcAdapterState], which in turn, requires WRITE_SECURE_SETTINGS permission.
-     *
-     * @return [true] if the [adapter]'s new state was successfully requested.
-     */
-    private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
-        return adapter?.run { setNfcAdapterState(this, !isEnabled) } ?: false
-    }
-
-    /**
      * Sets the [adapter] state to [enable].
      *
      * This uses introspection to execute either the NfcAdapter::enable() or NfcAdapter::disable()
      * function as appropriate. These functions both require WRITE_SECURE_SETTINGS permission.
      *
-     * @return [true] if the state change was successfully requested, otherwise [false].
+     * @return true if the state change was successfully requested, otherwise false.
      */
     private fun setNfcAdapterState(adapter: NfcAdapter, enable: Boolean): Boolean {
         if (!permissionGranted(WRITE_SECURE_SETTINGS)) return false
@@ -143,9 +144,9 @@ class NfcTileService : TileService() {
      */
     private fun updateTile(newState: Int, newSubTitleResId: Int) {
         qsTile?.apply {
-            Log.d(TAG, "Updating tile")
+            Log.d(TAG, "Updating tile with state $newState")
             this.state = newState
-            if (SDK_INT >= Build.VERSION_CODES.Q) this.subtitle = getText(newSubTitleResId)
+            if (SDK_INT >= VERSION_CODES.Q) this.subtitle = getText(newSubTitleResId)
             updateTile()
         }
     }
@@ -153,7 +154,7 @@ class NfcTileService : TileService() {
     /**
      * Updates the Quick Settings tile to show as active or not.
      *
-     * @param active If [true] show the tile as active, otherwise show as inactive.
+     * @param active If true show the tile as active, otherwise show as inactive.
      */
     private fun updateTile(active: Boolean) {
         if (active) updateTile(Tile.STATE_ACTIVE, string.tile_subtitle_active)
@@ -165,8 +166,37 @@ class NfcTileService : TileService() {
      *
      * @param adapter The adapter to reflect the state of.
      */
-    private fun updateTile(adapter: NfcAdapter?) {
+    private fun updateTile(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)) {
         adapter?.apply { updateTile(isEnabled) } ?:
             updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_unavailable)
+    }
+
+    /**
+     * Provides static functions for the NfcTileService class.
+     */
+    companion object {
+        /**
+         * Updates the Quick Settings tile owned by [context], which is an NfcTileService instance.
+         */
+        fun updateTile(context: Context) {
+            (context as? NfcTileService)?.run { updateTile(); }
+        }
+    }
+
+    /**
+     * A custom Broadcast Receiver for updating an NfcTileService on NFC adapter state changes.
+     */
+    inner class NfcBroadcastReceiver : BroadcastReceiver() {
+        /**
+         * Called when a broadcast message is received.
+         *
+         * This override simply reflects the event back to the [context] for which it the
+         * receiver was registered.
+         */
+        override fun onReceive(context: Context, intent: Intent) {
+            Log.d(TAG, "onReceive $context $intent")
+            if (intent.action == NfcAdapter.ACTION_ADAPTER_STATE_CHANGED) updateTile(context)
+            else Log.w(TAG, "Received unexpected broadcast message: $intent")
+        }
     }
 }
