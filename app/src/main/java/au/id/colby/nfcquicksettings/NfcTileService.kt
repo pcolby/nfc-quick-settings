@@ -109,6 +109,7 @@ class NfcTileService : TileService() {
         if (!permissionGranted(WRITE_SECURE_SETTINGS)) return false
         val methodName = if (enable) "enable" else "disable"
         Log.i(TAG, "Setting NFC adapter's status to ${methodName}d")
+        if (enable) updateTile(Tile.STATE_ACTIVE, string.tile_subtitle_turning_on)
         val success = try {
             Log.d(TAG, "Invoking NfcAdapter::$methodName()")
             val result = NfcAdapter::class.java.getMethod(methodName).invoke(adapter)
@@ -118,6 +119,8 @@ class NfcTileService : TileService() {
             Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
             false
         }
+        if (enable && !success) updateTile() // Clear the 'Turning on...' state.
+        if (!enable && success) updateTile(false) // Show the tile as inactive already.
         return success
     }
 

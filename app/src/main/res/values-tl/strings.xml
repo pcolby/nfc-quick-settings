@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Naka-on</string>
     <string name="tile_subtitle_inactive">Naka-off</string>
+    <string name="tile_subtitle_turning_on">Ino-on…</string>
     <string name="tile_subtitle_unavailable">Hindi available</string>
 </resources>

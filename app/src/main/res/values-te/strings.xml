@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ఆన్‌లో ఉంది</string>
     <string name="tile_subtitle_inactive">ఆఫ్‌లో ఉంది</string>
+    <string name="tile_subtitle_turning_on">ఆన్ చేస్తోంది…</string>
     <string name="tile_subtitle_unavailable">అందుబాటులో లేదు</string>
 </resources>

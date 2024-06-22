@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Күйүк</string>
     <string name="tile_subtitle_inactive">Өчүк</string>
+    <string name="tile_subtitle_turning_on">Күйгүзүлүүдө…</string>
     <string name="tile_subtitle_unavailable">Жеткиликсиз</string>
 </resources>

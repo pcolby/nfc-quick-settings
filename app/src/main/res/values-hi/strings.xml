@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">चालू है</string>
     <string name="tile_subtitle_inactive">बंद है</string>
+    <string name="tile_subtitle_turning_on">वाई-फ़ाई चालू हो रहा है…</string>
     <string name="tile_subtitle_unavailable">उपलब्ध नहीं है</string>
 </resources>

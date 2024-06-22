@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">آن ہے</string>
     <string name="tile_subtitle_inactive">آف ہے</string>
+    <string name="tile_subtitle_turning_on">آن ہو رہا ہے…</string>
     <string name="tile_subtitle_unavailable">دستیاب نہیں ہے</string>
 </resources>

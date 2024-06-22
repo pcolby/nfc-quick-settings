@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Aktibatuta</string>
     <string name="tile_subtitle_inactive">Desaktibatuta</string>
+    <string name="tile_subtitle_turning_on">Aktibatzen…</string>
     <string name="tile_subtitle_unavailable">Ez dago erabilgarri</string>
 </resources>

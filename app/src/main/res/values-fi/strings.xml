@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Päällä</string>
     <string name="tile_subtitle_inactive">Poissa päältä</string>
+    <string name="tile_subtitle_turning_on">Otetaan käyttöön…</string>
     <string name="tile_subtitle_unavailable">Ei saatavilla</string>
 </resources>

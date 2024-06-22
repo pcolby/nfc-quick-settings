@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Açık</string>
     <string name="tile_subtitle_inactive">Kapalı</string>
+    <string name="tile_subtitle_turning_on">Açılıyor…</string>
     <string name="tile_subtitle_unavailable">Kullanılamıyor</string>
 </resources>

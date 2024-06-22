@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">På</string>
     <string name="tile_subtitle_inactive">Av</string>
+    <string name="tile_subtitle_turning_on">Slår på …</string>
     <string name="tile_subtitle_unavailable">Utilgjengelig</string>
 </resources>

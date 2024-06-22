@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Włączony</string>
     <string name="tile_subtitle_inactive">Wyłączony</string>
+    <string name="tile_subtitle_turning_on">Włączam…</string>
     <string name="tile_subtitle_unavailable">Niedostępny</string>
 </resources>

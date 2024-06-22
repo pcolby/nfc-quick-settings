@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ਚਾਲੂ ਹੈ</string>
     <string name="tile_subtitle_inactive">ਬੰਦ ਹੈ</string>
+    <string name="tile_subtitle_turning_on">ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…</string>
     <string name="tile_subtitle_unavailable">ਅਣਉਪਲਬਧ ਹੈ</string>
 </resources>

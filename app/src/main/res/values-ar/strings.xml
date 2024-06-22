@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">الميزة مفعّلة</string>
     <string name="tile_subtitle_inactive">الميزة غير مفعّلة</string>
+    <string name="tile_subtitle_turning_on">جارٍ التفعيل…</string>
     <string name="tile_subtitle_unavailable">الميزة غير متاحة</string>
 </resources>

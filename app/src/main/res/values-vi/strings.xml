@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Đang bật</string>
     <string name="tile_subtitle_inactive">Đang tắt</string>
+    <string name="tile_subtitle_turning_on">Đang bật…</string>
     <string name="tile_subtitle_unavailable">Không hoạt động</string>
 </resources>
