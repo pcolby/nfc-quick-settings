@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">เปิด</string>
     <string name="tile_subtitle_inactive">ปิด</string>
+    <string name="tile_subtitle_turning_on">กำลังเปิด...</string>
     <string name="tile_subtitle_unavailable">ไม่พร้อมใช้งาน</string>
 </resources>

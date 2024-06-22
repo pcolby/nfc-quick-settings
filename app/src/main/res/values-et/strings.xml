@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Sees</string>
     <string name="tile_subtitle_inactive">Väljas</string>
+    <string name="tile_subtitle_turning_on">Sisselülitamine …</string>
     <string name="tile_subtitle_unavailable">Pole saadaval</string>
 </resources>

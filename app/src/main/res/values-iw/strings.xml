@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">פועל</string>
     <string name="tile_subtitle_inactive">כבוי</string>
+    <string name="tile_subtitle_turning_on">בתהליך הפעלה…</string>
     <string name="tile_subtitle_unavailable">לא זמין</string>
 </resources>

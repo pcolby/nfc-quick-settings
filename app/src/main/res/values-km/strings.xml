@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">បើក</string>
     <string name="tile_subtitle_inactive">បិទ</string>
+    <string name="tile_subtitle_turning_on">កំពុង​បើក...</string>
     <string name="tile_subtitle_unavailable">មិនមានទេ</string>
 </resources>

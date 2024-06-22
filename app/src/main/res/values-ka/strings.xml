@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ჩართულია</string>
     <string name="tile_subtitle_inactive">გამორთულია</string>
+    <string name="tile_subtitle_turning_on">ირთვება…</string>
     <string name="tile_subtitle_unavailable">მიუწვდომელია</string>
 </resources>

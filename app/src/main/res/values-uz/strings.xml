@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Yoniq</string>
     <string name="tile_subtitle_inactive">Oʻchiq</string>
+    <string name="tile_subtitle_turning_on">Yoqilmoqda…</string>
     <string name="tile_subtitle_unavailable">Ishlamaydi</string>
 </resources>

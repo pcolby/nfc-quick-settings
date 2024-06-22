@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Activat</string>
     <string name="tile_subtitle_inactive">Dezactivat</string>
+    <string name="tile_subtitle_turning_on">Se activează...</string>
     <string name="tile_subtitle_unavailable">Indisponibil</string>
 </resources>

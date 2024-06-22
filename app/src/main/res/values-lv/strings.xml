@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Ieslēgts</string>
     <string name="tile_subtitle_inactive">Izslēgts</string>
+    <string name="tile_subtitle_turning_on">Notiek ieslēgšana…</string>
     <string name="tile_subtitle_unavailable">Nav pieejams</string>
 </resources>

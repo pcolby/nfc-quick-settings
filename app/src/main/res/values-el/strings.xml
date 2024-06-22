@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Ενεργό</string>
     <string name="tile_subtitle_inactive">Ανενεργό</string>
+    <string name="tile_subtitle_turning_on">Ενεργοποίηση…</string>
     <string name="tile_subtitle_unavailable">Μη διαθέσιμο</string>
 </resources>

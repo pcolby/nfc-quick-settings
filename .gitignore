@@ -1,6 +1,7 @@
 .envrc
 .gradle
 .idea
+.kotlin
 build
 debug
 local.properties

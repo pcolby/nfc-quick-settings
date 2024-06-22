@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Vuliwe</string>
     <string name="tile_subtitle_inactive">Valiwe</string>
+    <string name="tile_subtitle_turning_on">Iyavula...</string>
     <string name="tile_subtitle_unavailable">Akutholakali</string>
 </resources>
