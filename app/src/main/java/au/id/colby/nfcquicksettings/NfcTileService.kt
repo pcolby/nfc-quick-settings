@@ -118,7 +118,6 @@ class NfcTileService : TileService() {
             Log.e(TAG, "Failed to invoke NfcAdapter::$methodName()", e)
             false
         }
-        if (success) updateTile(enable)
         return success
     }
 
