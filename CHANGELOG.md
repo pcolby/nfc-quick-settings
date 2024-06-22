@@ -1,6 +1,6 @@
 # Changelog[^1]
 
-## [Unreleased][]
+## [1.4.0][] (2024-06-22)
 
 Replaced timer with broadcast listener for more responsive tile updates.
 
@@ -34,7 +34,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.3.1...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.0
 [1.3.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.3.1
 [1.3.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.3.0
 [1.2.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.2.2
