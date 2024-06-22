@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">روشن</string>
     <string name="tile_subtitle_inactive">خاموش</string>
+    <string name="tile_subtitle_turning_on">روشن کردن…</string>
     <string name="tile_subtitle_unavailable">دردسترس نیست</string>
 </resources>

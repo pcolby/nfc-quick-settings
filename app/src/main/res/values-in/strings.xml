@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Aktif</string>
     <string name="tile_subtitle_inactive">Nonaktif</string>
+    <string name="tile_subtitle_turning_on">Mengaktifkan…</string>
     <string name="tile_subtitle_unavailable">Tidak tersedia</string>
 </resources>

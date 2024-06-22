@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">অন কৰা আছে</string>
     <string name="tile_subtitle_inactive">অফ আছে</string>
+    <string name="tile_subtitle_turning_on">অন কৰি থকা হৈছে…</string>
     <string name="tile_subtitle_unavailable">উপলব্ধ নহয়</string>
 </resources>

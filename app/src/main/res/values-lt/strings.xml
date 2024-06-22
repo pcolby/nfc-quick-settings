@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Įjungta</string>
     <string name="tile_subtitle_inactive">Išjungta</string>
+    <string name="tile_subtitle_turning_on">Įjungiama…</string>
     <string name="tile_subtitle_unavailable">Nepasiekiama</string>
 </resources>

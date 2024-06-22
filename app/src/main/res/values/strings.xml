@@ -3,5 +3,6 @@
     <string name="tile_label" translatable="false">NFC</string>
     <string name="tile_subtitle_active">On</string>
     <string name="tile_subtitle_inactive">Off</string>
+    <string name="tile_subtitle_turning_on">Turning on…</string>
     <string name="tile_subtitle_unavailable">Unavailable</string>
 </resources>

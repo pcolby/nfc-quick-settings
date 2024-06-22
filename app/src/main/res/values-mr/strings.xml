@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">सुरू आहे</string>
     <string name="tile_subtitle_inactive">बंद आहे</string>
+    <string name="tile_subtitle_turning_on">सुरू करत आहे…</string>
     <string name="tile_subtitle_unavailable">उपलब्ध नाही</string>
 </resources>

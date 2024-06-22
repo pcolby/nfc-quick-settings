@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Til</string>
     <string name="tile_subtitle_inactive">Fra</string>
+    <string name="tile_subtitle_turning_on">Aktiverer…</string>
     <string name="tile_subtitle_unavailable">Ikke tilgængelig</string>
 </resources>

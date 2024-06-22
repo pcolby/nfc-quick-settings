@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Aan</string>
     <string name="tile_subtitle_inactive">Uit</string>
+    <string name="tile_subtitle_turning_on">Aanzetten…</string>
     <string name="tile_subtitle_unavailable">Niet beschikbaar</string>
 </resources>

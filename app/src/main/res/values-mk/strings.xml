@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Вклучено</string>
     <string name="tile_subtitle_inactive">Исклучено</string>
+    <string name="tile_subtitle_turning_on">Се вклучува…</string>
     <string name="tile_subtitle_unavailable">Недостапно</string>
 </resources>

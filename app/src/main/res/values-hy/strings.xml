@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Միացված է</string>
     <string name="tile_subtitle_inactive">Անջատված է</string>
+    <string name="tile_subtitle_turning_on">Միացում…</string>
     <string name="tile_subtitle_unavailable">Հասանելի չէ</string>
 </resources>

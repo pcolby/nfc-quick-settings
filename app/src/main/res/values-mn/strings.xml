@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Асаалттай</string>
     <string name="tile_subtitle_inactive">Унтраалттай</string>
+    <string name="tile_subtitle_turning_on">Асааж байна…</string>
     <string name="tile_subtitle_unavailable">Боломжгүй</string>
 </resources>

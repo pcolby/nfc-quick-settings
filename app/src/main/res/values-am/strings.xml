@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">በርቷል</string>
     <string name="tile_subtitle_inactive">ጠፍቷል</string>
+    <string name="tile_subtitle_turning_on">በማብራት ላይ...</string>
     <string name="tile_subtitle_unavailable">አይገኝም</string>
 </resources>

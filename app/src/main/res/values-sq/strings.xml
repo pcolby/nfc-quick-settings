@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">Aktiv</string>
     <string name="tile_subtitle_inactive">Joaktiv</string>
+    <string name="tile_subtitle_turning_on">Po aktivizohet…</string>
     <string name="tile_subtitle_unavailable">Nuk ofrohet</string>
 </resources>

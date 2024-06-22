@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">இயக்கப்பட்டுள்ளது</string>
     <string name="tile_subtitle_inactive">முடக்கப்பட்டுள்ளது</string>
+    <string name="tile_subtitle_turning_on">ஆன் செய்கிறது…</string>
     <string name="tile_subtitle_unavailable">கிடைக்கவில்லை</string>
 </resources>

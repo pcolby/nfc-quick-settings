@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">已开启</string>
     <string name="tile_subtitle_inactive">已关闭</string>
+    <string name="tile_subtitle_turning_on">正在开启…</string>
     <string name="tile_subtitle_unavailable">不可用</string>
 </resources>

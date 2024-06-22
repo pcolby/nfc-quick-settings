@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ഓണാണ്</string>
     <string name="tile_subtitle_inactive">ഓഫാണ്</string>
+    <string name="tile_subtitle_turning_on">ഓണാക്കുന്നു…</string>
     <string name="tile_subtitle_unavailable">ലഭ്യമല്ല</string>
 </resources>

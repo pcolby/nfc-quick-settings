@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ଚାଲୁ ଅଛି</string>
     <string name="tile_subtitle_inactive">ବନ୍ଦ ଅଛି</string>
+    <string name="tile_subtitle_turning_on">ଅନ୍ ହେଉଛି…</string>
     <string name="tile_subtitle_unavailable">ଉପଲବ୍ଧ ନାହିଁ</string>
 </resources>

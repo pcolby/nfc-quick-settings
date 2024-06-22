@@ -2,5 +2,6 @@
 <resources>
     <string name="tile_subtitle_active">ON</string>
     <string name="tile_subtitle_inactive">OFF</string>
+    <string name="tile_subtitle_turning_on">ON にしています…</string>
     <string name="tile_subtitle_unavailable">使用不可</string>
 </resources>
