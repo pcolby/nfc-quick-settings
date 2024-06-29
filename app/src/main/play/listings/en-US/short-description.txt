@@ -1,0 +1,1 @@
+View NFC status, and quickly access NFC settings, from the Quick Settings menu
