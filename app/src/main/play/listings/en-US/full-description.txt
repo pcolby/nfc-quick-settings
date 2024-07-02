@@ -1,0 +1,11 @@
+NFC Quick Settings is a simple, open source, utility for quickly checking the device's current NFC status, and enabling or disabling NFC with as few taps as possible.
+
+NFC Quick Settings has no user interface of it's own. Instead, once installed, you will see a new "NFC" tile available when customising your Quick Settings menu. See "Add, remove, or move a setting" in Android Help for more information on customising the Quick Settings menu: https://support.google.com/android/answer/9083864?hl=en#customize_settings
+
+Once the NFC Quick Settings tile has been added to your Quick Settings menu, the tile will show the current NFC status.
+
+Android security limitations do not allow any third-party apps, such as this, to turn NFC on or off directly, so when tapped, the NFC Quick Settings tile will simply open the device's NFC Settings page (if the device has one), where you can enable or disable NFC as desired.
+
+NFC Quick Settings also has an advanced mode that allows NFC to be toggled directly from the tile, without having to going the NFC Settings page. But this advanced mode requires special permissions, which can only be granted via the Android Debug Bridge on a desktop computer. You can read more about this mode at https://github.com/pcolby/nfc-quick-settings?tab=readme-ov-file#advanced-mode
+
+NFC Quick Settings is freely available under the GPLv3 open source license. The source code is available at https://github.com/pcolby/nfc-quick-settings
