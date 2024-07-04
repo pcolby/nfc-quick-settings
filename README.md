@@ -15,7 +15,8 @@ The Quick Settings tile indicates the current NFC status (enabled, or disabled),
 varies a little depending on the permissions available. See [Basic](#basic-mode) and [Advanced](#advanced-mode) modes
 below.
 
-[![Get it on Google Play](assets/GetItOnGooglePlay_Badge_Web_color_English.png)](https://play.google.com/store/apps/details?id=au.id.colby.nfcquicksettings)
+[![Get it](assets/Play_Store_badge.svg)](https://play.google.com/store/apps/details?id=au.id.colby.nfcquicksettings)&ensp;
+[![Get it](assets/F-Droid_badge.svg)](https://f-droid.org/packages/au.id.colby.nfcquicksettings)
 
 ## Basic Mode
 
