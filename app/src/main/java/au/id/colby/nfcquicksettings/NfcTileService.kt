@@ -21,6 +21,7 @@ import android.service.quicksettings.TileService
 import android.util.Log
 import androidx.core.content.ContextCompat
 import au.id.colby.nfcquicksettings.R.string
+import java.lang.IllegalArgumentException
 
 private const val TAG = "NfcTileService"
 
@@ -42,7 +43,7 @@ class NfcTileService : TileService() {
     override fun onStartListening() {
         super.onStartListening()
         Log.d(TAG, "onStartListening; Registering broadcast receiver")
-        ContextCompat.registerReceiver(
+        ContextCompat.registerReceiver( // No harm if already registered.
             this,
             nfcBroadcastReceiver,
             IntentFilter(NfcAdapter.ACTION_ADAPTER_STATE_CHANGED),
@@ -58,7 +59,15 @@ class NfcTileService : TileService() {
      */
     override fun onStopListening() {
         Log.d(TAG, "onStopListening; Unregistering broadcast receiver")
-        unregisterReceiver(nfcBroadcastReceiver)
+        try {
+            unregisterReceiver(nfcBroadcastReceiver)
+        } catch (e: IllegalArgumentException) {
+            // It's very rare, but possible for onStopListening() to be called when the listener is
+            // no longer registered, such as when the tile is removed. This is non-fatal. We could
+            // use PackageManager.queryBroadcastReceivers() to perform a pre-check, but this is very
+            // rare, and Android does the same pre-check internally, so we optimise the happy case.
+            Log.w(TAG, "Failed to unregister broadcast receiver", e) // Non-fatal.
+        }
         super.onStopListening()
     }
 
