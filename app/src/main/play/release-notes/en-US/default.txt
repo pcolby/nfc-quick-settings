@@ -1,1 +1,1 @@
-- Added metadata for F-Droid
+- Handled a very rare, but possible, exception when removing the tile
