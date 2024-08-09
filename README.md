@@ -42,7 +42,7 @@ granted via the [Android Debug Bridge (adb)][] tool.
    > installs it at `android_sdk/platform-tools/`. If you want the standalone Android SDK Platform Tools package,
    > [download it here](https://developer.android.com/tools/releases/platform-tools).
 
-2. Install NFC Quick Settings, via [Google Play] or [GitHub Releases].
+2. Install NFC Quick Settings, via [Google Play], [F-Droid], or [GitHub Releases].
 
 3. [Enable adb debugging on your device](https://developer.android.com/tools/adb#Enabling).
 
@@ -65,6 +65,7 @@ adb shell pm revoke au.id.colby.nfcquicksettings android.permission.WRITE_SECURE
 [`NfcAdapter::enable()`]: https://cs.android.com/android/platform/superproject/+/main:frameworks/base/core/java/android/nfc/NfcAdapter.java;l=947?q=NfcAdapter "android.nfc.NfcAdapter::enable()"
 [`WRITE_SECURE_SETTINGS`]: https://developer.android.com/reference/android/Manifest.permission#WRITE_SECURE_SETTINGS "android.permission.WRITE_SECURE_SETTINGS"
 [Android Debug Bridge (adb)]: https://developer.android.com/tools/adb "Android Debug Bridge (adb)"
+[F-Droid]: https://f-droid.org/packages/au.id.colby.nfcquicksettings "NFC Quick Settings on F-Droid"
 [GitHub Releases]: https://github.com/pcolby/nfc-quick-settings/releases "NFC Quick Settings releases"
 [Google Play]: https://play.google.com/store/apps/details?id=au.id.colby.nfcquicksettings "NFC Quick Settings on Google Play"
 [SDK Manager]: https://developer.android.com/studio/intro/update#sdk-manager "Update your tools with the SDK Manager"

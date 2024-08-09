@@ -1,5 +1,9 @@
 # Changelog[^1]
 
+## [1.4.2][] (2024-07-30)
+
+Handle a rare exception when unregistering the broadcast listener.
+
 ## [1.4.1][] (2024-06-29)
 
 Added metadata for F-Droid.
@@ -38,7 +42,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.1...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.2...HEAD
+[1.4.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.2
 [1.4.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.1
 [1.4.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.0
 [1.3.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.3.1
