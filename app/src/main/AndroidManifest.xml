@@ -19,6 +19,7 @@
 
         <activity
             android:name=".NfcTilePreferencesActivity"
+            android:enabled="false"
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/tile_prefs_label"

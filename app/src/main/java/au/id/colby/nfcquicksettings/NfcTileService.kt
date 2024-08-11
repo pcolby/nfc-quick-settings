@@ -7,9 +7,11 @@ import android.Manifest.permission.WRITE_SECURE_SETTINGS
 import android.app.PendingIntent
 import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.content.BroadcastReceiver
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.nfc.NfcAdapter
 import android.os.Build.VERSION.SDK_INT
@@ -21,7 +23,6 @@ import android.service.quicksettings.TileService
 import android.util.Log
 import androidx.core.content.ContextCompat
 import au.id.colby.nfcquicksettings.R.string
-import java.lang.IllegalArgumentException
 
 private const val TAG = "NfcTileService"
 
@@ -33,6 +34,18 @@ private const val TAG = "NfcTileService"
  */
 class NfcTileService : TileService() {
     private val nfcBroadcastReceiver = NfcBroadcastReceiver()
+
+    /**
+     * Called when the tile service is created.
+     *
+     * This updates the associated NFC Tile Preferences activity (ie to enable or disable that
+     * activity, based on whether or not the WRITE_SECURE_SETTINGS permission has been granted).
+     */
+    override fun onCreate() {
+        super.onCreate()
+        Log.d(TAG, "onCreate")
+        updatePreferencesActivity()
+    }
 
     /**
      * Called when this tile moves into a listening state.
@@ -143,6 +156,28 @@ class NfcTileService : TileService() {
         //noinspection StartActivityAndCollapseDeprecated
         if (SDK_INT < UPSIDE_DOWN_CAKE) @Suppress("DEPRECATION") startActivityAndCollapse(intent)
         else startActivityAndCollapse(PendingIntent.getActivity(this, 0, intent, FLAG_IMMUTABLE))
+    }
+
+    /**
+     * Enables or disables the NFC tile's preferences activity based on whether or not the
+     * `WRITE_SECURE_SETTINGS` permission has been granted.
+     *
+     * Thus if the permission is granted, then NfcTilePreferencesActivity will be enabled to
+     * redirect users to the NFC Settings activity (`ACTION_NFC_SETTINGS`) on long-tapping the tile
+     * But if the the permissions is not granted, then NfcTilePreferencesActivity is disabled,
+     * and long-tapping the tile will result in the default OS behaviour (ie starting the
+     * Application Details activity (`ACTION_APPLICATION_DETAILS_SETTINGS`)).
+     */
+    private fun updatePreferencesActivity() {
+        val newState = if (permissionGranted(WRITE_SECURE_SETTINGS))
+            PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+        else
+            PackageManager.COMPONENT_ENABLED_STATE_DISABLED
+        Log.d(TAG, "Setting preferences activity enabled setting to $newState")
+        applicationContext.packageManager.setComponentEnabledSetting(
+            ComponentName(applicationContext, NfcTilePreferencesActivity::class.java),
+            newState, PackageManager.DONT_KILL_APP
+        )
     }
 
     /**
