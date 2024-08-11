@@ -22,7 +22,7 @@
             android:excludeFromRecents="true"
             android:exported="false"
             android:label="@string/tile_prefs_label"
-            android:noHistory="true">
+            android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>
