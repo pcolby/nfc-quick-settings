@@ -1,1 +1,1 @@
-- Handled a very rare, but possible, exception when removing the tile
+- Redirected long-tap to NFC Settings, when granted WRITE_SECURE_SETTINGS permission
