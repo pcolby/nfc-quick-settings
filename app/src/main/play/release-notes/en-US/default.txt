@@ -1,1 +1,1 @@
-- Added metadata for F-Droid
+- Redirected long-tap to NFC Settings, when granted WRITE_SECURE_SETTINGS permission
