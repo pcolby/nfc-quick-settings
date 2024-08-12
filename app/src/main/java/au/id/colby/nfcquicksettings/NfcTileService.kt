@@ -169,14 +169,14 @@ class NfcTileService : TileService() {
      * Application Details activity (`ACTION_APPLICATION_DETAILS_SETTINGS`)).
      */
     private fun updatePreferencesActivity() {
-        val newState = if (permissionGranted(WRITE_SECURE_SETTINGS))
-            PackageManager.COMPONENT_ENABLED_STATE_ENABLED
-        else
-            PackageManager.COMPONENT_ENABLED_STATE_DISABLED
+        val newState =
+            if (permissionGranted(WRITE_SECURE_SETTINGS)) PackageManager.COMPONENT_ENABLED_STATE_ENABLED
+            else PackageManager.COMPONENT_ENABLED_STATE_DISABLED
         Log.d(TAG, "Setting preferences activity enabled setting to $newState")
         applicationContext.packageManager.setComponentEnabledSetting(
             ComponentName(applicationContext, NfcTilePreferencesActivity::class.java),
-            newState, PackageManager.DONT_KILL_APP
+            newState,
+            PackageManager.DONT_KILL_APP
         )
     }
 
@@ -213,8 +213,10 @@ class NfcTileService : TileService() {
      * @param adapter The adapter to reflect the state of.
      */
     private fun updateTile(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)) {
-        adapter?.apply { updateTile(isEnabled) } ?:
-            updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_unavailable)
+        adapter?.apply { updateTile(isEnabled) } ?: updateTile(
+            Tile.STATE_INACTIVE,
+            string.tile_subtitle_unavailable
+        )
     }
 
     /**
