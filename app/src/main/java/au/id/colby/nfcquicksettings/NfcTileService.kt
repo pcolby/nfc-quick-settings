@@ -214,7 +214,7 @@ class NfcTileService : TileService() {
      */
     private fun updateTile(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)) {
         adapter?.apply { updateTile(isEnabled) } ?: updateTile(
-            Tile.STATE_INACTIVE,
+            Tile.STATE_UNAVAILABLE,
             string.tile_subtitle_unavailable
         )
     }
