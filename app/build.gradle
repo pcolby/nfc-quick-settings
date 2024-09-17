@@ -30,8 +30,8 @@ android {
         applicationId "au.id.colby.nfcquicksettings"
         minSdk 24
         targetSdk 34
-        versionCode 13
-        versionName "1.4.3-pre"
+        versionCode 14
+        versionName "1.4.4-pre"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -50,6 +50,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    packaging {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
     }
 }
 
