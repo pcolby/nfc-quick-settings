@@ -105,7 +105,7 @@ class NfcTileService : TileService() {
      * @return true if the [adapter]'s new state was successfully requested.
      */
     private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
-        return adapter?.run { setNfcAdapterState(this, !isEnabled) } ?: false
+        return adapter?.run { setNfcAdapterState(this, !isEnabled) } == true
     }
 
     /**
