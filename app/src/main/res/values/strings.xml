@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name" translatable="false">NFC Quick Settings</string>
+
+    <!-- Quick Settings Tile labels -->
     <string name="tile_label" translatable="false">NFC</string>
     <string name="tile_prefs_label" translatable="false">NFC Tile Preferences</string>
     <string name="tile_subtitle_active">On</string>
     <string name="tile_subtitle_inactive">Off</string>
     <string name="tile_subtitle_turning_on">Turning on…</string>
     <string name="tile_subtitle_unavailable">Unavailable</string>
-    <string name="title_activity_settings">NFC Quick Settings</string>
+
+    <!-- Settings Activity labels -->
+    <string name="settings_title">NFC Quick Settings</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
