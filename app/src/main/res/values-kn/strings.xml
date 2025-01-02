@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="tile_subtitle_active">ಆನ್ ಮಾಡಿ</string>
-    <string name="tile_subtitle_inactive">ಆಫ್ ಮಾಡಿ</string>
+    <string name="tile_subtitle_active">ಆನ್</string>
+    <string name="tile_subtitle_inactive">ಆಫ್</string>
     <string name="tile_subtitle_turning_on">ಆನ್ ಮಾಡಲಾಗುತ್ತಿದೆ...</string>
     <string name="tile_subtitle_unavailable">ಲಭ್ಯವಿಲ್ಲ</string>
 </resources>

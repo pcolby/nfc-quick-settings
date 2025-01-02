@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="tile_subtitle_active">Activé</string>
-    <string name="tile_subtitle_inactive">Désactivé</string>
+    <string name="tile_subtitle_inactive">Désactivée</string>
     <string name="tile_subtitle_turning_on">Activation en cours…</string>
     <string name="tile_subtitle_unavailable">Non disponible</string>
 </resources>

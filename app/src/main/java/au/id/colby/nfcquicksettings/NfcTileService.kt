@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023-2024 Paul Colby <git@colby.id.au>
+// SPDX-FileCopyrightText: 2023-2025 Paul Colby <git@colby.id.au>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 package au.id.colby.nfcquicksettings
@@ -105,7 +105,7 @@ class NfcTileService : TileService() {
      * @return true if the [adapter]'s new state was successfully requested.
      */
     private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
-        return adapter?.run { setNfcAdapterState(this, !isEnabled) } ?: false
+        return adapter?.run { setNfcAdapterState(this, !isEnabled) } == true
     }
 
     /**

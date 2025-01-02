@@ -1,5 +1,9 @@
 # Changelog[^1]
 
+## [1.4.4][] (2024-10-17)
+
+Support for Android 15.
+
 ## [1.4.3][] (2024-08-12)
 
 Redirected long-tap to NFC Settings when granted `WRITE_SECURE_SETTINGS` permission.
@@ -46,7 +50,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.3...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.4...HEAD
+[1.4.4]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.4
 [1.4.3]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.3
 [1.4.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.2
 [1.4.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.1

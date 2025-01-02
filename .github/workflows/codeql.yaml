@@ -24,8 +24,10 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-        languages: java
+        languages: kotlin
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
+    - run: find app/build/intermediates/ -name 'lint-resources.xml' -delete
+      shell: bash
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
