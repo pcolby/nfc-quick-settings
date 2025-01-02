@@ -17,6 +17,12 @@
         android:layout_height="wrap_content"
         android:baselineAligned="false" />
 
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
     <TextView
         android:autoLink="web"
         android:id="@+id/footerTextView"

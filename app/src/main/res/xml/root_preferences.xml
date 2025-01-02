@@ -3,22 +3,22 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory app:title="@string/messages_header">
+    <PreferenceCategory app:title="@string/tile_preferences_header">
 
         <ListPreference
             app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
+            app:entries="@array/tap_action_entries"
+            app:entryValues="@array/tap_action_values"
+            app:key="tile_tap_action"
+            app:title="@string/tile_tap_title"
             app:useSimpleSummaryProvider="true" />
 
         <ListPreference
             app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply2"
-            app:title="@string/reply_title"
+            app:entries="@array/tap_action_entries"
+            app:entryValues="@array/tap_action_values"
+            app:key="tile_long_tap_action"
+            app:title="@string/tile_long_tap_title"
             app:useSimpleSummaryProvider="true" />
 
     </PreferenceCategory>
