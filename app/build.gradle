@@ -23,14 +23,14 @@ android {
             }
         }
     }
-    namespace 'au.id.colby.nfcquicksettings'
-    compileSdk 35
+    namespace = 'au.id.colby.nfcquicksettings'
+    compileSdk = 35
 
     defaultConfig {
         applicationId "au.id.colby.nfcquicksettings"
-        minSdk 24
-        targetSdk 35
-        versionCode 15
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 15
         versionName "1.4.5-pre"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -38,9 +38,9 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            ndk { debugSymbolLevel 'FULL' }
+            ndk { debugSymbolLevel = 'FULL' }
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            shrinkResources true
+            shrinkResources = true
             if (signingConfigs.hasProperty("release")) signingConfig = signingConfigs.release
         }
     }
