@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Reply Preference -->
     <string-array name="tap_action_entries">
@@ -12,5 +13,17 @@
         <item>toggle</item>
         <item>this</item>
         <item>info</item>
+    </string-array>
+
+    <string-array name="entries">
+        <item>Choose me!</item>
+        <item>No, me!</item>
+        <item>What about me?!</item>
+    </string-array>
+
+    <string-array name="entry_values">
+        <item>alpha</item>
+        <item>beta</item>
+        <item>charlie</item>
     </string-array>
 </resources>
