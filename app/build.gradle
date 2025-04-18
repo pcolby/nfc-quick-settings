@@ -41,7 +41,7 @@ android {
             debuggable true
             resValue "string", "application_id", "${defaultConfig.applicationId}"
             resValue "string", "build_version",
-              "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}.debug"
+                    "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}.debug"
         }
 
         release {
@@ -52,7 +52,7 @@ android {
             if (signingConfigs.hasProperty("release")) signingConfig = signingConfigs.release
             resValue "string", "application_id", "${defaultConfig.applicationId}"
             resValue "string", "build_version",
-              "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}"
+                    "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}"
         }
     }
     compileOptions {
