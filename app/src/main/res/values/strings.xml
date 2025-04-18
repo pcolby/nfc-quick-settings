@@ -16,6 +16,7 @@
     <string name="tile_long_tap_title">Long-tap action</string>
     <string name="title_activity_settings2">SettingsActivity2</string>
 
+    <string name="intro">This application provides an NFC tile that can added to the Quick Settings menu.</string>
 
     <!--App title-->
     <string name="title">Preferences Sample</string>
