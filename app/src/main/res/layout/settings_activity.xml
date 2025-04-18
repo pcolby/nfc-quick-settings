@@ -22,7 +22,7 @@
                 android:layout_height="?attr/actionBarSize"
                 android:elevation="0dp"
                 app:navigationIcon="?attr/homeAsUpIndicator"
-                app:title="NFC Quick Settings" />
+                app:title="@string/app_name" />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
@@ -68,14 +68,24 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
     <TextView
       android:layout_height="wrap_content"
       android:layout_width="wrap_content"
-      android:text="Version 1.2.3-foo" />
+      android:text="Version: " />
     <TextView
       android:layout_height="wrap_content"
       android:layout_width="wrap_content"
-      android:text="au.id.colby.nfc..." />
+      android:text="@string/build_version" />
+</LinearLayout>
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="@string/application_id" />
 </LinearLayout>
 
 </FrameLayout>

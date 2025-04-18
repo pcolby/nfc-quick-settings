@@ -36,12 +36,23 @@ android {
     }
 
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+            resValue "string", "application_id", "${defaultConfig.applicationId}"
+            resValue "string", "build_version",
+              "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}.debug"
+        }
+
         release {
             minifyEnabled true
             ndk { debugSymbolLevel = 'FULL' }
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             shrinkResources = true
             if (signingConfigs.hasProperty("release")) signingConfig = signingConfigs.release
+            resValue "string", "application_id", "${defaultConfig.applicationId}"
+            resValue "string", "build_version",
+              "${defaultConfig.versionName}+${defaultConfig.versionCode}.${System.env.BUILD_ID ?: "local"}"
         }
     }
     compileOptions {
