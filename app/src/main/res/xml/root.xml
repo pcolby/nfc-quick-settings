@@ -14,7 +14,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<PreferenceScreen
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Preference
@@ -32,9 +32,16 @@
         app:summary="Sample preferences that launch dialogs"
         app:fragment="com.example.androidx.preference.sample.MainActivity$DialogPreferencesFragment"/>
 
+    <PreferenceCategory android:title="Preference category">
+
+    </PreferenceCategory>
     <Preference
         app:title="@string/advanced_attributes"
         app:summary="Sample preferences with advanced attributes"
         app:fragment="com.example.androidx.preference.sample.MainActivity$AdvancedPreferencesFragment"/>
+
+    <FooterPreference
+
+    />
 
 </PreferenceScreen>
