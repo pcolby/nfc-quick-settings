@@ -1,5 +1,11 @@
 # Changelog[^1]
 
+## 1.4.5 (_Unreleased_)
+
+Support for Android 15.
+
+Updated translations for `fr-CA`, `kk`, and `kn`.
+
 ## [1.4.4][] (2024-10-17)
 
 Support for Android 15.
