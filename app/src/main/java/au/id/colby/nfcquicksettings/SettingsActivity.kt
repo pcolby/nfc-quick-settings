@@ -3,8 +3,14 @@
 
 package au.id.colby.nfcquicksettings
 
+import android.app.StatusBarManager
+import android.content.ComponentName
+import android.graphics.drawable.Icon
+import android.os.Build.VERSION.SDK_INT
+import android.os.Build.VERSION_CODES
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +35,19 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.settings_activity)
 
         val addTileButton = findViewById<Button>(R.id.addTileButton)
-        addTileButton.setOnClickListener { Log.d(TAG, "addTileButton::onClick") }
+        if (SDK_INT >= VERSION_CODES.TIRAMISU) {
+            addTileButton.setOnClickListener {
+                Log.d(TAG, "addTileButton::onClick")
+                val statusBarManager = getSystemService(StatusBarManager::class.java)
+                statusBarManager.requestAddTileService(
+                    ComponentName(this, NfcTileService::class.java),
+                    getString(R.string.tile_label),
+                    Icon.createWithResource(this, R.drawable.round_nfc_24),
+                    mainExecutor
+                ) { result -> Log.i(TAG, "requestAddTileService result: $result") }
+                // \todo Handle result codes. eg added, vs already-added, etc.
+            }
+        } else addTileButton.visibility = View.GONE
 
         val settingsVersion = findViewById<TextView>(R.id.settingsVersion)
         settingsVersion.text = getString(R.string.settings_version_text,
