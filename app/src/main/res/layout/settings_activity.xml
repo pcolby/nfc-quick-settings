@@ -38,14 +38,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:text="@string/intro" />
+            android:text="@string/settings_intro" />
 
         <Button
             android:id="@+id/addTileButton"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add NFC tile to Quick Settings" />
+            android:text="@string/settings_add_tile_button_label" />
 
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
@@ -66,7 +66,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Version: " />
+                    android:text="@string/settings_version_label" />
 
                 <TextView
                     android:layout_width="wrap_content"

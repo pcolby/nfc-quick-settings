@@ -11,5 +11,7 @@
 
     <!-- Settings Activity labels -->
     <string name="settings_title" translatable="false">NFC Quick Settings</string>
-    <string name="intro">This application provides an NFC tile that can added to the Quick Settings menu.</string>
+    <string name="settings_intro">This application provides an NFC tile that can be added to the Quick Settings menu.</string>
+    <string name="settings_add_tile_button_label">Add NFC tile to Quick Settings</string>
+    <string name="settings_version_label">Version: </string>
 </resources>
