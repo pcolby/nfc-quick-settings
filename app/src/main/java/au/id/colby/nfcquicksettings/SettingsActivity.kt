@@ -4,10 +4,12 @@
 package au.id.colby.nfcquicksettings
 
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.preference.PreferenceFragmentCompat
 
-private const val TITLE_TAG = "settingsActivityTitle"
+private const val TAG = "SettingsActivity"
 
 /**
  * An activity for managing user preferences for NFC Quick Settings.
@@ -23,7 +25,16 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.settings_activity)
+
+        val addTileButton = findViewById<Button?>(R.id.addTileButton)
+        addTileButton.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                Log.d(TAG, "addTileButton::onClick")
+            }
+        })
+
 //        if (savedInstanceState == null) {
 //            supportFragmentManager
 //                .beginTransaction()
