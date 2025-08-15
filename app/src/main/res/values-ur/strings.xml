@@ -4,4 +4,7 @@
     <string name="tile_subtitle_inactive">آف ہے</string>
     <string name="tile_subtitle_turning_on">آن ہو رہا ہے…</string>
     <string name="tile_subtitle_unavailable">دستیاب نہیں ہے</string>
+    <string name="settings_intro">This application provides an NFC tile that can be added to the Quick Settings menu.</string>
+    <string name="settings_add_tile_button_label">Add NFC tile to Quick Settings</string>
+    <string name="settings_version_label">Version: </string>
 </resources>
