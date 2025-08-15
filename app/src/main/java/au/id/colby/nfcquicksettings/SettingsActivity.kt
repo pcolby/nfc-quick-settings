@@ -30,11 +30,7 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(R.layout.settings_activity)
 
         val addTileButton = findViewById<Button>(R.id.addTileButton)
-        addTileButton.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                Log.d(TAG, "addTileButton::onClick")
-            }
-        })
+        addTileButton.setOnClickListener { Log.d(TAG, "addTileButton::onClick") }
 
         val settingsVersion = findViewById<TextView>(R.id.settingsVersion)
         settingsVersion.text = getString(R.string.settings_version_text,
