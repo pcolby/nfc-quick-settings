@@ -55,7 +55,11 @@ class SettingsActivity : AppCompatActivity() {
             getString(R.string.tile_label),
             Icon.createWithResource(this, R.drawable.round_nfc_24),
             mainExecutor
-        ) { result -> Log.i(TAG, "requestAddTileService result: $result") }
+        ) { result -> onAddTileServiceResponse(result) }
+    }
+
+    private fun onAddTileServiceResponse(result: Int?) {
+        Log.i(TAG, "requestAddTileService result: $result")
         // \todo Handle result codes. eg added, vs already-added, etc.
     }
 }
