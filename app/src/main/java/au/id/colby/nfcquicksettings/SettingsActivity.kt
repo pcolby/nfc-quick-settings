@@ -49,8 +49,7 @@ class SettingsActivity : AppCompatActivity() {
         Log.d(TAG, "onTileButtonClick")
         assert(SDK_INT >= VERSION_CODES.TIRAMISU)
         if (SDK_INT < VERSION_CODES.TIRAMISU) return
-        val statusBarManager = getSystemService(StatusBarManager::class.java)
-        statusBarManager.requestAddTileService(
+        getSystemService(StatusBarManager::class.java).requestAddTileService(
             ComponentName(this, NfcTileService::class.java),
             getString(R.string.tile_label),
             Icon.createWithResource(this, R.drawable.round_nfc_24),
