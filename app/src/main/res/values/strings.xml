@@ -10,6 +10,6 @@
     <string name="tile_subtitle_unavailable">Unavailable</string>
 
     <!-- Settings Activity labels -->
-    <string name="settings_title">NFC Quick Settings</string>
+    <string name="settings_title" translatable="false">NFC Quick Settings</string>
     <string name="intro">This application provides an NFC tile that can added to the Quick Settings menu.</string>
 </resources>
