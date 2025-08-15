@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 private const val TAG = "SettingsActivity"
@@ -28,12 +29,16 @@ class SettingsActivity : AppCompatActivity() {
 
         setContentView(R.layout.settings_activity)
 
-        val addTileButton = findViewById<Button?>(R.id.addTileButton)
+        val addTileButton = findViewById<Button>(R.id.addTileButton)
         addTileButton.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 Log.d(TAG, "addTileButton::onClick")
             }
         })
+
+        val settingsVersion = findViewById<TextView>(R.id.settingsVersion)
+        settingsVersion.text = getString(R.string.settings_version_text,
+            getText(R.string.build_version))
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }

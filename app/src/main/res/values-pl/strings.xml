@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Włączony</string>
     <string name="tile_subtitle_inactive">Wyłączony</string>
     <string name="tile_subtitle_turning_on">Włączam…</string>
     <string name="tile_subtitle_unavailable">Niedostępny</string>
     <string name="settings_intro">This application provides an NFC tile that can be added to the Quick Settings menu.</string>
     <string name="settings_add_tile_button_label">Add NFC tile to Quick Settings</string>
-    <string name="settings_version_label">Version: </string>
+    <string name="settings_version_text">"wersja <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
 </resources>

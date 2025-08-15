@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ఆన్‌లో ఉంది</string>
     <string name="tile_subtitle_inactive">ఆఫ్‌లో ఉంది</string>
     <string name="tile_subtitle_turning_on">ఆన్ చేస్తోంది…</string>
     <string name="tile_subtitle_unavailable">అందుబాటులో లేదు</string>
     <string name="settings_intro">This application provides an NFC tile that can be added to the Quick Settings menu.</string>
     <string name="settings_add_tile_button_label">Add NFC tile to Quick Settings</string>
-    <string name="settings_version_label">Version: </string>
+    <string name="settings_version_text">"వెర్షన్ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
 </resources>
