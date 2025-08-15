@@ -1,1 +1,2 @@
-- Support for Android 15.
+- Support for Android 16.
+- Updated translations for `fr-CA`, `kk`, and `kn`.

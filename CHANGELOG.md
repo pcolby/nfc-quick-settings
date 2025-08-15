@@ -1,8 +1,8 @@
 # Changelog[^1]
 
-## 1.4.5 (_Unreleased_)
+## [1.4.5][] (2025-08-15)
 
-Support for Android 15.
+Support for Android 16.
 
 Updated translations for `fr-CA`, `kk`, and `kn`.
 
@@ -56,7 +56,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.4...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.5...HEAD
+[1.4.5]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.5
 [1.4.4]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.4
 [1.4.3]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.3
 [1.4.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.2
