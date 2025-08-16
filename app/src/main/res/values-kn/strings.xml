@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">ಆಫ್</string>
     <string name="tile_subtitle_turning_on">ಆನ್ ಮಾಡಲಾಗುತ್ತಿದೆ...</string>
     <string name="tile_subtitle_unavailable">ಲಭ್ಯವಿಲ್ಲ</string>
-    <string name="settings_intro">"ಈ ಅಪ್ಲಿಕೇಶನ್ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ಮೆನುಗೆ ಸೇರಿಸಬಹುದಾದ ಎನ್ಎಫ್ಸಿ ಟೈಲ್ ಅನ್ನು ಒದಗಿಸುತ್ತದೆ."</string>
+    <string name="settings_intro">"ಈ ಅಪ್ಲಿಕೇಶನ್ ಸರಳವಾಗಿ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ಮೆನುಗೆ ಸೇರಿಸಬಹುದಾದ ಎನ್ಎಫ್ಸಿ ಟೈಲ್ ಅನ್ನು ಒದಗಿಸುತ್ತದೆ."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ಗೆ ಎನ್ಎಫ್ಸಿ ಟೈಲ್ ಸೇರಿಸಿ"</string>
     <string name="settings_version_text">"ಆವೃತ್ತಿ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"ವಿಫಲವಾಗಿದೆ. ಅಪ್ಲಿಕೇಶನ್ ಮುನ್ನೆಲೆಗಳಲ್ಲಿಲ್ಲ"</string>

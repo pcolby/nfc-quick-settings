@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">გამორთულია</string>
     <string name="tile_subtitle_turning_on">ირთვება…</string>
     <string name="tile_subtitle_unavailable">მიუწვდომელია</string>
-    <string name="settings_intro">"ეს პროგრამა უზრუნველყოფს NFC ფილას, რომლის დამატებაც შესაძლებელია <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> მენიუში."</string>
+    <string name="settings_intro">"ეს პროგრამა უბრალოდ უზრუნველყოფს NFC ფილას, რომლის დამატებაც შესაძლებელია <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> მენიუში."</string>
     <string name="settings_add_tile_button_label">"დაამატეთ NFC ფილა <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ზე"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> ვერსია"</string>
     <string name="settings_app_not_in_foreground">"ვერ მოხერხდა განაცხადი არ არის წინა პლანზე"</string>

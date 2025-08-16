@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Deaktiv</string>
     <string name="tile_subtitle_turning_on">Aktiv edilir...</string>
     <string name="tile_subtitle_unavailable">Əlçatan deyil</string>
-    <string name="settings_intro">"Bu proqram <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusuna əlavə edilə bilən bir NFC kafel təqdim edir."</string>
+    <string name="settings_intro">"Bu proqram sadəcə <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusuna əlavə edilə bilən bir NFC kafel təqdim edir."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ə NFC plitəsini əlavə edin"</string>
     <string name="settings_version_text">"versiya <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Uğursuz oldu. Tətbiq ön planda deyil"</string>

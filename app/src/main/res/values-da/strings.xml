@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Fra</string>
     <string name="tile_subtitle_turning_on">Aktiverer…</string>
     <string name="tile_subtitle_unavailable">Ikke tilgængelig</string>
-    <string name="settings_intro">"Denne applikation indeholder en NFC-flise, der kan føjes til menuen <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Denne applikation giver simpelthen en NFC-flise, der kan føjes til menuen <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Tilføj NFC-flise til <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Mislykkedes. Ansøgning ikke i forgrunden"</string>

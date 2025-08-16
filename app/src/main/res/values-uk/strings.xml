@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Вимкнено</string>
     <string name="tile_subtitle_turning_on">Увімкнення…</string>
     <string name="tile_subtitle_unavailable">Недоступно</string>
-    <string name="settings_intro">"Ця програма надає плитку NFC, яку можна додати в меню <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Ця програма просто надає плитку NFC, яку можна додати до меню <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Додайте плитку NFC до <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"версія <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Невдало. Застосування не на передньому плані"</string>

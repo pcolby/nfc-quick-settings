@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Väljas</string>
     <string name="tile_subtitle_turning_on">Sisselülitamine …</string>
     <string name="tile_subtitle_unavailable">Pole saadaval</string>
-    <string name="settings_intro">"See rakendus pakub NFC-plaati, mida saab lisada menüüsse <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"See rakendus pakub lihtsalt NFC-plaati, mida saab lisada menüüsse <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Lisage NFC plaat saidile <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versioon <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Ebaõnnestus. Rakendus ei ole esiplaanil"</string>

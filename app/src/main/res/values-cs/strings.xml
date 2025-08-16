@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Vypnuto</string>
     <string name="tile_subtitle_turning_on">Zapínání…</string>
     <string name="tile_subtitle_unavailable">Nedostupné</string>
-    <string name="settings_intro">"Tato aplikace poskytuje dlaždici NFC, kterou lze přidat do nabídky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Tato aplikace jednoduše poskytuje dlaždici NFC, kterou lze přidat do nabídky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Přidejte NFC dlaždici do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"verze <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Neuspěl. Aplikace není v popředí"</string>

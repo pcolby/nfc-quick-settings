@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">අක්‍රියයි</string>
     <string name="tile_subtitle_turning_on">ක්‍රියාත්මක කරමින්…</string>
     <string name="tile_subtitle_unavailable">නොමැත</string>
-    <string name="settings_intro">"මෙම යෙදුම <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> මෙනුවට එකතු කළ හැකි NFC ටයිල් එකක් සපයයි."</string>
+    <string name="settings_intro">"මෙම යෙදුම සරලව <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> මෙනුවට එකතු කළ හැකි NFC ටයිල් එකක් සපයයි."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> වෙත NFC ටයිල් එක් කරන්න"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> අනුවාදය"</string>
     <string name="settings_app_not_in_foreground">"අසාර්ථක විය. යෙදුම පෙරමුනේ නැත"</string>

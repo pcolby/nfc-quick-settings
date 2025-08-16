@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">آف ہے</string>
     <string name="tile_subtitle_turning_on">آن ہو رہا ہے…</string>
     <string name="tile_subtitle_unavailable">دستیاب نہیں ہے</string>
-    <string name="settings_intro">"یہ ایپلی کیشن ایک این ایف سی ٹائل فراہم کرتی ہے جسے <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> مینو میں شامل کیا جاسکتا ہے۔"</string>
+    <string name="settings_intro">"یہ ایپلی کیشن صرف ایک این ایف سی ٹائل فراہم کرتی ہے جسے <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> مینو میں شامل کیا جاسکتا ہے۔"</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> میں این ایف سی ٹائل شامل کریں"</string>
     <string name="settings_version_text">"ورژن <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"ناکام. درخواست پیش منظر میں نہیں ہے"</string>

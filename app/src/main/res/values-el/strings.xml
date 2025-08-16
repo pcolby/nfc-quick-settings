@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Ανενεργό</string>
     <string name="tile_subtitle_turning_on">Ενεργοποίηση…</string>
     <string name="tile_subtitle_unavailable">Μη διαθέσιμο</string>
-    <string name="settings_intro">"Αυτή η εφαρμογή παρέχει ένα πλακίδιο NFC που μπορεί να προστεθεί στο μενού <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Αυτή η εφαρμογή παρέχει απλώς ένα πλακίδιο NFC που μπορεί να προστεθεί στο μενού <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Προσθέστε πλακίδιο NFC στο <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"έκδοση <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Αποτυχία. Η εφαρμογή δεν βρίσκεται σε προσκήνιο"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Өчүк</string>
     <string name="tile_subtitle_turning_on">Күйгүзүлүүдө…</string>
     <string name="tile_subtitle_unavailable">Жеткиликсиз</string>
-    <string name="settings_intro">"This application provides an NFC tile that can be added to the <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menu."</string>
+    <string name="settings_intro">"This application simply provides an NFC tile that can be added to the <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menu."</string>
     <string name="settings_add_tile_button_label">"Add NFC tile to <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> версиясы"</string>
     <string name="settings_app_not_in_foreground">"Failed. Application not in foreground"</string>

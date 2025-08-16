@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Đang tắt</string>
     <string name="tile_subtitle_turning_on">Đang bật…</string>
     <string name="tile_subtitle_unavailable">Không hoạt động</string>
-    <string name="settings_intro">"Ứng dụng này cung cấp một ô NFC có thể được thêm vào menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Ứng dụng này chỉ đơn giản là cung cấp một ô NFC có thể được thêm vào menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Thêm ô NFC vào <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"phiên bản <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Thất bại. Ứng dụng không ở phía trước"</string>

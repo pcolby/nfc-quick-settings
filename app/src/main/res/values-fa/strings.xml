@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">خاموش</string>
     <string name="tile_subtitle_turning_on">روشن کردن…</string>
     <string name="tile_subtitle_unavailable">دردسترس نیست</string>
-    <string name="settings_intro">"این برنامه یک کاشی NFC را ارائه می دهد که می تواند به منوی <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> اضافه شود."</string>
+    <string name="settings_intro">"این برنامه به سادگی یک کاشی NFC را ارائه می دهد که می تواند به منوی <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> اضافه شود."</string>
     <string name="settings_add_tile_button_label">"کاشی NFC را به <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> اضافه کنید"</string>
     <string name="settings_version_text">"نسخه <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"شکست خورده برنامه در پیش زمینه نیست"</string>

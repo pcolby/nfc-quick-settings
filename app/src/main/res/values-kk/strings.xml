@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Өшірулі</string>
     <string name="tile_subtitle_turning_on">Қосылып жатыр…</string>
     <string name="tile_subtitle_unavailable">Қолжетімсіз</string>
-    <string name="settings_intro">"Бұл бағдарлама <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> мәзіріне қосуға болатын NFC плиткасын ұсынады."</string>
+    <string name="settings_intro">"Бұл бағдарлама жай ғана <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> мәзіріне қосуға болатын NFC плиткасын ұсынады."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ге NFC плиткасын қосыңыз"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> нұсқасы"</string>
     <string name="settings_app_not_in_foreground">"Сәтсіз аяқталды. Қолдану алдыңғы қатарда емес"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">الميزة غير مفعّلة</string>
     <string name="tile_subtitle_turning_on">جارٍ التفعيل…</string>
     <string name="tile_subtitle_unavailable">الميزة غير متاحة</string>
-    <string name="settings_intro">"يوفر هذا التطبيق لوحة NFC التي يمكن إضافتها إلى قائمة <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"يوفر هذا التطبيق ببساطة لوحة NFC التي يمكن إضافتها إلى قائمة <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"إضافة ملف NFC إلى <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"الإصدار <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"فشلت. التطبيق ليس في المقدمة"</string>

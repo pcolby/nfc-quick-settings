@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Izslēgts</string>
     <string name="tile_subtitle_turning_on">Notiek ieslēgšana…</string>
     <string name="tile_subtitle_unavailable">Nav pieejams</string>
-    <string name="settings_intro">"Šī lietojumprogramma nodrošina NFC flīzi, ko var pievienot izvēlnei <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Šī lietojumprogramma vienkārši nodrošina NFC flīzi, ko var pievienot izvēlnei <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Pievienojiet NFC flīzi <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versija <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Neizdevās. Pielietojums nav priekšplānā"</string>

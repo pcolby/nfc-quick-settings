@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Vypnuté</string>
     <string name="tile_subtitle_turning_on">Zapína sa…</string>
     <string name="tile_subtitle_unavailable">Nie je k dispozícii</string>
-    <string name="settings_intro">"Táto aplikácia poskytuje dlaždicu NFC, ktorú je možné pridať do ponuky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Táto aplikácia jednoducho poskytuje dlaždicu NFC, ktorú je možné pridať do ponuky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Pridajte dlaždicu NFC do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"verzia <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Zlyhal. Aplikácia nie je v popredí"</string>

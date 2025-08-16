@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">બંધ છે</string>
     <string name="tile_subtitle_turning_on">ચાલુ કરી રહ્યાં છીએ…</string>
     <string name="tile_subtitle_unavailable">ઉપલબ્ધ નથી</string>
-    <string name="settings_intro">"આ એપ્લિકેશન એનએફસી ટાઇલ પ્રદાન કરે છે જે <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> મેનૂમાં ઉમેરી શકાય છે."</string>
+    <string name="settings_intro">"આ એપ્લિકેશન ફક્ત એક એનએફસી ટાઇલ પ્રદાન કરે છે જે <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> મેનૂમાં ઉમેરી શકાય છે."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> માં એનએફસી ટાઇલ ઉમેરો"</string>
     <string name="settings_version_text">"વર્ઝન <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"નિષ્ફળ એપ્લિકેશન ફોરગ્રાઉન્ડમાં નથી"</string>

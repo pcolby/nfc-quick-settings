@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">ጠፍቷል</string>
     <string name="tile_subtitle_turning_on">በማብራት ላይ...</string>
     <string name="tile_subtitle_unavailable">አይገኝም</string>
-    <string name="settings_intro">"ይህ መተግበሪያ ወደ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ምናሌ ሊታከል የሚችል የ NFC ሰይል ይሰጣል።"</string>
+    <string name="settings_intro">"ይህ መተግበሪያ በ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ምናሌ ላይ ሊጨመር የሚችል የ NFC ሰይል በቀላሉ ይሰጣል።"</string>
     <string name="settings_add_tile_button_label">"የ NFC ሰይል ወደ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ያክሉ"</string>
     <string name="settings_version_text">"ሥሪት <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"አልተሳካም። መተግበሪያ በፊት ላይ አይደለም"</string>

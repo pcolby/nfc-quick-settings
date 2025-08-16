@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Mati</string>
     <string name="tile_subtitle_turning_on">Menghidupkan…</string>
     <string name="tile_subtitle_unavailable">Tidak tersedia</string>
-    <string name="settings_intro">"Aplikasi ini menyediakan jubin NFC yang boleh ditambah ke menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Aplikasi ini hanya menyediakan jubin NFC yang boleh ditambah ke menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Tambah jubin NFC ke <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versi <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Gagal. Permohonan tidak di latar depan"</string>

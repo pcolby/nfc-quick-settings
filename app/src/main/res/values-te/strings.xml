@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">ఆఫ్‌లో ఉంది</string>
     <string name="tile_subtitle_turning_on">ఆన్ చేస్తోంది…</string>
     <string name="tile_subtitle_unavailable">అందుబాటులో లేదు</string>
-    <string name="settings_intro">"ఈ అప్లికేషన్ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> మెనుకు జోడించగల NFC టైల్ను అందిస్తుంది."</string>
+    <string name="settings_intro">"ఈ అప్లికేషన్ కేవలం <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> మెనుకు జోడించగల NFC టైల్ను అందిస్తుంది."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> కు NFC టైల్ను జోడించండి"</string>
     <string name="settings_version_text">"వెర్షన్ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"విఫలమైంది. అప్లికేషన్ ముందుభాగంలో లేదు"</string>

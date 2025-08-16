@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Wyłączony</string>
     <string name="tile_subtitle_turning_on">Włączam…</string>
     <string name="tile_subtitle_unavailable">Niedostępny</string>
-    <string name="settings_intro">"Ta aplikacja udostępnia kafelek NFC, który można dodać do menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Ta aplikacja po prostu zapewnia kafelek NFC, który można dodać do menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Dodaj kafelek NFC do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"wersja <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Nie powiodło się. Aplikacja nie jest na pierwszym planie"</string>

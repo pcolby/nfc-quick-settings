@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Išjungta</string>
     <string name="tile_subtitle_turning_on">Įjungiama…</string>
     <string name="tile_subtitle_unavailable">Nepasiekiama</string>
-    <string name="settings_intro">"Ši programa suteikia NFC plytelę, kurią galima pridėti prie <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> meniu."</string>
+    <string name="settings_intro">"Ši programa tiesiog pateikia NFC plytelę, kurią galima pridėti prie <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> meniu."</string>
     <string name="settings_add_tile_button_label">"Pridėkite NFC plytelę prie <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> versija"</string>
     <string name="settings_app_not_in_foreground">"Nepavyko. Taikymas nėra pirmame plane"</string>

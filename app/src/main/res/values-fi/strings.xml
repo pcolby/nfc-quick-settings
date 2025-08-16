@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Poissa päältä</string>
     <string name="tile_subtitle_turning_on">Otetaan käyttöön…</string>
     <string name="tile_subtitle_unavailable">Ei saatavilla</string>
-    <string name="settings_intro">"Tämä sovellus tarjoaa NFC-ruudun, joka voidaan lisätä <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -valikkoon."</string>
+    <string name="settings_intro">"Tämä sovellus tarjoaa yksinkertaisesti NFC-laatan, joka voidaan lisätä <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -valikkoon."</string>
     <string name="settings_add_tile_button_label">"Lisää NFC-laatta kohtaan <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versio <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Epäonnistui. Sovellus ei ole etualalla"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Откл.</string>
     <string name="tile_subtitle_turning_on">Включение…</string>
     <string name="tile_subtitle_unavailable">Функция недоступна</string>
-    <string name="settings_intro">"Это приложение предоставляет плитку NFC, которую можно добавить в меню <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Это приложение просто предоставляет плитку NFC, которую можно добавить в меню <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Добавьте файл NFC в <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"версия <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Не удалось. Приложение не находится на переднем плане"</string>

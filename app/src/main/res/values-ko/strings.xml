@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">꺼짐</string>
     <string name="tile_subtitle_turning_on">켜는 중...</string>
     <string name="tile_subtitle_unavailable">이용 불가</string>
-    <string name="settings_intro">"이 애플리케이션은 <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 메뉴에 추가할 수 있는 NFC 타일을 제공합니다."</string>
+    <string name="settings_intro">"이 애플리케이션은 단순히 <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 메뉴에 추가할 수 있는 NFC 타일을 제공합니다."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 에 NFC 타일 추가"</string>
     <string name="settings_version_text">"버전 <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"실패.애플리케이션이 포그라운드에 있지 않음"</string>

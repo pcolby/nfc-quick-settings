@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Անջատված է</string>
     <string name="tile_subtitle_turning_on">Միացում…</string>
     <string name="tile_subtitle_unavailable">Հասանելի չէ</string>
-    <string name="settings_intro">"Այս հավելվածը ապահովում է NFC կղմինդր, որը կարող է ավելացվել է <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ընտրացանկում:"</string>
+    <string name="settings_intro">"Այս հավելվածը պարզապես ապահովում է NFC կղմինդր, որը կարող է ավելացվել է <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ցանկի."</string>
     <string name="settings_add_tile_button_label">"Ավելացնել NFC սալիկ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ին"</string>
     <string name="settings_version_text">"տարբերակ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Ձախողվել է. Դիմումը առաջին պլանում չէ"</string>

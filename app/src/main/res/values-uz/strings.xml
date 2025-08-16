@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Oʻchiq</string>
     <string name="tile_subtitle_turning_on">Yoqilmoqda…</string>
     <string name="tile_subtitle_unavailable">Ishlamaydi</string>
-    <string name="settings_intro">"Ushbu dastur <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusiga qo'shilishi mumkin bo'lgan NFC plitasini taqdim etadi."</string>
+    <string name="settings_intro">"Ushbu dastur shunchaki <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusiga qo'shilishi mumkin bo'lgan NFC plitasini taqdim etadi."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ga NFC plitasini qo'shing"</string>
     <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> versiya"</string>
     <string name="settings_app_not_in_foreground">"Muvaffaqiyatsiz. Dastur oldingi planda emas"</string>

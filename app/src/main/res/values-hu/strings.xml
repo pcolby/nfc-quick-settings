@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Ki</string>
     <string name="tile_subtitle_turning_on">Bekapcsolás…</string>
     <string name="tile_subtitle_unavailable">Nem áll rendelkezésre</string>
-    <string name="settings_intro">"Ez az alkalmazás NFC csempét biztosít, amely hozzáadható a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menühöz."</string>
+    <string name="settings_intro">"Ez az alkalmazás egyszerűen egy NFC csempét biztosít, amely hozzáadható a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menühöz."</string>
     <string name="settings_add_tile_button_label">"NFC csempe hozzáadása a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -hoz"</string>
     <string name="settings_version_text">"verzió: <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Nem sikerült. Alkalmazás nincs előtérben"</string>

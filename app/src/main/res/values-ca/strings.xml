@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Desactivat</string>
     <string name="tile_subtitle_turning_on">S\'està activant…</string>
     <string name="tile_subtitle_unavailable">No disponible</string>
-    <string name="settings_intro">"Aquesta aplicació proporciona una rajola NFC que es pot afegir al menú <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Aquesta aplicació simplement proporciona una rajola NFC que es pot afegir al menú <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Afegeix fitxa NFC a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versió <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Fracassat. L'aplicació no en primer pla"</string>

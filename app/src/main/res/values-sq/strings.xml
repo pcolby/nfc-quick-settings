@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Joaktiv</string>
     <string name="tile_subtitle_turning_on">Po aktivizohet…</string>
     <string name="tile_subtitle_unavailable">Nuk ofrohet</string>
-    <string name="settings_intro">"Ky aplikacion siguron një pllakë NFC që mund të shtohet në menunë <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Ky aplikacion thjesht ofron një pllakë NFC që mund të shtohet në menunë <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Shto pllakë NFC në <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versioni <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Dështoi. Aplikimi nuk është në plan të parë"</string>

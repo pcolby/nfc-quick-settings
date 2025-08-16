@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Slökkt</string>
     <string name="tile_subtitle_turning_on">Kveikir…</string>
     <string name="tile_subtitle_unavailable">Ekki í boði</string>
-    <string name="settings_intro">"Þetta forrit veitir NFC flísar sem hægt er að bæta við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> valmyndina."</string>
+    <string name="settings_intro">"Þetta forrit veitir einfaldlega NFC flísar sem hægt er að bæta við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> valmyndina."</string>
     <string name="settings_add_tile_button_label">"Bæta NFC flísum við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"útgáfa <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Misheppnaðist. Umsókn ekki í forgrunni"</string>

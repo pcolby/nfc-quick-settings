@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">बंद है</string>
     <string name="tile_subtitle_turning_on">वाई-फ़ाई चालू हो रहा है…</string>
     <string name="tile_subtitle_unavailable">उपलब्ध नहीं है</string>
-    <string name="settings_intro">"यह एप्लिकेशन एक NFC टाइल प्रदान करता है जिसे <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> मेनू में जोड़ा जा सकता है।"</string>
+    <string name="settings_intro">"यह एप्लिकेशन बस एक NFC टाइल प्रदान करता है जिसे <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> मेनू में जोड़ा जा सकता है।"</string>
     <string name="settings_add_tile_button_label">"NFC टाइल को <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> में जोड़ें"</string>
     <string name="settings_version_text">"वर्शन <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"असफल। अनुप्रयोग अग्रभूमि में नहीं है"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Desativado</string>
     <string name="tile_subtitle_turning_on">Ativando…</string>
     <string name="tile_subtitle_unavailable">Indisponível</string>
-    <string name="settings_intro">"Este aplicativo fornece um bloco NFC que pode ser adicionado ao menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Este aplicativo simplesmente fornece um bloco NFC que pode ser adicionado ao menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Adicione o arquivo NFC ao <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"Versão <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Falhou. O aplicativo não está em primeiro plano"</string>

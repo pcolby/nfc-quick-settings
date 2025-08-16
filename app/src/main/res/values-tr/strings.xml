@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Kapalı</string>
     <string name="tile_subtitle_turning_on">Açılıyor…</string>
     <string name="tile_subtitle_unavailable">Kullanılamıyor</string>
-    <string name="settings_intro">"Bu uygulama, <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menüsüne eklenebilecek bir NFC karosu sağlar."</string>
+    <string name="settings_intro">"Bu uygulama sadece <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menüsüne eklenebilecek bir NFC döşemesi sağlar."</string>
     <string name="settings_add_tile_button_label">"NFC döşemesini <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 'e ekleyin"</string>
     <string name="settings_version_text">"sürüm: <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Başarısız oldu. Uygulama ön planda değil"</string>

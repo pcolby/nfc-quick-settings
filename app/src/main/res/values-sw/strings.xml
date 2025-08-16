@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Kimezimwa</string>
     <string name="tile_subtitle_turning_on">Inawasha...</string>
     <string name="tile_subtitle_unavailable">Hakipatikani</string>
-    <string name="settings_intro">"Programu hii hutoa tile ya NFC ambayo inaweza kuongezwa kwenye orodha ya <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Programu hii hutoa tu tile ya NFC ambayo inaweza kuongezwa kwenye orodha ya <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Ongeza tile ya NFC kwenye <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"toleo la <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Kushindwa. Maombi sio katika msingi wa mbele"</string>

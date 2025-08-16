@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Av</string>
     <string name="tile_subtitle_turning_on">Aktiverar …</string>
     <string name="tile_subtitle_unavailable">Inte tillgängligt</string>
-    <string name="settings_intro">"Denna applikation tillhandahåller en NFC-bricka som kan läggas till i menyn <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Denna applikation ger helt enkelt en NFC-kakel som kan läggas till i menyn <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Lägg till NFC-bricka till <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Misslyckades. Ansökan inte i förgrunden"</string>

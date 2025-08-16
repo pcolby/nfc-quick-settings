@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">OFF</string>
     <string name="tile_subtitle_turning_on">ON にしています…</string>
     <string name="tile_subtitle_unavailable">使用不可</string>
-    <string name="settings_intro">"このアプリケーションには、<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> メニューに追加できる NFC タイルが用意されています。"</string>
+    <string name="settings_intro">"このアプリケーションは、<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> メニューに追加できる NFC タイルを提供するだけです。"</string>
     <string name="settings_add_tile_button_label">"NFC ファイルを <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> に追加"</string>
     <string name="settings_version_text">"バージョン <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"失敗。アプリケーションがフォアグラウンドにありません"</string>

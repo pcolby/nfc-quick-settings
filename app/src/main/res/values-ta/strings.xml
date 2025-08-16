@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">முடக்கப்பட்டுள்ளது</string>
     <string name="tile_subtitle_turning_on">ஆன் செய்கிறது…</string>
     <string name="tile_subtitle_unavailable">கிடைக்கவில்லை</string>
-    <string name="settings_intro">"இந்த பயன்பாடு <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> மெனுவில் சேர்க்கக்கூடிய NFC ஓட்டை வழங்குகிறது."</string>
+    <string name="settings_intro">"இந்த பயன்பாடு வெறுமனே <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> மெனுவில் சேர்க்கக்கூடிய NFC ஓட்டை வழங்குகிறது."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> க்கு NFC டைலைச் சேர்க்கவும்"</string>
     <string name="settings_version_text">"பதிப்பு <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"தோல்வியுற்றது. பயன்பாடு முன்னணியில் இல்லை"</string>

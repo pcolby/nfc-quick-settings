@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Исклучено</string>
     <string name="tile_subtitle_turning_on">Се вклучува…</string>
     <string name="tile_subtitle_unavailable">Недостапно</string>
-    <string name="settings_intro">"Оваа апликација обезбедува NFC плочка која може да се додаде во менито <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Оваа апликација едноставно обезбедува NFC плочка која може да се додаде во менито <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Додадете плочка NFC на <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"верзија <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Не успеа. Апликацијата не е во преден план"</string>

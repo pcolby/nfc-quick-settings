@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Aus</string>
     <string name="tile_subtitle_turning_on">Wird aktiviert…</string>
     <string name="tile_subtitle_unavailable">Nicht verfügbar</string>
-    <string name="settings_intro">"Diese Anwendung bietet eine NFC-Kachel, die zum <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -Menü hinzugefügt werden kann."</string>
+    <string name="settings_intro">"Diese Anwendung stellt einfach eine NFC-Kachel bereit, die zum <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -Menü hinzugefügt werden kann."</string>
     <string name="settings_add_tile_button_label">"NFC-Kachel zu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> hinzufügen"</string>
     <string name="settings_version_text">"Version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Fehlgeschlagen. Anwendung nicht im Vordergrund"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">ഓഫാണ്</string>
     <string name="tile_subtitle_turning_on">ഓണാക്കുന്നു…</string>
     <string name="tile_subtitle_unavailable">ലഭ്യമല്ല</string>
-    <string name="settings_intro">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> മെനുവിൽ ചേർക്കാൻ കഴിയുന്ന ഒരു എൻഎഫ്സി ടൈൽ ഈ ആപ്ലിക്കേഷൻ നൽകുന്നു."</string>
+    <string name="settings_intro">"ഈ ആപ്ലിക്കേഷൻ ലളിതമായി <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> മെനുവിൽ ചേർക്കാൻ കഴിയുന്ന ഒരു എൻഎഫ്സി ടൈൽ നൽകുന്നു."</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ലേക്ക് എൻഎഫ്സി ടൈൽ ചേർക്കുക"</string>
     <string name="settings_version_text">"പതിപ്പ് <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"പരാജയപ്പെട്ടു. അപ്ലിക്കേഷൻ മുൻവശത്തല്ല"</string>

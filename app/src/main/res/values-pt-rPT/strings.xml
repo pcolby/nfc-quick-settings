@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Desligado</string>
     <string name="tile_subtitle_turning_on">A ativar...</string>
     <string name="tile_subtitle_unavailable">Indisponível</string>
-    <string name="settings_intro">"Esta aplicação fornece um mosaico NFC que pode ser adicionado ao menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_intro">"Esta aplicação fornece simplesmente um mosaico NFC que pode ser adicionado ao menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
     <string name="settings_add_tile_button_label">"Adicionar telha NFC a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versão <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Falhou. Aplicação não em primeiro plano"</string>

@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">ਬੰਦ ਹੈ</string>
     <string name="tile_subtitle_turning_on">ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…</string>
     <string name="tile_subtitle_unavailable">ਅਣਉਪਲਬਧ ਹੈ</string>
-    <string name="settings_intro">"ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਇੱਕ ਐਨਐਫਸੀ ਟਾਈਲ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ ਜੋ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ਮੀਨੂ ਵਿੱਚ ਜੋੜਿਆ ਜਾ ਸਕਦਾ ਹੈ।"</string>
+    <string name="settings_intro">"ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਸਿਰਫ਼ ਇੱਕ ਐਨਐਫਸੀ ਟਾਈਲ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ ਜੋ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ਮੀਨੂ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"</string>
     <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ਵਿੱਚ ਐਨਐਫਸੀ ਟਾਈਲ ਸ਼ਾਮਲ ਕਰੋ"</string>
     <string name="settings_version_text">"ਵਰਜਨ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"ਅਸਫਲ. ਐਪਲੀਕੇਸ਼ਨ ਫੋਰਗਰਾਉਂਡ ਵਿੱਚ ਨਹੀਂ"</string>

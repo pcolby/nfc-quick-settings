@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Af</string>
     <string name="tile_subtitle_turning_on">Skakel tans aan …</string>
     <string name="tile_subtitle_unavailable">Onbeskikbaar</string>
-    <string name="settings_intro">"Hierdie toepassing bied 'n NFC-teël wat by die <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu gevoeg kan word."</string>
+    <string name="settings_intro">"Hierdie toepassing bied eenvoudig 'n NFC-teël wat by die <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu gevoeg kan word."</string>
     <string name="settings_add_tile_button_label">"Voeg NFC-teël by <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"weergawe <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Misluk. Toepassing nie op die voorgrond nie"</string>

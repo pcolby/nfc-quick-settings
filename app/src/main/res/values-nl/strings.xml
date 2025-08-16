@@ -4,7 +4,7 @@
     <string name="tile_subtitle_inactive">Uit</string>
     <string name="tile_subtitle_turning_on">Aanzetten…</string>
     <string name="tile_subtitle_unavailable">Niet beschikbaar</string>
-    <string name="settings_intro">"Deze applicatie biedt een NFC-tegel die kan worden toegevoegd aan het <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu."</string>
+    <string name="settings_intro">"Deze applicatie biedt gewoon een NFC-tegel die kan worden toegevoegd aan het <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu."</string>
     <string name="settings_add_tile_button_label">"NFC-tegel toevoegen aan <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"versie <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
     <string name="settings_app_not_in_foreground">"Mislukt. Applicatie niet op de voorgrond"</string>
