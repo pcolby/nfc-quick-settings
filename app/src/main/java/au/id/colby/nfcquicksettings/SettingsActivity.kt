@@ -31,6 +31,11 @@ private const val TAG = "SettingsActivity"
  */
 class SettingsActivity : AppCompatActivity() {
 
+    /**
+     * Called when this activity is being created.
+     *
+     * This override sets up the UI.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -54,6 +59,12 @@ class SettingsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
+    /**
+     * Called when the user taps the "Add Tile" button. Requests the system to prompt the user to
+     * install the tile.
+     *
+     * @see onAddTileServiceResponse
+     */
     private fun onTileButtonClick() {
         Log.d(TAG, "onTileButtonClick")
         assert(SDK_INT >= VERSION_CODES.TIRAMISU)
@@ -66,6 +77,14 @@ class SettingsActivity : AppCompatActivity() {
         ) { result -> onAddTileServiceResponse(result) }
     }
 
+    /**
+     * Handles the system's response to our request to add the tile.
+     *
+     * @param result The result of the add-tile request.
+     *
+     * @see onTileButtonClick
+     * @see StatusBarManager.requestAddTileService
+     */
     private fun onAddTileServiceResponse(result: Int?) {
         Log.d(TAG, "requestAddTileService result: $result")
         val message = getString(when (result) {
