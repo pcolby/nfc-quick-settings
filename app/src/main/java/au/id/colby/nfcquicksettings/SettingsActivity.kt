@@ -36,14 +36,16 @@ class SettingsActivity : AppCompatActivity() {
 
         setContentView(R.layout.settings_activity)
 
-        findViewById<TextView>(R.id.settingsIntro).text = getString(R.string.settings_intro,
-            getText(R.string.android_quick_settings_label))
+        val qsLabel = getText(R.string.android_quick_settings_label)
+        findViewById<TextView>(R.id.settingsIntro).text = getString(R.string.settings_intro, qsLabel)
 
-        val addTileButton = findViewById<Button>(R.id.addTileButton)
-        addTileButton.text = getString(R.string.settings_add_tile_button_label,
-            getText(R.string.android_quick_settings_label))
-        if (SDK_INT < VERSION_CODES.TIRAMISU) addTileButton.visibility = View.GONE
-        else addTileButton.setOnClickListener { onTileButtonClick() }
+        findViewById<Button>(R.id.addTileButton).apply {
+            if (SDK_INT < VERSION_CODES.TIRAMISU) visibility = View.GONE
+            else {
+                text = getString(R.string.settings_add_tile_button_label, qsLabel)
+                setOnClickListener { onTileButtonClick() }
+            }
+        }
 
         val settingsVersion = findViewById<TextView>(R.id.settingsVersion)
         settingsVersion.text = getString(R.string.settings_version_text,
