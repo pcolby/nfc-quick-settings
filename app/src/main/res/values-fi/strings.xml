@@ -13,7 +13,7 @@
     <string name="settings_no_current_user">ERROR_NOT_CURRENT_USER</string>
     <string name="settings_no_status_bar_service">ERROR_NO_STATUS_BAR_SERVICE</string>
     <string name="settings_request_in_progress">ERROR_REQUEST_IN_PROGRESS</string>
-    <string name="settings_tile_added">RESULT_TILE_ADDED</string>
+    <string name="settings_tile_added">"Kiekko lisätty"</string>
     <string name="settings_tile_already_added">RESULT_TILE_ALREADY_ADDED</string>
     <string name="settings_tile_not_added">RESULT_TILE_NOT_ADDED</string>
     <string name="settings_unknown_add_response">RESULT_UNKNOWN</string>
