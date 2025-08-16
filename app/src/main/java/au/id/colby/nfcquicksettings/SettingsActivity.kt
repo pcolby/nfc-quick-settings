@@ -36,7 +36,12 @@ class SettingsActivity : AppCompatActivity() {
 
         setContentView(R.layout.settings_activity)
 
+        findViewById<TextView>(R.id.settingsIntro).text = getString(R.string.settings_intro,
+            getText(R.string.android_quick_settings_label))
+
         val addTileButton = findViewById<Button>(R.id.addTileButton)
+        addTileButton.text = getString(R.string.settings_add_tile_button_label,
+            getText(R.string.android_quick_settings_label))
         if (SDK_INT < VERSION_CODES.TIRAMISU) addTileButton.visibility = View.GONE
         else addTileButton.setOnClickListener { onTileButtonClick() }
 
