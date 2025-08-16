@@ -4,18 +4,18 @@
     <string name="tile_subtitle_inactive">OFF</string>
     <string name="tile_subtitle_turning_on">ON にしています…</string>
     <string name="tile_subtitle_unavailable">使用不可</string>
-    <string name="settings_intro">"This application provides an NFC tile that can be added to the <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menu."</string>
-    <string name="settings_add_tile_button_label">"Add NFC tile to <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_intro">"このアプリケーションには、<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> メニューに追加できる NFC タイルが用意されています。"</string>
+    <string name="settings_add_tile_button_label">"NFC ファイルを <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> に追加"</string>
     <string name="settings_version_text">"バージョン <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
-    <string name="settings_app_not_in_foreground">"Failed. Application not in foreground"</string>
-    <string name="settings_bad_component">"Failed. Bad component"</string>
-    <string name="settings_mismatched_package">"Failed. Mismatched package"</string>
-    <string name="settings_no_current_user">"Failed. Not current user"</string>
-    <string name="settings_no_status_bar_service">"Failed. No Status Bar service"</string>
-    <string name="settings_request_in_progress">"Failed. Request in progress"</string>
+    <string name="settings_app_not_in_foreground">"失敗。アプリケーションがフォアグラウンドにありません"</string>
+    <string name="settings_bad_component">"失敗。コンポーネントが不正です"</string>
+    <string name="settings_mismatched_package">"失敗。パッケージが一致しません"</string>
+    <string name="settings_no_current_user">"失敗。現在のユーザーではありません"</string>
+    <string name="settings_no_status_bar_service">"失敗。ステータスバーサービスはありません。"</string>
+    <string name="settings_request_in_progress">"失敗。リクエストは進行中です"</string>
     <string name="settings_tile_added">"タイルを追加しました"</string>
-    <string name="settings_tile_already_added">"Tile already added"</string>
-    <string name="settings_tile_not_added">"Tile not added"</string>
-    <string name="settings_unknown_add_response">"Unknown add response"</string>
+    <string name="settings_tile_already_added">"タイルは既に追加されています"</string>
+    <string name="settings_tile_not_added">"タイルは追加されていません"</string>
+    <string name="settings_unknown_add_response">"不明な追加応答"</string>
     <string name="android_quick_settings_label">"クイック設定"</string>
 </resources>

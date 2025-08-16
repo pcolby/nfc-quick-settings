@@ -4,18 +4,18 @@
     <string name="tile_subtitle_inactive">Slökkt</string>
     <string name="tile_subtitle_turning_on">Kveikir…</string>
     <string name="tile_subtitle_unavailable">Ekki í boði</string>
-    <string name="settings_intro">"This application provides an NFC tile that can be added to the <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menu."</string>
-    <string name="settings_add_tile_button_label">"Add NFC tile to <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_intro">"Þetta forrit veitir NFC flísar sem hægt er að bæta við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> valmyndina."</string>
+    <string name="settings_add_tile_button_label">"Bæta NFC flísum við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
     <string name="settings_version_text">"útgáfa <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
-    <string name="settings_app_not_in_foreground">"Failed. Application not in foreground"</string>
-    <string name="settings_bad_component">"Failed. Bad component"</string>
-    <string name="settings_mismatched_package">"Failed. Mismatched package"</string>
-    <string name="settings_no_current_user">"Failed. Not current user"</string>
-    <string name="settings_no_status_bar_service">"Failed. No Status Bar service"</string>
-    <string name="settings_request_in_progress">"Failed. Request in progress"</string>
+    <string name="settings_app_not_in_foreground">"Misheppnaðist. Umsókn ekki í forgrunni"</string>
+    <string name="settings_bad_component">"Misheppnaðist. Slæmur þáttur"</string>
+    <string name="settings_mismatched_package">"Misheppnaðist. Missamsvarandi pakki"</string>
+    <string name="settings_no_current_user">"Misheppnaðist. Ekki núverandi notandi"</string>
+    <string name="settings_no_status_bar_service">"Misheppnaðist. Engin stöðustikurþjónusta"</string>
+    <string name="settings_request_in_progress">"Misheppnaðist. Beiðni í vinnslu"</string>
     <string name="settings_tile_added">"Reit bætt við"</string>
-    <string name="settings_tile_already_added">"Tile already added"</string>
-    <string name="settings_tile_not_added">"Tile not added"</string>
-    <string name="settings_unknown_add_response">"Unknown add response"</string>
+    <string name="settings_tile_already_added">"Flísar þegar bætt við"</string>
+    <string name="settings_tile_not_added">"Flísar ekki bætt við"</string>
+    <string name="settings_unknown_add_response">"Óþekkt viðbrögð við"</string>
     <string name="android_quick_settings_label">"Flýtistillingar"</string>
 </resources>
