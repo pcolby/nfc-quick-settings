@@ -47,6 +47,7 @@ jobs:
         for buildType in debug release; do
           find "${$RUNNER_TEMP/build-outputs/$MATRIX_OS/apk/$buildType" -name '*.apk' \
             -printf "${buildType}-filename=%f\n" | tee -a "$GITHUB_OUTPUT"
+        done
       shell: bash
       env:
         MATRIX_OS: ${{ matrix.os }}
