@@ -4,6 +4,7 @@
 package au.id.colby.nfcquicksettings
 
 import android.app.StatusBarManager
+import android.app.StatusBarManager.*
 import android.content.ComponentName
 import android.graphics.drawable.Icon
 import android.os.Build.VERSION.SDK_INT
@@ -14,6 +15,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 private const val TAG = "SettingsActivity"
 
@@ -58,7 +60,20 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun onAddTileServiceResponse(result: Int?) {
-        Log.i(TAG, "requestAddTileService result: $result")
-        // \todo Handle result codes. eg added, vs already-added, etc.
+        Log.d(TAG, "requestAddTileService result: $result")
+        val message = getString(when (result) {
+            TILE_ADD_REQUEST_ERROR_APP_NOT_IN_FOREGROUND -> R.string.settings_app_not_in_foreground
+            TILE_ADD_REQUEST_ERROR_BAD_COMPONENT -> R.string.settings_bad_component
+            TILE_ADD_REQUEST_ERROR_MISMATCHED_PACKAGE -> R.string.settings_mismatched_package
+            TILE_ADD_REQUEST_ERROR_NOT_CURRENT_USER -> R.string.settings_no_current_user
+            TILE_ADD_REQUEST_ERROR_NO_STATUS_BAR_SERVICE -> R.string.settings_no_status_bar_service
+            TILE_ADD_REQUEST_ERROR_REQUEST_IN_PROGRESS -> R.string.settings_request_in_progress
+            TILE_ADD_REQUEST_RESULT_TILE_ADDED -> R.string.settings_tile_added
+            TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED -> R.string.settings_tile_already_added
+            TILE_ADD_REQUEST_RESULT_TILE_NOT_ADDED -> R.string.settings_tile_not_added
+            else -> R.string.settings_unknown_add_response
+        })
+        Log.d(TAG, "requestAddTileService message: $message")
+        Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_LONG).show()
     }
 }

@@ -7,4 +7,14 @@
     <string name="settings_intro">This application provides an NFC tile that can be added to the Quick Settings menu.</string>
     <string name="settings_add_tile_button_label">Add NFC tile to Quick Settings</string>
     <string name="settings_version_text">"वर्शन <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">ERROR_APP_NOT_IN_FOREGROUND</string>
+    <string name="settings_bad_component">ERROR_BAD_COMPONENT</string>
+    <string name="settings_mismatched_package">ERROR_MISMATCHED_PACKAGE</string>
+    <string name="settings_no_current_user">ERROR_NOT_CURRENT_USER</string>
+    <string name="settings_no_status_bar_service">ERROR_NO_STATUS_BAR_SERVICE</string>
+    <string name="settings_request_in_progress">ERROR_REQUEST_IN_PROGRESS</string>
+    <string name="settings_tile_added">RESULT_TILE_ADDED</string>
+    <string name="settings_tile_already_added">RESULT_TILE_ALREADY_ADDED</string>
+    <string name="settings_tile_not_added">RESULT_TILE_NOT_ADDED</string>
+    <string name="settings_unknown_add_response">RESULT_UNKNOWN</string>
 </resources>
