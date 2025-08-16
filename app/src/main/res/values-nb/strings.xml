@@ -17,5 +17,5 @@
     <string name="settings_tile_already_added">"Tile already added"</string>
     <string name="settings_tile_not_added">"Tile not added"</string>
     <string name="settings_unknown_add_response">"Unknown add response"</string>
-    <string name="android_quick_settings_label">"Quick Settings"</string>
+    <string name="android_quick_settings_label">"Hurtiginnstillinger"</string>
 </resources>
