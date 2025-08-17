@@ -1,8 +1,8 @@
 # Changelog[^1]
 
-## 1.5.0 (_Unreleased)
+## [1.5.0][] (2025-08-17)
 
-Added a new setting activity, so the app will appear in the app drawer (as is now required by Google Play reviewers).
+Added a new settings activity, so the app will appear in the app drawer (as is now required by Google Play reviewers).
 
 ## [1.4.5][] (2025-08-15)
 
@@ -60,7 +60,8 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.4.5...HEAD
+[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.0
 [1.4.5]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.5
 [1.4.4]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.4
 [1.4.3]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.3
