@@ -1,2 +1,1 @@
-- Support for Android 16.
-- Updated translations for `fr-CA`, `kk`, and `kn`.
+- Added a new settings activity, so the app will appear in the app drawer (as is now required by Google Play reviewers).
