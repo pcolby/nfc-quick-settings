@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Yoniq</string>
     <string name="tile_subtitle_inactive">Oʻchiq</string>
     <string name="tile_subtitle_turning_on">Yoqilmoqda…</string>
     <string name="tile_subtitle_unavailable">Ishlamaydi</string>
+    <string name="settings_intro">"Ushbu dastur shunchaki <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusiga qo'shilishi mumkin bo'lgan NFC plitasini taqdim etadi."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ga NFC plitasini qo'shing"</string>
+    <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> versiya"</string>
+    <string name="settings_app_not_in_foreground">"Muvaffaqiyatsiz. Dastur oldingi planda emas"</string>
+    <string name="settings_bad_component">"Muvaffaqiyatsiz. Yomon komponent"</string>
+    <string name="settings_mismatched_package">"Muvaffaqiyatsiz. Mos kelmaydigan paket"</string>
+    <string name="settings_no_current_user">"Muvaffaqiyatsiz. Hozirgi foydalanuvchi emas"</string>
+    <string name="settings_no_status_bar_service">"Muvaffaqiyatsiz. Status paneli xizmati yo'q"</string>
+    <string name="settings_request_in_progress">"Muvaffaqiyatsiz. So'rov davom etmoqda"</string>
+    <string name="settings_tile_added">"Katakcha kiritildi"</string>
+    <string name="settings_tile_already_added">"Plitka allaqachon qo'shilgan"</string>
+    <string name="settings_tile_not_added">"Plitka qo'shilmagan"</string>
+    <string name="settings_unknown_add_response">"Noma'lum qo'shish javobi"</string>
+    <string name="android_quick_settings_label">"Tezkor sozlamalar"</string>
 </resources>

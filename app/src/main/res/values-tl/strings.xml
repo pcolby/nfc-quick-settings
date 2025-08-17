@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Naka-on</string>
     <string name="tile_subtitle_inactive">Naka-off</string>
     <string name="tile_subtitle_turning_on">Ino-on…</string>
     <string name="tile_subtitle_unavailable">Hindi available</string>
+    <string name="settings_intro">"Nagbibigay lamang ang application na ito ng isang NFC tile na maaaring idagdag sa menu ng <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Magdagdag ng NFC tile sa <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"bersyon <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Nabigo. Ang aplikasyon ay wala sa harapan"</string>
+    <string name="settings_bad_component">"Nabigo. Masamang bahagi"</string>
+    <string name="settings_mismatched_package">"Nabigo. Hindi katugma na pakete"</string>
+    <string name="settings_no_current_user">"Nabigo. Hindi kasalukuyang gumagamit"</string>
+    <string name="settings_no_status_bar_service">"Nabigo. Walang serbisyo ng Status Bar"</string>
+    <string name="settings_request_in_progress">"Nabigo. Ang kahilingan ay nag-usad"</string>
+    <string name="settings_tile_added">"Idinagdag ang tile"</string>
+    <string name="settings_tile_already_added">"Idinagdag na ang tile"</string>
+    <string name="settings_tile_not_added">"Hindi idinagdag ang tile"</string>
+    <string name="settings_unknown_add_response">"Hindi kilalang magdagdag ng tugon"</string>
+    <string name="android_quick_settings_label">"Mga Mabilisang Setting"</string>
 </resources>

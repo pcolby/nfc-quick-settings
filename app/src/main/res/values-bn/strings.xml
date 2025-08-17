@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">চালু আছে</string>
     <string name="tile_subtitle_inactive">বন্ধ আছে</string>
     <string name="tile_subtitle_turning_on">চালু করা হচ্ছে…</string>
     <string name="tile_subtitle_unavailable">উপলভ্য নেই</string>
+    <string name="settings_intro">"এই অ্যাপ্লিকেশনটি কেবল একটি এনএফসি টাইল সরবরাহ করে যা <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> মেনুতে যুক্ত করা যেতে পারে।"</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> এ এনএফসি টাইল যুক্ত করুন"</string>
+    <string name="settings_version_text">"ভার্সন <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"ব্যর্থ। অ্যাপ্লিকেশন অগ্রভাগে নয়"</string>
+    <string name="settings_bad_component">"ব্যর্থ। খারাপ উপাদান"</string>
+    <string name="settings_mismatched_package">"ব্যর্থ। মিল প্যাকেজ"</string>
+    <string name="settings_no_current_user">"ব্যর্থ। বর্তমান ব্যবহারকারী নয়"</string>
+    <string name="settings_no_status_bar_service">"ব্যর্থ। কোনও স্ট্যাটাস বার পরিষেবা নেই"</string>
+    <string name="settings_request_in_progress">"ব্যর্থ। অনুরোধ চলছে"</string>
+    <string name="settings_tile_added">"টাইল যোগ করা হয়েছে"</string>
+    <string name="settings_tile_already_added">"টাইল ইতিমধ্যে যোগ করা হয়েছে"</string>
+    <string name="settings_tile_not_added">"টাইল যোগ করা হয়নি"</string>
+    <string name="settings_unknown_add_response">"অজানা যোগ প্রতিক্রিয়া"</string>
+    <string name="android_quick_settings_label">"দ্রুত সেটিংস"</string>
 </resources>

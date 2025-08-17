@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Til</string>
     <string name="tile_subtitle_inactive">Fra</string>
     <string name="tile_subtitle_turning_on">Aktiverer…</string>
     <string name="tile_subtitle_unavailable">Ikke tilgængelig</string>
+    <string name="settings_intro">"Denne applikation giver simpelthen en NFC-flise, der kan føjes til menuen <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Tilføj NFC-flise til <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Mislykkedes. Ansøgning ikke i forgrunden"</string>
+    <string name="settings_bad_component">"Mislykkedes. Dårlig komponent"</string>
+    <string name="settings_mismatched_package">"Mislykkedes. Uoverensstemmende pakke"</string>
+    <string name="settings_no_current_user">"Mislykkedes. Ikke nuværende bruger"</string>
+    <string name="settings_no_status_bar_service">"Mislykkedes. Ingen statuslinjetjeneste"</string>
+    <string name="settings_request_in_progress">"Mislykkedes. Anmodning i gang"</string>
+    <string name="settings_tile_added">"Feltet blev tilføjet"</string>
+    <string name="settings_tile_already_added">"Flise allerede tilføjet"</string>
+    <string name="settings_tile_not_added">"Flise ikke tilføjet"</string>
+    <string name="settings_unknown_add_response">"Ukendt tilføj svar"</string>
+    <string name="android_quick_settings_label">"Kvikmenu"</string>
 </resources>

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">פועל</string>
     <string name="tile_subtitle_inactive">כבוי</string>
     <string name="tile_subtitle_turning_on">בתהליך הפעלה…</string>
     <string name="tile_subtitle_unavailable">לא זמין</string>
+    <string name="settings_intro">"This application simply provides an NFC tile that can be added to the <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menu."</string>
+    <string name="settings_add_tile_button_label">"Add NFC tile to <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"גרסה <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Failed. Application not in foreground"</string>
+    <string name="settings_bad_component">"Failed. Bad component"</string>
+    <string name="settings_mismatched_package">"Failed. Mismatched package"</string>
+    <string name="settings_no_current_user">"Failed. Not current user"</string>
+    <string name="settings_no_status_bar_service">"Failed. No Status Bar service"</string>
+    <string name="settings_request_in_progress">"Failed. Request in progress"</string>
+    <string name="settings_tile_added">"הלחצן נוסף"</string>
+    <string name="settings_tile_already_added">"Tile already added"</string>
+    <string name="settings_tile_not_added">"Tile not added"</string>
+    <string name="settings_unknown_add_response">"Unknown add response"</string>
+    <string name="android_quick_settings_label">"הגדרות מהירות"</string>
 </resources>

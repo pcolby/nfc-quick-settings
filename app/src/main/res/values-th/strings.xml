@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">เปิด</string>
     <string name="tile_subtitle_inactive">ปิด</string>
     <string name="tile_subtitle_turning_on">กำลังเปิด...</string>
     <string name="tile_subtitle_unavailable">ไม่พร้อมใช้งาน</string>
+    <string name="settings_intro">"แอปพลิเคชันนี้มีกระเบื้อง NFC ที่สามารถเพิ่มลงในเมนู <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_add_tile_button_label">"เพิ่มกระเบื้อง NFC ไปที่ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"เวอร์ชัน <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"ล้มเหลวแอปพลิเคชันไม่ได้อยู่ในเบื้องหน้า"</string>
+    <string name="settings_bad_component">"ล้มเหลวส่วนประกอบที่ไม่ดี"</string>
+    <string name="settings_mismatched_package">"ล้มเหลวแพคเกจที่ไม่ตรงกัน"</string>
+    <string name="settings_no_current_user">"ล้มเหลวไม่ใช่ผู้ใช้ปัจจุบัน"</string>
+    <string name="settings_no_status_bar_service">"ล้มเหลวไม่มีบริการแถบสถานะ"</string>
+    <string name="settings_request_in_progress">"ล้มเหลวกำลังร้องขอ"</string>
+    <string name="settings_tile_added">"เพิ่มชิ้นส่วนแล้ว"</string>
+    <string name="settings_tile_already_added">"เพิ่มกระเบื้องแล้ว"</string>
+    <string name="settings_tile_not_added">"ไม่เพิ่ม กระเบื้อง"</string>
+    <string name="settings_unknown_add_response">"ไม่ทราบเพิ่มการตอบสนอง"</string>
+    <string name="android_quick_settings_label">"การตั้งค่าด่วน"</string>
 </resources>

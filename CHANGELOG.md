@@ -1,5 +1,9 @@
 # Changelog[^1]
 
+## 1.5.0 (_Unreleased)
+
+Added a new setting activity, so the app will appear in the app drawer (as is now required by Google Play reviewers).
+
 ## [1.4.5][] (2025-08-15)
 
 Support for Android 16.

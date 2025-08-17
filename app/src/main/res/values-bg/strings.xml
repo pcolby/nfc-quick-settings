@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Вкл.</string>
     <string name="tile_subtitle_inactive">Изкл.</string>
     <string name="tile_subtitle_turning_on">Включва се...</string>
     <string name="tile_subtitle_unavailable">Не е налице</string>
+    <string name="settings_intro">"Това приложение просто предоставя NFC плочка, която може да бъде добавена към менюто <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Добавете NFC плочка към <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"версия <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Неуспешно. Приложението не е на преден план"</string>
+    <string name="settings_bad_component">"Неуспешно. Лош компонент"</string>
+    <string name="settings_mismatched_package">"Неуспешно. Несъответен пакет"</string>
+    <string name="settings_no_current_user">"Неуспешно. Не е текущ потребител"</string>
+    <string name="settings_no_status_bar_service">"Неуспешно. Няма услуга за лентата на състоянието"</string>
+    <string name="settings_request_in_progress">"Неуспешно. Заявка в процес на изпълнение"</string>
+    <string name="settings_tile_added">"Панелът е добавен"</string>
+    <string name="settings_tile_already_added">"Вече добавена плочка"</string>
+    <string name="settings_tile_not_added">"Плочката не е добавена"</string>
+    <string name="settings_unknown_add_response">"Неизвестен добавяне на отговор"</string>
+    <string name="android_quick_settings_label">"Бързи настройки"</string>
 </resources>

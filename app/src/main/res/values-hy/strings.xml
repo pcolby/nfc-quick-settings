@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Միացված է</string>
     <string name="tile_subtitle_inactive">Անջատված է</string>
     <string name="tile_subtitle_turning_on">Միացում…</string>
     <string name="tile_subtitle_unavailable">Հասանելի չէ</string>
+    <string name="settings_intro">"Այս հավելվածը պարզապես ապահովում է NFC կղմինդր, որը կարող է ավելացվել է <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ցանկի."</string>
+    <string name="settings_add_tile_button_label">"Ավելացնել NFC սալիկ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ին"</string>
+    <string name="settings_version_text">"տարբերակ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Ձախողվել է. Դիմումը առաջին պլանում չէ"</string>
+    <string name="settings_bad_component">"Ձախողվել է. Վատ բաղադրիչ"</string>
+    <string name="settings_mismatched_package">"Ձախողվել է. Անհամապատասխանող փաթեթ"</string>
+    <string name="settings_no_current_user">"Ձախողվել է. Ընթացիկ օգտվողը չէ"</string>
+    <string name="settings_no_status_bar_service">"Ձախողվել է. Կարգավիճակի բարի ծառայություն չկա"</string>
+    <string name="settings_request_in_progress">"Ձախողվել է. Հարցումն ընթացքի մեջ է"</string>
+    <string name="settings_tile_added">"Սալիկն ավելացվեց"</string>
+    <string name="settings_tile_already_added">"Սալիկ արդեն ավելացված է"</string>
+    <string name="settings_tile_not_added">"Սալիկ չի ավելացվել"</string>
+    <string name="settings_unknown_add_response">"Անհայտ ավելացնել պատասխանը"</string>
+    <string name="android_quick_settings_label">"Արագ կարգա­վորումներ"</string>
 </resources>

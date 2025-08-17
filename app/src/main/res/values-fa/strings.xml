@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">روشن</string>
     <string name="tile_subtitle_inactive">خاموش</string>
     <string name="tile_subtitle_turning_on">روشن کردن…</string>
     <string name="tile_subtitle_unavailable">دردسترس نیست</string>
+    <string name="settings_intro">"این برنامه به سادگی یک کاشی NFC را ارائه می دهد که می تواند به منوی <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> اضافه شود."</string>
+    <string name="settings_add_tile_button_label">"کاشی NFC را به <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> اضافه کنید"</string>
+    <string name="settings_version_text">"نسخه <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"شکست خورده برنامه در پیش زمینه نیست"</string>
+    <string name="settings_bad_component">"شکست خورده جزء بد"</string>
+    <string name="settings_mismatched_package">"شکست خورده بسته نامناسب"</string>
+    <string name="settings_no_current_user">"شکست خورده کاربر فعلی نیست"</string>
+    <string name="settings_no_status_bar_service">"شکست خورده بدون سرویس نوار وضعیت"</string>
+    <string name="settings_request_in_progress">"شکست خورده درخواست در حال انجام است"</string>
+    <string name="settings_tile_added">"کاشی اضافه شد"</string>
+    <string name="settings_tile_already_added">"کاشی قبلاً اضافه شده است"</string>
+    <string name="settings_tile_not_added">"کاشی اضافه نشده است"</string>
+    <string name="settings_unknown_add_response">"پاسخ افزودن ناشناخته"</string>
+    <string name="android_quick_settings_label">"تنظیمات سریع"</string>
 </resources>

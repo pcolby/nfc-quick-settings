@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ఆన్‌లో ఉంది</string>
     <string name="tile_subtitle_inactive">ఆఫ్‌లో ఉంది</string>
     <string name="tile_subtitle_turning_on">ఆన్ చేస్తోంది…</string>
     <string name="tile_subtitle_unavailable">అందుబాటులో లేదు</string>
+    <string name="settings_intro">"ఈ అప్లికేషన్ కేవలం <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> మెనుకు జోడించగల NFC టైల్ను అందిస్తుంది."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> కు NFC టైల్ను జోడించండి"</string>
+    <string name="settings_version_text">"వెర్షన్ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"విఫలమైంది. అప్లికేషన్ ముందుభాగంలో లేదు"</string>
+    <string name="settings_bad_component">"విఫలమైంది. చెడు భాగం"</string>
+    <string name="settings_mismatched_package">"విఫలమైంది. సరిపోలని ప్యాకేజీ"</string>
+    <string name="settings_no_current_user">"విఫలమైంది. ప్రస్తుత వినియోగదారు కాదు"</string>
+    <string name="settings_no_status_bar_service">"విఫలమైంది. స్థితి బార్ సేవ లేదు"</string>
+    <string name="settings_request_in_progress">"విఫలమైంది. అభ్యర్థన పురోగతిలో ఉంది"</string>
+    <string name="settings_tile_added">"టైల్ జోడించబడింది"</string>
+    <string name="settings_tile_already_added">"టైల్ ఇప్పటికే జోడించబడింది"</string>
+    <string name="settings_tile_not_added">"టైల్ జోడించబడలేదు"</string>
+    <string name="settings_unknown_add_response">"తెలియని యాడ్ ప్రతిస్పందన"</string>
+    <string name="android_quick_settings_label">"క్విక్ సెట్టింగ్‌లు"</string>
 </resources>

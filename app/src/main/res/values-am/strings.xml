@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">በርቷል</string>
     <string name="tile_subtitle_inactive">ጠፍቷል</string>
     <string name="tile_subtitle_turning_on">በማብራት ላይ...</string>
     <string name="tile_subtitle_unavailable">አይገኝም</string>
+    <string name="settings_intro">"ይህ መተግበሪያ በ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ምናሌ ላይ ሊጨመር የሚችል የ NFC ሰይል በቀላሉ ይሰጣል።"</string>
+    <string name="settings_add_tile_button_label">"የ NFC ሰይል ወደ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ያክሉ"</string>
+    <string name="settings_version_text">"ሥሪት <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"አልተሳካም። መተግበሪያ በፊት ላይ አይደለም"</string>
+    <string name="settings_bad_component">"አልተሳካም። መጥፎ አካል"</string>
+    <string name="settings_mismatched_package">"አልተሳካም። የማይዛመድ ጥቅል"</string>
+    <string name="settings_no_current_user">"አልተሳካም። የአሁኑ ተጠቃሚ አይደለም"</string>
+    <string name="settings_no_status_bar_service">"አልተሳካም። የሁኔታ አሞሌ አገልግሎት የለም"</string>
+    <string name="settings_request_in_progress">"አልተሳካም። ጥያቄ በሂደት ላይ"</string>
+    <string name="settings_tile_added">"ሰቅ ታክሏል"</string>
+    <string name="settings_tile_already_added">"ሰይል ቀድሞውኑ ተ"</string>
+    <string name="settings_tile_not_added">"ሰይል አልተጨመረም"</string>
+    <string name="settings_unknown_add_response">"የማይታወቅ ማከል ምላሽ"</string>
+    <string name="android_quick_settings_label">"ፈጣን ቅንብሮች"</string>
 </resources>

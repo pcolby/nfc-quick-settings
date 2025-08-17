@@ -20,7 +20,7 @@ jobs:
     - name: Setup Build ID
       run: |
         [[ "$MATRIX_OS" == ubuntu* ]] && osName=linux || osName="${MATRIX_OS:0:3}"
-        echo "BUILD_ID=$GITHUB_RUN_NUMBER.$osName" >> "$GITHUB_ENV"
+        tee -a "$GITHUB_ENV" <<< "BUILD_ID=$GITHUB_RUN_NUMBER.$osName"
       shell: bash
       env:
         MATRIX_OS: ${{ matrix.os }}
@@ -30,7 +30,7 @@ jobs:
         base64 --decode <<< "$JAVA_KEYSTORE_DATA" > "$JAVA_KEYSTORE_FILE"
         JAVA_KEYSTORE_FILE="${JAVA_KEYSTORE_FILE//\\/\\\\}" \
         envsubst < "$GITHUB_WORKSPACE/.github/workflows/keystore.properties" > "$KEYSTORE_PROPERTIES_FILE"
-        echo "KEYSTORE_PROPERTIES_FILE=$KEYSTORE_PROPERTIES_FILE" >> "$GITHUB_ENV"
+        tee -a "$GITHUB_ENV" <<< "KEYSTORE_PROPERTIES_FILE=$KEYSTORE_PROPERTIES_FILE"
       shell: bash
       env:
         JAVA_KEYSTORE_ALIAS: ${{ secrets.JAVA_KEYSTORE_ALIAS }}
@@ -39,10 +39,16 @@ jobs:
         JAVA_KEYSTORE_PASSWORD: ${{ secrets.JAVA_KEYSTORE_PASSWORD }}
         KEYSTORE_PROPERTIES_FILE: ${{ runner.temp }}/keystore.properties
     - run: ./gradlew build signingReport
-    - name: Prep consolidated build outputs
+    - id: prep-output
+      name: Prep consolidated build outputs
       run: |
         mkdir -p "$RUNNER_TEMP/build-outputs"
         mv 'app/build/outputs' "$RUNNER_TEMP/build-outputs/$MATRIX_OS"
+        for buildType in debug release; do
+          filePath=$(ls -1 "$RUNNER_TEMP/build-outputs/$MATRIX_OS/apk/$buildType/nfcquicksettings-"*.apk)
+          tee -a "$GITHUB_OUTPUT" <<< "${buildType}-filename=${filePath##*/}"
+          tee -a "$GITHUB_OUTPUT" <<< "${buildType}-filepath=${filePath}"
+        done
       shell: bash
       env:
         MATRIX_OS: ${{ matrix.os }}
@@ -51,4 +57,16 @@ jobs:
       with:
         name: build-outputs-${{ matrix.os }}
         path: ${{ runner.temp }}/build-outputs
+        if-no-files-found: error
+    - name: Upload debug APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ steps.prep-output.outputs.debug-filename }}
+        path: ${{ steps.prep-output.outputs.debug-filepath }}
+        if-no-files-found: error
+    - name: Upload release APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ steps.prep-output.outputs.release-filename }}
+        path: ${{ steps.prep-output.outputs.release-filepath }}
         if-no-files-found: error

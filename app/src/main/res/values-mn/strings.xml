@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Асаалттай</string>
     <string name="tile_subtitle_inactive">Унтраалттай</string>
     <string name="tile_subtitle_turning_on">Асааж байна…</string>
     <string name="tile_subtitle_unavailable">Боломжгүй</string>
+    <string name="settings_intro">"Энэ програм нь ердөө л <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> цэсэнд нэмж болох NFC хавтанг өгдөг."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> дээр NFC хавтанг нэмнэ"</string>
+    <string name="settings_version_text">"хувилбар <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Бүтэлгүйтсэн. Өргөдөл нь урд талдаа биш"</string>
+    <string name="settings_bad_component">"Бүтэлгүйтсэн. Муу бүрэлдэхүүн хэсэг"</string>
+    <string name="settings_mismatched_package">"Бүтэлгүйтсэн. Тохиролцоогүй багц"</string>
+    <string name="settings_no_current_user">"Бүтэлгүйтсэн. Одоогийн хэрэглэгч биш"</string>
+    <string name="settings_no_status_bar_service">"Бүтэлгүйтсэн. Статус бар үйлчилгээ байхгүй"</string>
+    <string name="settings_request_in_progress">"Бүтэлгүйтсэн. Хүсэлт хэрэгжиж байна"</string>
+    <string name="settings_tile_added">"Хавтан нэмсэн"</string>
+    <string name="settings_tile_already_added">"Хавтан аль хэдийн нэмсэн"</string>
+    <string name="settings_tile_not_added">"Хавтан нэмэгдээгүй"</string>
+    <string name="settings_unknown_add_response">"Үл мэдэгдэхгүй нэмэх хариу"</string>
+    <string name="android_quick_settings_label">"Шуурхай тохиргоо"</string>
 </resources>

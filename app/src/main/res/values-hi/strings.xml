@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">चालू है</string>
     <string name="tile_subtitle_inactive">बंद है</string>
     <string name="tile_subtitle_turning_on">वाई-फ़ाई चालू हो रहा है…</string>
     <string name="tile_subtitle_unavailable">उपलब्ध नहीं है</string>
+    <string name="settings_intro">"यह एप्लिकेशन बस एक NFC टाइल प्रदान करता है जिसे <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> मेनू में जोड़ा जा सकता है।"</string>
+    <string name="settings_add_tile_button_label">"NFC टाइल को <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> में जोड़ें"</string>
+    <string name="settings_version_text">"वर्शन <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"असफल। अनुप्रयोग अग्रभूमि में नहीं है"</string>
+    <string name="settings_bad_component">"असफल। खराब कॉम्पोनेन्ट"</string>
+    <string name="settings_mismatched_package">"असफल। बेमेल पैकेज"</string>
+    <string name="settings_no_current_user">"असफल। मौजूदा यूज़र नहीं है"</string>
+    <string name="settings_no_status_bar_service">"असफल। कोई स्टेटस बार सेवा नहीं है"</string>
+    <string name="settings_request_in_progress">"असफल। अनुरोध किया जा रहा है"</string>
+    <string name="settings_tile_added">"टाइल जोड़ी गई"</string>
+    <string name="settings_tile_already_added">"टाइल पहले ही जोड़ा जा चुका है"</string>
+    <string name="settings_tile_not_added">"टाइल नहीं जोड़ा गया"</string>
+    <string name="settings_unknown_add_response">"अज्ञात ऐड रिस्पॉन्स"</string>
+    <string name="android_quick_settings_label">"क्विक सेटिंग"</string>
 </resources>

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">இயக்கப்பட்டுள்ளது</string>
     <string name="tile_subtitle_inactive">முடக்கப்பட்டுள்ளது</string>
     <string name="tile_subtitle_turning_on">ஆன் செய்கிறது…</string>
     <string name="tile_subtitle_unavailable">கிடைக்கவில்லை</string>
+    <string name="settings_intro">"இந்த பயன்பாடு வெறுமனே <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> மெனுவில் சேர்க்கக்கூடிய NFC ஓட்டை வழங்குகிறது."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> க்கு NFC டைலைச் சேர்க்கவும்"</string>
+    <string name="settings_version_text">"பதிப்பு <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"தோல்வியுற்றது. பயன்பாடு முன்னணியில் இல்லை"</string>
+    <string name="settings_bad_component">"தோல்வியுற்றது. மோசமான கூறு"</string>
+    <string name="settings_mismatched_package">"தோல்வியுற்றது. பொருந்தாத தொகுப்பு"</string>
+    <string name="settings_no_current_user">"தோல்வியுற்றது. தற்போதைய பயனர் அல்ல"</string>
+    <string name="settings_no_status_bar_service">"தோல்வியுற்றது. ஸ்டேடஸ் பார் சேவை இல்லை"</string>
+    <string name="settings_request_in_progress">"தோல்வியுற்றது. கோரிக்கை நடைமுறையில் உள்ளது"</string>
+    <string name="settings_tile_added">"கட்டம் சேர்க்கப்பட்டது"</string>
+    <string name="settings_tile_already_added">"ஓடு ஏற்கனவே சேர்க்கப்பட்டது"</string>
+    <string name="settings_tile_not_added">"டைல் சேர்க்கப்படவில்லை"</string>
+    <string name="settings_unknown_add_response">"தெரியாத பதில் சேர்க்கவும்"</string>
+    <string name="android_quick_settings_label">"விரைவு அமைப்புகள்"</string>
 </resources>

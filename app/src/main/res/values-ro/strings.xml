@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Activat</string>
     <string name="tile_subtitle_inactive">Dezactivat</string>
     <string name="tile_subtitle_turning_on">Se activează...</string>
     <string name="tile_subtitle_unavailable">Indisponibil</string>
+    <string name="settings_intro">"Această aplicație oferă pur și simplu o placă NFC care poate fi adăugată în meniul <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Adăugați țiglă NFC la <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versiunea <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Eșuat. Aplicația nu este în prim-plan"</string>
+    <string name="settings_bad_component">"Eșuat. Componenta proastă"</string>
+    <string name="settings_mismatched_package">"Eșuat. Pachet necorespunzător"</string>
+    <string name="settings_no_current_user">"Eșuat. Utilizatorul nu este curent"</string>
+    <string name="settings_no_status_bar_service">"Eșuat. Fără serviciu de bara de stare"</string>
+    <string name="settings_request_in_progress">"Eșuat. Cerere în curs"</string>
+    <string name="settings_tile_added">"Cardul a fost adăugat"</string>
+    <string name="settings_tile_already_added">"Tigla deja adăugată"</string>
+    <string name="settings_tile_not_added">"Tigla nu a fost adăugată"</string>
+    <string name="settings_unknown_add_response">"Răspuns de adăugare necunoscut"</string>
+    <string name="android_quick_settings_label">"Setări rapide"</string>
 </resources>

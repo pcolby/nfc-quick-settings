@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Włączony</string>
     <string name="tile_subtitle_inactive">Wyłączony</string>
     <string name="tile_subtitle_turning_on">Włączam…</string>
     <string name="tile_subtitle_unavailable">Niedostępny</string>
+    <string name="settings_intro">"Ta aplikacja po prostu zapewnia kafelek NFC, który można dodać do menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Dodaj kafelek NFC do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"wersja <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Nie powiodło się. Aplikacja nie jest na pierwszym planie"</string>
+    <string name="settings_bad_component">"Nie powiodło się. Zły komponent"</string>
+    <string name="settings_mismatched_package">"Nie powiodło się. Niedopasowany pakiet"</string>
+    <string name="settings_no_current_user">"Nie powiodło się. Nie jest aktualnym użytkownikiem"</string>
+    <string name="settings_no_status_bar_service">"Nie powiodło się. Brak usługi paska stanu"</string>
+    <string name="settings_request_in_progress">"Nie powiodło się. Prośba w toku"</string>
+    <string name="settings_tile_added">"Dodano kartę"</string>
+    <string name="settings_tile_already_added">"Płytka już dodana"</string>
+    <string name="settings_tile_not_added">"Płytka nie została dodana"</string>
+    <string name="settings_unknown_add_response">"Nieznana odpowiedź dodawania"</string>
+    <string name="android_quick_settings_label">"Szybkie ustawienia"</string>
 </resources>
