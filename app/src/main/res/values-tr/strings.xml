@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Açık</string>
     <string name="tile_subtitle_inactive">Kapalı</string>
     <string name="tile_subtitle_turning_on">Açılıyor…</string>
     <string name="tile_subtitle_unavailable">Kullanılamıyor</string>
+    <string name="settings_intro">"Bu uygulama sadece <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menüsüne eklenebilecek bir NFC döşemesi sağlar."</string>
+    <string name="settings_add_tile_button_label">"NFC döşemesini <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 'e ekleyin"</string>
+    <string name="settings_version_text">"sürüm: <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Başarısız oldu. Uygulama ön planda değil"</string>
+    <string name="settings_bad_component">"Başarısız oldu. Kötü bileşen"</string>
+    <string name="settings_mismatched_package">"Başarısız oldu. Eşleşmeyen paket"</string>
+    <string name="settings_no_current_user">"Başarısız oldu. Geçerli kullanıcı değil"</string>
+    <string name="settings_no_status_bar_service">"Başarısız oldu. Durum Çubuğu hizmeti yok"</string>
+    <string name="settings_request_in_progress">"Başarısız oldu. Talep devam ediyor"</string>
+    <string name="settings_tile_added">"Kutu eklendi"</string>
+    <string name="settings_tile_already_added">"Döşeme zaten eklendi"</string>
+    <string name="settings_tile_not_added">"Döşeme eklenmedi"</string>
+    <string name="settings_unknown_add_response">"Bilinmeyen yanıt ekle"</string>
+    <string name="android_quick_settings_label">"Hızlı Ayarlar"</string>
 </resources>

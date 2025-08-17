@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Kveikt</string>
     <string name="tile_subtitle_inactive">Slökkt</string>
     <string name="tile_subtitle_turning_on">Kveikir…</string>
     <string name="tile_subtitle_unavailable">Ekki í boði</string>
+    <string name="settings_intro">"Þetta forrit veitir einfaldlega NFC flísar sem hægt er að bæta við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> valmyndina."</string>
+    <string name="settings_add_tile_button_label">"Bæta NFC flísum við <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"útgáfa <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Misheppnaðist. Umsókn ekki í forgrunni"</string>
+    <string name="settings_bad_component">"Misheppnaðist. Slæmur þáttur"</string>
+    <string name="settings_mismatched_package">"Misheppnaðist. Missamsvarandi pakki"</string>
+    <string name="settings_no_current_user">"Misheppnaðist. Ekki núverandi notandi"</string>
+    <string name="settings_no_status_bar_service">"Misheppnaðist. Engin stöðustikurþjónusta"</string>
+    <string name="settings_request_in_progress">"Misheppnaðist. Beiðni í vinnslu"</string>
+    <string name="settings_tile_added">"Reit bætt við"</string>
+    <string name="settings_tile_already_added">"Flísar þegar bætt við"</string>
+    <string name="settings_tile_not_added">"Flísar ekki bætt við"</string>
+    <string name="settings_unknown_add_response">"Óþekkt viðbrögð við"</string>
+    <string name="android_quick_settings_label">"Flýtistillingar"</string>
 </resources>

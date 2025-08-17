@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">켜짐</string>
     <string name="tile_subtitle_inactive">꺼짐</string>
     <string name="tile_subtitle_turning_on">켜는 중...</string>
     <string name="tile_subtitle_unavailable">이용 불가</string>
+    <string name="settings_intro">"이 애플리케이션은 단순히 <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 메뉴에 추가할 수 있는 NFC 타일을 제공합니다."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 에 NFC 타일 추가"</string>
+    <string name="settings_version_text">"버전 <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"실패.애플리케이션이 포그라운드에 있지 않음"</string>
+    <string name="settings_bad_component">"실패.잘못된 구성 요소"</string>
+    <string name="settings_mismatched_package">"실패.일치하지 않는 패키지"</string>
+    <string name="settings_no_current_user">"실패.현재 사용자가 아님"</string>
+    <string name="settings_no_status_bar_service">"실패.상태 표시줄 서비스 없음"</string>
+    <string name="settings_request_in_progress">"실패.요청 진행 중"</string>
+    <string name="settings_tile_added">"타일 추가됨"</string>
+    <string name="settings_tile_already_added">"타일이 이미 추가됨"</string>
+    <string name="settings_tile_not_added">"타일이 추가되지 않음"</string>
+    <string name="settings_unknown_add_response">"알 수 없는 추가 응답"</string>
+    <string name="android_quick_settings_label">"빠른 설정"</string>
 </resources>

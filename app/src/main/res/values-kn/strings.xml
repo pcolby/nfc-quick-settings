@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ಆನ್</string>
     <string name="tile_subtitle_inactive">ಆಫ್</string>
     <string name="tile_subtitle_turning_on">ಆನ್ ಮಾಡಲಾಗುತ್ತಿದೆ...</string>
     <string name="tile_subtitle_unavailable">ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="settings_intro">"ಈ ಅಪ್ಲಿಕೇಶನ್ ಸರಳವಾಗಿ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ಮೆನುಗೆ ಸೇರಿಸಬಹುದಾದ ಎನ್ಎಫ್ಸಿ ಟೈಲ್ ಅನ್ನು ಒದಗಿಸುತ್ತದೆ."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ಗೆ ಎನ್ಎಫ್ಸಿ ಟೈಲ್ ಸೇರಿಸಿ"</string>
+    <string name="settings_version_text">"ಆವೃತ್ತಿ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"ವಿಫಲವಾಗಿದೆ. ಅಪ್ಲಿಕೇಶನ್ ಮುನ್ನೆಲೆಗಳಲ್ಲಿಲ್ಲ"</string>
+    <string name="settings_bad_component">"ವಿಫಲವಾಗಿದೆ. ಕೆಟ್ಟ ಘಟಕ"</string>
+    <string name="settings_mismatched_package">"ವಿಫಲವಾಗಿದೆ. ಹೊಂದಿಕೆಯಾಗದ ಪ್ಯಾಕೇಜ್"</string>
+    <string name="settings_no_current_user">"ವಿಫಲವಾಗಿದೆ. ಪ್ರಸ್ತುತ ಬಳಕೆದಾರರಲ್ಲ"</string>
+    <string name="settings_no_status_bar_service">"ವಿಫಲವಾಗಿದೆ. ಸ್ಥಿತಿ ಬಾರ್ ಸೇವೆ ಇಲ್ಲ"</string>
+    <string name="settings_request_in_progress">"ವಿಫಲವಾಗಿದೆ. ವಿನಂತಿ ಪ್ರಗತಿಯಲ್ಲಿದೆ"</string>
+    <string name="settings_tile_added">"ಟೈಲ್ ಸೇರಿಸಲಾಗಿದೆ"</string>
+    <string name="settings_tile_already_added">"ಟೈಲ್ ಈಗಾಗಲೇ ಸೇರಿಸಲಾಗಿದೆ"</string>
+    <string name="settings_tile_not_added">"ಟೈಲ್ ಸೇರಿಸಲಾಗಿಲ್ಲ"</string>
+    <string name="settings_unknown_add_response">"ಅಜ್ಞಾತ ಪ್ರತಿಕ್ರಿಯೆಯನ್ನು ಸೇರಿಸಿ"</string>
+    <string name="android_quick_settings_label">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳು"</string>
 </resources>

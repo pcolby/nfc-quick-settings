@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Қосулы</string>
     <string name="tile_subtitle_inactive">Өшірулі</string>
     <string name="tile_subtitle_turning_on">Қосылып жатыр…</string>
     <string name="tile_subtitle_unavailable">Қолжетімсіз</string>
+    <string name="settings_intro">"Бұл бағдарлама жай ғана <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> мәзіріне қосуға болатын NFC плиткасын ұсынады."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ге NFC плиткасын қосыңыз"</string>
+    <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> нұсқасы"</string>
+    <string name="settings_app_not_in_foreground">"Сәтсіз аяқталды. Қолдану алдыңғы қатарда емес"</string>
+    <string name="settings_bad_component">"Сәтсіз аяқталды. Жаман компонент"</string>
+    <string name="settings_mismatched_package">"Сәтсіз аяқталды. Сәйкеспейтін пакет"</string>
+    <string name="settings_no_current_user">"Сәтсіз аяқталды. Ағымдағы пайдаланушы емес"</string>
+    <string name="settings_no_status_bar_service">"Сәтсіз аяқталды. Күй жолағы қызметі жоқ"</string>
+    <string name="settings_request_in_progress">"Сәтсіз аяқталды. Сұрау жүргізілуде"</string>
+    <string name="settings_tile_added">"Бөлшек қосылды."</string>
+    <string name="settings_tile_already_added">"Плитка қазірдің өзінде қосылды"</string>
+    <string name="settings_tile_not_added">"Плитка қосылмады"</string>
+    <string name="settings_unknown_add_response">"Белгісіз қосу жауабы"</string>
+    <string name="android_quick_settings_label">"Жылдам параметрлер"</string>
 </resources>

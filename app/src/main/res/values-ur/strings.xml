@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">آن ہے</string>
     <string name="tile_subtitle_inactive">آف ہے</string>
     <string name="tile_subtitle_turning_on">آن ہو رہا ہے…</string>
     <string name="tile_subtitle_unavailable">دستیاب نہیں ہے</string>
+    <string name="settings_intro">"یہ ایپلی کیشن صرف ایک این ایف سی ٹائل فراہم کرتی ہے جسے <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> مینو میں شامل کیا جاسکتا ہے۔"</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> میں این ایف سی ٹائل شامل کریں"</string>
+    <string name="settings_version_text">"ورژن <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"ناکام. درخواست پیش منظر میں نہیں ہے"</string>
+    <string name="settings_bad_component">"ناکام. خراب جزو"</string>
+    <string name="settings_mismatched_package">"ناکام. مماثل پیکیج"</string>
+    <string name="settings_no_current_user">"ناکام. موجودہ صارف نہیں"</string>
+    <string name="settings_no_status_bar_service">"ناکام. کوئی اسٹیٹس بار سروس نہیں"</string>
+    <string name="settings_request_in_progress">"ناکام. درخواست جاری ہے"</string>
+    <string name="settings_tile_added">"ٹائل کو شامل کیا گیا"</string>
+    <string name="settings_tile_already_added">"ٹائل پہلے ہی شامل کی گئی"</string>
+    <string name="settings_tile_not_added">"ٹائل شامل نہیں"</string>
+    <string name="settings_unknown_add_response">"نامعلوم شامل جواب"</string>
+    <string name="android_quick_settings_label">"فوری ترتیبات"</string>
 </resources>

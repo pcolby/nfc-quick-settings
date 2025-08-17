@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Activat</string>
     <string name="tile_subtitle_inactive">Desactivat</string>
     <string name="tile_subtitle_turning_on">S\'està activant…</string>
     <string name="tile_subtitle_unavailable">No disponible</string>
+    <string name="settings_intro">"Aquesta aplicació simplement proporciona una rajola NFC que es pot afegir al menú <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Afegeix fitxa NFC a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versió <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Fracassat. L'aplicació no en primer pla"</string>
+    <string name="settings_bad_component">"Fracassat. Component dolent"</string>
+    <string name="settings_mismatched_package">"Fracassat. Paquet desajustat"</string>
+    <string name="settings_no_current_user">"Fracassat. No és usuari actual"</string>
+    <string name="settings_no_status_bar_service">"Fracassat. Sense servei de barra d'estat"</string>
+    <string name="settings_request_in_progress">"Fracassat. Sol·licitud en curs"</string>
+    <string name="settings_tile_added">"El mosaic s\'ha afegit"</string>
+    <string name="settings_tile_already_added">"Rajola ja afegida"</string>
+    <string name="settings_tile_not_added">"Rajola no afegida"</string>
+    <string name="settings_unknown_add_response">"Desconegut afegir resposta"</string>
+    <string name="android_quick_settings_label">"Configuració ràpida"</string>
 </resources>

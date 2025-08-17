@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Activé</string>
     <string name="tile_subtitle_inactive">Désactivée</string>
     <string name="tile_subtitle_turning_on">Activation en cours…</string>
     <string name="tile_subtitle_unavailable">Non disponible</string>
+    <string name="settings_intro">"Cette application fournit simplement une vignette NFC qui peut être ajoutée au menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Ajouter une tuile NFC à <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Échec. La demande n'est pas au premier plan"</string>
+    <string name="settings_bad_component">"Échec. Composant défectueux"</string>
+    <string name="settings_mismatched_package">"Échec. Emballage non assortie"</string>
+    <string name="settings_no_current_user">"Échec. Utilisateur non actuel"</string>
+    <string name="settings_no_status_bar_service">"Échec. Aucun service de barre d'état"</string>
+    <string name="settings_request_in_progress">"Échec. Demande en cours"</string>
+    <string name="settings_tile_added">"Tuile ajoutée"</string>
+    <string name="settings_tile_already_added">"Tuile déjà ajoutée"</string>
+    <string name="settings_tile_not_added">"Tuile non ajoutée"</string>
+    <string name="settings_unknown_add_response">"Ajouter une réponse inconnue"</string>
+    <string name="android_quick_settings_label">"Paramètres rapides"</string>
 </resources>

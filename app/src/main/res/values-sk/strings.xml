@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Zapnuté</string>
     <string name="tile_subtitle_inactive">Vypnuté</string>
     <string name="tile_subtitle_turning_on">Zapína sa…</string>
     <string name="tile_subtitle_unavailable">Nie je k dispozícii</string>
+    <string name="settings_intro">"Táto aplikácia jednoducho poskytuje dlaždicu NFC, ktorú je možné pridať do ponuky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Pridajte dlaždicu NFC do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"verzia <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Zlyhal. Aplikácia nie je v popredí"</string>
+    <string name="settings_bad_component">"Zlyhal. Zlá zložka"</string>
+    <string name="settings_mismatched_package">"Zlyhal. Nesúladený balík"</string>
+    <string name="settings_no_current_user">"Zlyhal. Nie je aktuálny používateľ"</string>
+    <string name="settings_no_status_bar_service">"Zlyhal. Žiadna služba stavového riadku"</string>
+    <string name="settings_request_in_progress">"Zlyhal. Prebieha žiadosť"</string>
+    <string name="settings_tile_added">"Karta bola pridaná"</string>
+    <string name="settings_tile_already_added">"Dlaždice už pridané"</string>
+    <string name="settings_tile_not_added">"Dlaždice neboli pridané"</string>
+    <string name="settings_unknown_add_response">"Neznáma pridanie odpovede"</string>
+    <string name="android_quick_settings_label">"Rýchle nastavenia"</string>
 </resources>

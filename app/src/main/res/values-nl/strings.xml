@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Aan</string>
     <string name="tile_subtitle_inactive">Uit</string>
     <string name="tile_subtitle_turning_on">Aanzetten…</string>
     <string name="tile_subtitle_unavailable">Niet beschikbaar</string>
+    <string name="settings_intro">"Deze applicatie biedt gewoon een NFC-tegel die kan worden toegevoegd aan het <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu."</string>
+    <string name="settings_add_tile_button_label">"NFC-tegel toevoegen aan <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versie <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Mislukt. Applicatie niet op de voorgrond"</string>
+    <string name="settings_bad_component">"Mislukt. Slecht onderdeel"</string>
+    <string name="settings_mismatched_package">"Mislukt. Niet bij elkaar passend pakket"</string>
+    <string name="settings_no_current_user">"Mislukt. Geen huidige gebruiker"</string>
+    <string name="settings_no_status_bar_service">"Mislukt. Geen Status Bar-service"</string>
+    <string name="settings_request_in_progress">"Mislukt. Aanvraag in behandeling"</string>
+    <string name="settings_tile_added">"Tegel toegevoegd"</string>
+    <string name="settings_tile_already_added">"Tegel is al toegevoegd"</string>
+    <string name="settings_tile_not_added">"Tegel niet toegevoegd"</string>
+    <string name="settings_unknown_add_response">"Onbekend antwoord toevoegen"</string>
+    <string name="android_quick_settings_label">"Snelle instellingen"</string>
 </resources>

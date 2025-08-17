@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Ativado</string>
     <string name="tile_subtitle_inactive">Desativado</string>
     <string name="tile_subtitle_turning_on">Ativando…</string>
     <string name="tile_subtitle_unavailable">Indisponível</string>
+    <string name="settings_intro">"Este aplicativo simplesmente fornece um bloco NFC que pode ser adicionado ao menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Adicione o arquivo NFC ao <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"Versão <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Falhou. O aplicativo não está em primeiro plano"</string>
+    <string name="settings_bad_component">"Falhou. Componente defeituoso"</string>
+    <string name="settings_mismatched_package">"Falhou. Pacote incompatível"</string>
+    <string name="settings_no_current_user">"Falhou. Usuário não atual"</string>
+    <string name="settings_no_status_bar_service">"Falhou. Sem serviço de barra de status"</string>
+    <string name="settings_request_in_progress">"Falhou. Solicitação em andamento"</string>
+    <string name="settings_tile_added">"Bloco adicionado"</string>
+    <string name="settings_tile_already_added">"Tile já adicionado"</string>
+    <string name="settings_tile_not_added">"Azulejo não adicionado"</string>
+    <string name="settings_unknown_add_response">"Resposta de adição desconhecida"</string>
+    <string name="android_quick_settings_label">"Config. rápida"</string>
 </resources>

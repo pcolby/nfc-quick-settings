@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Hidup</string>
     <string name="tile_subtitle_inactive">Mati</string>
     <string name="tile_subtitle_turning_on">Menghidupkan…</string>
     <string name="tile_subtitle_unavailable">Tidak tersedia</string>
+    <string name="settings_intro">"Aplikasi ini hanya menyediakan jubin NFC yang boleh ditambah ke menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Tambah jubin NFC ke <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versi <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Gagal. Permohonan tidak di latar depan"</string>
+    <string name="settings_bad_component">"Gagal. Komponen buruk"</string>
+    <string name="settings_mismatched_package">"Gagal. Pakej yang tidak sesuai"</string>
+    <string name="settings_no_current_user">"Gagal. Bukan pengguna semasa"</string>
+    <string name="settings_no_status_bar_service">"Gagal. Tiada perkhidmatan Bar Status"</string>
+    <string name="settings_request_in_progress">"Gagal. Permintaan sedang dijalankan"</string>
+    <string name="settings_tile_added">"Jubin ditambah"</string>
+    <string name="settings_tile_already_added">"Jubin sudah ditambah"</string>
+    <string name="settings_tile_not_added">"Jubin tidak ditambah"</string>
+    <string name="settings_unknown_add_response">"Tambah jawapan tidak diketahui"</string>
+    <string name="android_quick_settings_label">"Tetapan Pantas"</string>
 </resources>

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ഓണാണ്</string>
     <string name="tile_subtitle_inactive">ഓഫാണ്</string>
     <string name="tile_subtitle_turning_on">ഓണാക്കുന്നു…</string>
     <string name="tile_subtitle_unavailable">ലഭ്യമല്ല</string>
+    <string name="settings_intro">"ഈ ആപ്ലിക്കേഷൻ ലളിതമായി <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> മെനുവിൽ ചേർക്കാൻ കഴിയുന്ന ഒരു എൻഎഫ്സി ടൈൽ നൽകുന്നു."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ലേക്ക് എൻഎഫ്സി ടൈൽ ചേർക്കുക"</string>
+    <string name="settings_version_text">"പതിപ്പ് <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"പരാജയപ്പെട്ടു. അപ്ലിക്കേഷൻ മുൻവശത്തല്ല"</string>
+    <string name="settings_bad_component">"പരാജയപ്പെട്ടു. മോശം ഘടകം"</string>
+    <string name="settings_mismatched_package">"പരാജയപ്പെട്ടു. പൊരുത്തപ്പെടാത്ത പാക്കേജ്"</string>
+    <string name="settings_no_current_user">"പരാജയപ്പെട്ടു. നിലവിലെ ഉപയോക്താവല്ല"</string>
+    <string name="settings_no_status_bar_service">"പരാജയപ്പെട്ടു. സ്റ്റാറ്റസ് ബാർ സേവനമില്ല"</string>
+    <string name="settings_request_in_progress">"പരാജയപ്പെട്ടു. അഭ്യർത്ഥന പുരോഗമിക്കുന്നു"</string>
+    <string name="settings_tile_added">"ടൈൽ ചേർത്തു"</string>
+    <string name="settings_tile_already_added">"ടൈൽ ഇതിനകം ചേർത്തു"</string>
+    <string name="settings_tile_not_added">"ടൈൽ ചേർത്തിട്ടില്ല"</string>
+    <string name="settings_unknown_add_response">"അജ്ഞാത പ്രതികരണം ചേർക്കുക"</string>
+    <string name="android_quick_settings_label">"ദ്രുത ക്രമീകരണം"</string>
 </resources>

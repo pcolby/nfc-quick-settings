@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">सुरू आहे</string>
     <string name="tile_subtitle_inactive">बंद आहे</string>
     <string name="tile_subtitle_turning_on">सुरू करत आहे…</string>
     <string name="tile_subtitle_unavailable">उपलब्ध नाही</string>
+    <string name="settings_intro">"हा अनुप्रयोग फक्त एनएफसी टाइल प्रदान करतो जो <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> मेनूमध्ये जोडला"</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> वर NFC टाइल जोडा"</string>
+    <string name="settings_version_text">"आवृत्ती <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"अयशस्वी. अनुप्रयोग फोर्ग्राउंडमध्ये नाही"</string>
+    <string name="settings_bad_component">"अयशस्वी. खराब घटक"</string>
+    <string name="settings_mismatched_package">"अयशस्वी. अनुकूल पॅकेज"</string>
+    <string name="settings_no_current_user">"अयशस्वी. वर्तमान वापरकर्ता नाही"</string>
+    <string name="settings_no_status_bar_service">"अयशस्वी. स्थिती बार सेवा नाही"</string>
+    <string name="settings_request_in_progress">"अयशस्वी. विनंती प्रगतीत आहे"</string>
+    <string name="settings_tile_added">"टाइल जोडली"</string>
+    <string name="settings_tile_already_added">"टाइल आधीपास"</string>
+    <string name="settings_tile_not_added">"टाइल जोडले नाही"</string>
+    <string name="settings_unknown_add_response">"अज्ञात प्रतिसाद"</string>
+    <string name="android_quick_settings_label">"क्विक सेटिंग्ज"</string>
 </resources>

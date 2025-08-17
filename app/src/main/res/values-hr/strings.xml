@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Uključeno</string>
     <string name="tile_subtitle_inactive">Isključeno</string>
     <string name="tile_subtitle_turning_on">Uključivanje…</string>
     <string name="tile_subtitle_unavailable">Nedostupno</string>
+    <string name="settings_intro">"Ova aplikacija jednostavno nudi NFC pločicu koja se može dodati u izbornik <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Dodajte NFC pločicu na <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"verzija <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Nije uspjelo. Primjena nije u prvom planu"</string>
+    <string name="settings_bad_component">"Nije uspjelo. Loša komponenta"</string>
+    <string name="settings_mismatched_package">"Nije uspjelo. Neusklađeni paket"</string>
+    <string name="settings_no_current_user">"Nije uspjelo. Nije trenutni korisnik"</string>
+    <string name="settings_no_status_bar_service">"Nije uspjelo. Nema usluge statusne trake"</string>
+    <string name="settings_request_in_progress">"Nije uspjelo. Zahtjev u tijeku"</string>
+    <string name="settings_tile_added">"Kartica je dodana"</string>
+    <string name="settings_tile_already_added">"Pločica je već dodana"</string>
+    <string name="settings_tile_not_added">"Pločica nije dodana"</string>
+    <string name="settings_unknown_add_response">"Nepoznat odgovor na dodavanje"</string>
+    <string name="android_quick_settings_label">"Brze postavke"</string>
 </resources>

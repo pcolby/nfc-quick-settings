@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Увімкнено</string>
     <string name="tile_subtitle_inactive">Вимкнено</string>
     <string name="tile_subtitle_turning_on">Увімкнення…</string>
     <string name="tile_subtitle_unavailable">Недоступно</string>
+    <string name="settings_intro">"Ця програма просто надає плитку NFC, яку можна додати до меню <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Додайте плитку NFC до <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"версія <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Невдало. Застосування не на передньому плані"</string>
+    <string name="settings_bad_component">"Невдало. Поганий компонент"</string>
+    <string name="settings_mismatched_package">"Невдало. Невідповідний пакет"</string>
+    <string name="settings_no_current_user">"Невдало. Не поточний користувач"</string>
+    <string name="settings_no_status_bar_service">"Невдало. Немає служби рядка стану"</string>
+    <string name="settings_request_in_progress">"Невдало. Запит триває"</string>
+    <string name="settings_tile_added">"Опцію додано"</string>
+    <string name="settings_tile_already_added">"Плитка вже додана"</string>
+    <string name="settings_tile_not_added">"Плитка не додана"</string>
+    <string name="settings_unknown_add_response">"Невідома додати відповідь"</string>
+    <string name="android_quick_settings_label">"Швидкі налаштування"</string>
 </resources>

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Sees</string>
     <string name="tile_subtitle_inactive">Väljas</string>
     <string name="tile_subtitle_turning_on">Sisselülitamine …</string>
     <string name="tile_subtitle_unavailable">Pole saadaval</string>
+    <string name="settings_intro">"See rakendus pakub lihtsalt NFC-plaati, mida saab lisada menüüsse <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Lisage NFC plaat saidile <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versioon <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Ebaõnnestus. Rakendus ei ole esiplaanil"</string>
+    <string name="settings_bad_component">"Ebaõnnestus. Halb komponent"</string>
+    <string name="settings_mismatched_package">"Ebaõnnestus. Sobimatu pakett"</string>
+    <string name="settings_no_current_user">"Ebaõnnestus. Pole praegune kasutaja"</string>
+    <string name="settings_no_status_bar_service">"Ebaõnnestus. Olekuriba teenust puudub"</string>
+    <string name="settings_request_in_progress">"Ebaõnnestus. Taotlus pooleli"</string>
+    <string name="settings_tile_added">"Paan on lisatud"</string>
+    <string name="settings_tile_already_added">"Plaat on juba lisatud"</string>
+    <string name="settings_tile_not_added">"Plaati pole lisatud"</string>
+    <string name="settings_unknown_add_response">"Tundmatu lisa vastus"</string>
+    <string name="android_quick_settings_label">"Kiirseaded"</string>
 </resources>

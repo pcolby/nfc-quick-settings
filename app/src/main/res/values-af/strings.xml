@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Aan</string>
     <string name="tile_subtitle_inactive">Af</string>
     <string name="tile_subtitle_turning_on">Skakel tans aan …</string>
     <string name="tile_subtitle_unavailable">Onbeskikbaar</string>
+    <string name="settings_intro">"Hierdie toepassing bied eenvoudig 'n NFC-teël wat by die <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -menu gevoeg kan word."</string>
+    <string name="settings_add_tile_button_label">"Voeg NFC-teël by <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"weergawe <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Misluk. Toepassing nie op die voorgrond nie"</string>
+    <string name="settings_bad_component">"Misluk. Slegte komponent"</string>
+    <string name="settings_mismatched_package">"Misluk. Ongepaardgaande pakket"</string>
+    <string name="settings_no_current_user">"Misluk. Nie huidige gebruiker nie"</string>
+    <string name="settings_no_status_bar_service">"Misluk. Geen Statusbalk diens nie"</string>
+    <string name="settings_request_in_progress">"Misluk. Versoek aan die gang"</string>
+    <string name="settings_tile_added">"Teël is bygevoeg"</string>
+    <string name="settings_tile_already_added">"Teël reeds bygevoeg"</string>
+    <string name="settings_tile_not_added">"Teël nie bygevoeg nie"</string>
+    <string name="settings_unknown_add_response">"Onbekende byvoegreaksie"</string>
+    <string name="android_quick_settings_label">"Kitsinstellings"</string>
 </resources>

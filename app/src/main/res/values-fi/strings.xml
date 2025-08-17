@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Päällä</string>
     <string name="tile_subtitle_inactive">Poissa päältä</string>
     <string name="tile_subtitle_turning_on">Otetaan käyttöön…</string>
     <string name="tile_subtitle_unavailable">Ei saatavilla</string>
+    <string name="settings_intro">"Tämä sovellus tarjoaa yksinkertaisesti NFC-laatan, joka voidaan lisätä <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -valikkoon."</string>
+    <string name="settings_add_tile_button_label">"Lisää NFC-laatta kohtaan <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versio <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Epäonnistui. Sovellus ei ole etualalla"</string>
+    <string name="settings_bad_component">"Epäonnistui. Huono komponentti"</string>
+    <string name="settings_mismatched_package">"Epäonnistui. Yhteensopimaton paketti"</string>
+    <string name="settings_no_current_user">"Epäonnistui. Ei nykyinen käyttäjä"</string>
+    <string name="settings_no_status_bar_service">"Epäonnistui. Ei tilarivin palvelua"</string>
+    <string name="settings_request_in_progress">"Epäonnistui. Pyyntö käynnissä"</string>
+    <string name="settings_tile_added">"Kiekko lisätty"</string>
+    <string name="settings_tile_already_added">"Laatta on jo lisätty"</string>
+    <string name="settings_tile_not_added">"Laatta ei lisätty"</string>
+    <string name="settings_unknown_add_response">"Tuntematon lisää vastaus"</string>
+    <string name="android_quick_settings_label">"Pika-asetukset"</string>
 </resources>

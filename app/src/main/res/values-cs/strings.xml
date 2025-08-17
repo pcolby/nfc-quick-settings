@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Zapnuto</string>
     <string name="tile_subtitle_inactive">Vypnuto</string>
     <string name="tile_subtitle_turning_on">Zapínání…</string>
     <string name="tile_subtitle_unavailable">Nedostupné</string>
+    <string name="settings_intro">"Tato aplikace jednoduše poskytuje dlaždici NFC, kterou lze přidat do nabídky <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Přidejte NFC dlaždici do <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"verze <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Neuspěl. Aplikace není v popředí"</string>
+    <string name="settings_bad_component">"Neuspěl. Špatná součást"</string>
+    <string name="settings_mismatched_package">"Neuspěl. Neshodující balíček"</string>
+    <string name="settings_no_current_user">"Neuspěl. Není aktuální uživatel"</string>
+    <string name="settings_no_status_bar_service">"Neuspěl. Žádná služba stavového řádku"</string>
+    <string name="settings_request_in_progress">"Neuspěl. Probíhá žádost"</string>
+    <string name="settings_tile_added">"Dlaždice byla přidána"</string>
+    <string name="settings_tile_already_added">"Dlaždice již přidána"</string>
+    <string name="settings_tile_not_added">"Dlaždice nebyla přidána"</string>
+    <string name="settings_unknown_add_response">"Neznámá přidání odpovědi"</string>
+    <string name="android_quick_settings_label">"Rychlé nastavení"</string>
 </resources>

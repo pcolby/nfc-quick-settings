@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Aktiv</string>
     <string name="tile_subtitle_inactive">Deaktiv</string>
     <string name="tile_subtitle_turning_on">Aktiv edilir...</string>
     <string name="tile_subtitle_unavailable">Əlçatan deyil</string>
+    <string name="settings_intro">"Bu proqram sadəcə <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menyusuna əlavə edilə bilən bir NFC kafel təqdim edir."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ə NFC plitəsini əlavə edin"</string>
+    <string name="settings_version_text">"versiya <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Uğursuz oldu. Tətbiq ön planda deyil"</string>
+    <string name="settings_bad_component">"Uğursuz oldu. Pis komponent"</string>
+    <string name="settings_mismatched_package">"Uğursuz oldu. Uyğunsuz paket"</string>
+    <string name="settings_no_current_user">"Uğursuz oldu. Cari istifadəçi deyil"</string>
+    <string name="settings_no_status_bar_service">"Uğursuz oldu. Status Bar xidməti yoxdur"</string>
+    <string name="settings_request_in_progress">"Uğursuz oldu. Sorğu davam edir"</string>
+    <string name="settings_tile_added">"Mozaik əlavə edilib"</string>
+    <string name="settings_tile_already_added">"Kafel artıq əlavə edildi"</string>
+    <string name="settings_tile_not_added">"Kafel əlavə edilməyib"</string>
+    <string name="settings_unknown_add_response">"Naməlum əlavə cavab"</string>
+    <string name="android_quick_settings_label">"Sürətli Ayarlar"</string>
 </resources>

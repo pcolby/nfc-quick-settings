@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Đang bật</string>
     <string name="tile_subtitle_inactive">Đang tắt</string>
     <string name="tile_subtitle_turning_on">Đang bật…</string>
     <string name="tile_subtitle_unavailable">Không hoạt động</string>
+    <string name="settings_intro">"Ứng dụng này chỉ đơn giản là cung cấp một ô NFC có thể được thêm vào menu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Thêm ô NFC vào <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"phiên bản <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Thất bại. Ứng dụng không ở phía trước"</string>
+    <string name="settings_bad_component">"Thất bại. Thành phần xấu"</string>
+    <string name="settings_mismatched_package">"Thất bại. Gói không phù hợp"</string>
+    <string name="settings_no_current_user">"Thất bại. Không phải người dùng hiện tại"</string>
+    <string name="settings_no_status_bar_service">"Thất bại. Không có dịch vụ thanh trạng thái"</string>
+    <string name="settings_request_in_progress">"Thất bại. Yêu cầu đang được tiến hành"</string>
+    <string name="settings_tile_added">"Đã thêm thẻ thông tin"</string>
+    <string name="settings_tile_already_added">"Ngói đã được thêm"</string>
+    <string name="settings_tile_not_added">"Ngói không được thêm"</string>
+    <string name="settings_unknown_add_response">"Không xác định thêm phản hồi"</string>
+    <string name="android_quick_settings_label">"Cài đặt nhanh"</string>
 </resources>

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Įjungta</string>
     <string name="tile_subtitle_inactive">Išjungta</string>
     <string name="tile_subtitle_turning_on">Įjungiama…</string>
     <string name="tile_subtitle_unavailable">Nepasiekiama</string>
+    <string name="settings_intro">"Ši programa tiesiog pateikia NFC plytelę, kurią galima pridėti prie <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> meniu."</string>
+    <string name="settings_add_tile_button_label">"Pridėkite NFC plytelę prie <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> versija"</string>
+    <string name="settings_app_not_in_foreground">"Nepavyko. Taikymas nėra pirmame plane"</string>
+    <string name="settings_bad_component">"Nepavyko. Blogas komponentas"</string>
+    <string name="settings_mismatched_package">"Nepavyko. Nesutampa pakuotė"</string>
+    <string name="settings_no_current_user">"Nepavyko. Ne dabartinis vartotojas"</string>
+    <string name="settings_no_status_bar_service">"Nepavyko. Nėra būsenos juostos paslaugos"</string>
+    <string name="settings_request_in_progress">"Nepavyko. Vykdomas prašymas"</string>
+    <string name="settings_tile_added">"Išklotinė pridėta"</string>
+    <string name="settings_tile_already_added">"Plytelės jau pridėtos"</string>
+    <string name="settings_tile_not_added">"Plytelių nepridėta"</string>
+    <string name="settings_unknown_add_response">"Nežinomas pridėti atsakymą"</string>
+    <string name="android_quick_settings_label">"Spartieji nustatymai"</string>
 </resources>

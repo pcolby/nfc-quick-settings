@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">සක්‍රියයි</string>
     <string name="tile_subtitle_inactive">අක්‍රියයි</string>
     <string name="tile_subtitle_turning_on">ක්‍රියාත්මක කරමින්…</string>
     <string name="tile_subtitle_unavailable">නොමැත</string>
+    <string name="settings_intro">"මෙම යෙදුම සරලව <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> මෙනුවට එකතු කළ හැකි NFC ටයිල් එකක් සපයයි."</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> වෙත NFC ටයිල් එක් කරන්න"</string>
+    <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> අනුවාදය"</string>
+    <string name="settings_app_not_in_foreground">"අසාර්ථක විය. යෙදුම පෙරමුනේ නැත"</string>
+    <string name="settings_bad_component">"අසාර්ථක විය. නරක සංරචකය"</string>
+    <string name="settings_mismatched_package">"අසාර්ථක විය. නොගැලපෙන පැකේජය"</string>
+    <string name="settings_no_current_user">"අසාර්ථක විය. වත්මන් පරිශීලකයා නොවේ"</string>
+    <string name="settings_no_status_bar_service">"අසාර්ථක විය. තත්ව තීරු සේවාවක් නොමැත"</string>
+    <string name="settings_request_in_progress">"අසාර්ථක විය. ඉල්ලීම ක්රියාත්මක වෙමින් පවතී"</string>
+    <string name="settings_tile_added">"ටයිල් එක එක් කරන ලදි"</string>
+    <string name="settings_tile_already_added">"ටයිල් දැනටමත් එකතු කර ඇත"</string>
+    <string name="settings_tile_not_added">"ටයිල් එකතු කර නැත"</string>
+    <string name="settings_unknown_add_response">"නොදන්නා ප්රතිචාර එකතු කරන්න"</string>
+    <string name="android_quick_settings_label">"ක්ෂණික සැකසීම්"</string>
 </resources>

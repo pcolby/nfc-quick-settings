@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ਚਾਲੂ ਹੈ</string>
     <string name="tile_subtitle_inactive">ਬੰਦ ਹੈ</string>
     <string name="tile_subtitle_turning_on">ਚਾਲੂ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…</string>
     <string name="tile_subtitle_unavailable">ਅਣਉਪਲਬਧ ਹੈ</string>
+    <string name="settings_intro">"ਇਹ ਐਪਲੀਕੇਸ਼ਨ ਸਿਰਫ਼ ਇੱਕ ਐਨਐਫਸੀ ਟਾਈਲ ਪ੍ਰਦਾਨ ਕਰਦੀ ਹੈ ਜੋ <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ਮੀਨੂ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ।"</string>
+    <string name="settings_add_tile_button_label">"<xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> ਵਿੱਚ ਐਨਐਫਸੀ ਟਾਈਲ ਸ਼ਾਮਲ ਕਰੋ"</string>
+    <string name="settings_version_text">"ਵਰਜਨ <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"ਅਸਫਲ. ਐਪਲੀਕੇਸ਼ਨ ਫੋਰਗਰਾਉਂਡ ਵਿੱਚ ਨਹੀਂ"</string>
+    <string name="settings_bad_component">"ਅਸਫਲ. ਮਾੜਾ ਕੰਪੋਨੈਂਟ"</string>
+    <string name="settings_mismatched_package">"ਅਸਫਲ. ਬੇਮੇਲ ਪੈਕੇਜ"</string>
+    <string name="settings_no_current_user">"ਅਸਫਲ. ਮੌਜੂਦਾ ਉਪਭੋਗਤਾ ਨਹੀਂ"</string>
+    <string name="settings_no_status_bar_service">"ਅਸਫਲ. ਕੋਈ ਸਥਿਤੀ ਬਾਰ ਸੇਵਾ ਨਹੀਂ"</string>
+    <string name="settings_request_in_progress">"ਅਸਫਲ. ਬੇਨਤੀ ਚੱਲ ਰਹੀ ਹੈ"</string>
+    <string name="settings_tile_added">"ਟਾਇਲ ਨੂੰ ਸ਼ਾਮਲ ਕੀਤਾ ਗਿਆ"</string>
+    <string name="settings_tile_already_added">"ਟਾਇਲ ਪਹਿਲਾਂ ਹੀ ਸ਼ਾਮਲ ਕੀਤੀ ਗਈ"</string>
+    <string name="settings_tile_not_added">"ਟਾਈਲ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੀ ਗਈ"</string>
+    <string name="settings_unknown_add_response">"ਅਣਜਾਣ ਜਵਾਬ ਜੋੜੋ"</string>
+    <string name="android_quick_settings_label">"ਤਤਕਾਲ ਸੈਟਿੰਗਾਂ"</string>
 </resources>

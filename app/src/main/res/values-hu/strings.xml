@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Be</string>
     <string name="tile_subtitle_inactive">Ki</string>
     <string name="tile_subtitle_turning_on">Bekapcsolás…</string>
     <string name="tile_subtitle_unavailable">Nem áll rendelkezésre</string>
+    <string name="settings_intro">"Ez az alkalmazás egyszerűen egy NFC csempét biztosít, amely hozzáadható a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> menühöz."</string>
+    <string name="settings_add_tile_button_label">"NFC csempe hozzáadása a <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -hoz"</string>
+    <string name="settings_version_text">"verzió: <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Nem sikerült. Alkalmazás nincs előtérben"</string>
+    <string name="settings_bad_component">"Nem sikerült. Rossz komponens"</string>
+    <string name="settings_mismatched_package">"Nem sikerült. Nem megfelelő csomag"</string>
+    <string name="settings_no_current_user">"Nem sikerült. Nem aktuális felhasználó"</string>
+    <string name="settings_no_status_bar_service">"Nem sikerült. Nincs állapotsor szolgáltatás"</string>
+    <string name="settings_request_in_progress">"Nem sikerült. Kérelem folyamatban van"</string>
+    <string name="settings_tile_added">"Kártya hozzáadva"</string>
+    <string name="settings_tile_already_added">"A csempe már hozzáadva"</string>
+    <string name="settings_tile_not_added">"A csempe nincs hozzáadva"</string>
+    <string name="settings_unknown_add_response">"Ismeretlen válasz hozzáadása"</string>
+    <string name="android_quick_settings_label">"Gyorsbeállítások"</string>
 </resources>

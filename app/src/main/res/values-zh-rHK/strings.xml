@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">已開啟</string>
     <string name="tile_subtitle_inactive">已關閉</string>
     <string name="tile_subtitle_turning_on">正在開啟…</string>
     <string name="tile_subtitle_unavailable">無法使用</string>
+    <string name="settings_intro">"此应用程序仅提供了一个 NFC 图块，可以将其添加到 <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> 菜单中。"</string>
+    <string name="settings_add_tile_button_label">"将 NFC 图块添加到 <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"版本 <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"失败。应用程序不在前台"</string>
+    <string name="settings_bad_component">"失败。组件不正确"</string>
+    <string name="settings_mismatched_package">"失败。包裹不匹配"</string>
+    <string name="settings_no_current_user">"失败。不是当前用户"</string>
+    <string name="settings_no_status_bar_service">"失败。没有状态栏服务"</string>
+    <string name="settings_request_in_progress">"失败。请求正在进行中"</string>
+    <string name="settings_tile_added">"加咗圖塊"</string>
+    <string name="settings_tile_already_added">"已添加图块"</string>
+    <string name="settings_tile_not_added">"未添加图块"</string>
+    <string name="settings_unknown_add_response">"未知的添加响应"</string>
+    <string name="android_quick_settings_label">"快速設定"</string>
 </resources>

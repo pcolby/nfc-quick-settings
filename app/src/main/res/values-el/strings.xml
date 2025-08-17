@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Ενεργό</string>
     <string name="tile_subtitle_inactive">Ανενεργό</string>
     <string name="tile_subtitle_turning_on">Ενεργοποίηση…</string>
     <string name="tile_subtitle_unavailable">Μη διαθέσιμο</string>
+    <string name="settings_intro">"Αυτή η εφαρμογή παρέχει απλώς ένα πλακίδιο NFC που μπορεί να προστεθεί στο μενού <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Προσθέστε πλακίδιο NFC στο <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"έκδοση <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Αποτυχία. Η εφαρμογή δεν βρίσκεται σε προσκήνιο"</string>
+    <string name="settings_bad_component">"Αποτυχία. Κακή συνιστώσα"</string>
+    <string name="settings_mismatched_package">"Αποτυχία. Ασυμβίβαστη συσκευασία"</string>
+    <string name="settings_no_current_user">"Αποτυχία. Μη τρέχων χρήστης"</string>
+    <string name="settings_no_status_bar_service">"Αποτυχία. Καμία υπηρεσία γραμμής κατάστασης"</string>
+    <string name="settings_request_in_progress">"Αποτυχία. Αίτημα σε εξέλιξη"</string>
+    <string name="settings_tile_added">"Το πλακίδιο προστέθηκε"</string>
+    <string name="settings_tile_already_added">"Πλακάκι που έχει ήδη προστεθεί"</string>
+    <string name="settings_tile_not_added">"Πλακάκι δεν προστέθηκε"</string>
+    <string name="settings_unknown_add_response">"Άγνωστη προσθήκη απόκρισης"</string>
+    <string name="android_quick_settings_label">"Γρήγορες ρυθμίσεις"</string>
 </resources>

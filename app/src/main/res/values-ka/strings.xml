@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">ჩართულია</string>
     <string name="tile_subtitle_inactive">გამორთულია</string>
     <string name="tile_subtitle_turning_on">ირთვება…</string>
     <string name="tile_subtitle_unavailable">მიუწვდომელია</string>
+    <string name="settings_intro">"ეს პროგრამა უბრალოდ უზრუნველყოფს NFC ფილას, რომლის დამატებაც შესაძლებელია <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> მენიუში."</string>
+    <string name="settings_add_tile_button_label">"დაამატეთ NFC ფილა <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -ზე"</string>
+    <string name="settings_version_text">"<xliff:g id="VERSION_NUM">%1$s</xliff:g> ვერსია"</string>
+    <string name="settings_app_not_in_foreground">"ვერ მოხერხდა განაცხადი არ არის წინა პლანზე"</string>
+    <string name="settings_bad_component">"ვერ მოხერხდა ცუდი კომპონენტი"</string>
+    <string name="settings_mismatched_package">"ვერ მოხერხდა შეუსაბამებელი პაკეტი"</string>
+    <string name="settings_no_current_user">"ვერ მოხერხდა არა მიმდინარე მომხმარებელი"</string>
+    <string name="settings_no_status_bar_service">"ვერ მოხერხდა სტატუსის ბარის სერვისი არ არის"</string>
+    <string name="settings_request_in_progress">"ვერ მოხერხდა მოთხოვნა მიმდინარეობს"</string>
+    <string name="settings_tile_added">"მოზაიკის ფილა დაემატა"</string>
+    <string name="settings_tile_already_added">"ფილა უკვე დაემატა"</string>
+    <string name="settings_tile_not_added">"ფილა არ დაემატა"</string>
+    <string name="settings_unknown_add_response">"უცნობი პასუხის და"</string>
+    <string name="android_quick_settings_label">"სწრაფი პარამეტრები"</string>
 </resources>

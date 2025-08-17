@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Aktiv</string>
     <string name="tile_subtitle_inactive">Joaktiv</string>
     <string name="tile_subtitle_turning_on">Po aktivizohet…</string>
     <string name="tile_subtitle_unavailable">Nuk ofrohet</string>
+    <string name="settings_intro">"Ky aplikacion thjesht ofron një pllakë NFC që mund të shtohet në menunë <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Shto pllakë NFC në <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"versioni <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Dështoi. Aplikimi nuk është në plan të parë"</string>
+    <string name="settings_bad_component">"Dështoi. Komponenti i keq"</string>
+    <string name="settings_mismatched_package">"Dështoi. Paketa e papërputhshme"</string>
+    <string name="settings_no_current_user">"Dështoi. Jo përdoruesi aktual"</string>
+    <string name="settings_no_status_bar_service">"Dështoi. Nuk ka shërbim Status Bar"</string>
+    <string name="settings_request_in_progress">"Dështoi. Kërkesa në vazhdim"</string>
+    <string name="settings_tile_added">"Pllakëza u shtua"</string>
+    <string name="settings_tile_already_added">"Pllaka tashmë është shtuar"</string>
+    <string name="settings_tile_not_added">"Pllaka nuk shtohet"</string>
+    <string name="settings_unknown_add_response">"Përgjigje e panjohur"</string>
+    <string name="android_quick_settings_label">"Cilësimet e shpejta"</string>
 </resources>

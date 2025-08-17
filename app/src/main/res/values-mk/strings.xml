@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">Вклучено</string>
     <string name="tile_subtitle_inactive">Исклучено</string>
     <string name="tile_subtitle_turning_on">Се вклучува…</string>
     <string name="tile_subtitle_unavailable">Недостапно</string>
+    <string name="settings_intro">"Оваа апликација едноставно обезбедува NFC плочка која може да се додаде во менито <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>."</string>
+    <string name="settings_add_tile_button_label">"Додадете плочка NFC на <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g>"</string>
+    <string name="settings_version_text">"верзија <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Не успеа. Апликацијата не е во преден план"</string>
+    <string name="settings_bad_component">"Не успеа. Лоша компонента"</string>
+    <string name="settings_mismatched_package">"Не успеа. Неусогласен пакет"</string>
+    <string name="settings_no_current_user">"Не успеа. Не е моментален корисник"</string>
+    <string name="settings_no_status_bar_service">"Не успеа. Нема услуга за статус бар"</string>
+    <string name="settings_request_in_progress">"Не успеа. Барањето во тек"</string>
+    <string name="settings_tile_added">"Додадена е плочка"</string>
+    <string name="settings_tile_already_added">"Плочка веќе додадена"</string>
+    <string name="settings_tile_not_added">"Плочка не е додадена"</string>
+    <string name="settings_unknown_add_response">"Непознат одговор за додавање"</string>
+    <string name="android_quick_settings_label">"Брзи поставки"</string>
 </resources>

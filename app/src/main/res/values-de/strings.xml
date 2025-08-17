@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="tile_subtitle_active">An</string>
     <string name="tile_subtitle_inactive">Aus</string>
     <string name="tile_subtitle_turning_on">Wird aktiviert…</string>
     <string name="tile_subtitle_unavailable">Nicht verfügbar</string>
+    <string name="settings_intro">"Diese Anwendung stellt einfach eine NFC-Kachel bereit, die zum <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> -Menü hinzugefügt werden kann."</string>
+    <string name="settings_add_tile_button_label">"NFC-Kachel zu <xliff:g id="QUICK_SETTINGS">%1$s</xliff:g> hinzufügen"</string>
+    <string name="settings_version_text">"Version <xliff:g id="VERSION_NUM">%1$s</xliff:g>"</string>
+    <string name="settings_app_not_in_foreground">"Fehlgeschlagen. Anwendung nicht im Vordergrund"</string>
+    <string name="settings_bad_component">"Fehlgeschlagen. Schlechte Komponente"</string>
+    <string name="settings_mismatched_package">"Fehlgeschlagen. Paket stimmt nicht überein"</string>
+    <string name="settings_no_current_user">"Fehlgeschlagen. Kein aktueller Benutzer"</string>
+    <string name="settings_no_status_bar_service">"Fehlgeschlagen. Kein Statusleisten-Dienst"</string>
+    <string name="settings_request_in_progress">"Fehlgeschlagen. Anfrage wird bearbeitet"</string>
+    <string name="settings_tile_added">"Ansicht hinzugefügt"</string>
+    <string name="settings_tile_already_added">"Kachel wurde bereits hinzugefügt"</string>
+    <string name="settings_tile_not_added">"Kachel nicht hinzugefügt"</string>
+    <string name="settings_unknown_add_response">"Unbekannte Antwort hinzufügen"</string>
+    <string name="android_quick_settings_label">"Schnell­­­ein­­stel­lungen"</string>
 </resources>
