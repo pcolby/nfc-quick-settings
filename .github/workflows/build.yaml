@@ -146,7 +146,7 @@ jobs:
           dst=$(sed -Ee 's/^(.*)\.linux-release(\.apk)$/\1\2/' <<< "${src}")
           mv -nv "${src}" "${dst}"
       - name: Release APKs
-        run: gh release upload "${REF_NAME}" *.apk
+        run: gh release upload "${REF_NAME}" *.apk/*.apk
         env:
           GH_REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}
