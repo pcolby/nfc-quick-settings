@@ -9,6 +9,6 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilties via email to git@colby.id.au.
+Please report security vulnerabilties via email to [git@colby.id.au](mailto:git@colby.id.au).
 
 Thanks!

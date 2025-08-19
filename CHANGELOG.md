@@ -60,7 +60,6 @@ Added translations for 86 languages.
 
 Initial release.
 
-[Unreleased]: https://github.com/pcolby/nfc-quick-settings/compare/v1.5.0...HEAD
 [1.5.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.0
 [1.4.5]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.5
 [1.4.4]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.4

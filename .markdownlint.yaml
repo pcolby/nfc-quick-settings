@@ -1,0 +1,12 @@
+descriptive-link-text:
+  prohibited_texts:
+    - click here
+    - link
+    - more
+
+line-length:
+  line_length: 120
+  tables: false
+
+no-duplicate-heading:
+  siblings_only: true
