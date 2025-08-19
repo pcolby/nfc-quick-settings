@@ -1,0 +1,20 @@
+name: Lint
+
+on:
+  pull_request:
+  push:
+
+permissions: { }
+
+jobs:
+  check:
+    name: Lint checks
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check Markdown files
+        run: npm install markdownlint-cli2 --global && markdownlint-cli2
+      - name: Check shell scripts
+        run: find -name '*.sh' -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
+      - name: Check YAML files
+        run: yamllint --strict .

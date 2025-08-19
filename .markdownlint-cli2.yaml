@@ -1,0 +1,5 @@
+globs:
+  - '**/*.md'
+
+ignores:
+  - COPYING.md
