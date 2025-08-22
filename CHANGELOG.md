@@ -1,5 +1,9 @@
 # Changelog[^1]
 
+## 1.5.1 (_unreleased_)
+
+Fixed a potential (not user-perceived) crash when a device's NFC system is unavailable.
+
 ## [1.5.0][] (2025-08-17)
 
 Added a new settings activity, so the app will appear in the app drawer (as is now required by Google Play reviewers).

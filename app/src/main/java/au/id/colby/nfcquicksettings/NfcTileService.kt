@@ -210,12 +210,22 @@ class NfcTileService : TileService() {
     /**
      * Updates the Quick Settings tile to reflect the [adapter]'s current state.
      *
+     * If [adapter] is null, then the default NFC adapter is used.
+     *
      * @param adapter The adapter to reflect the state of.
      */
-    private fun updateTile(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)) {
-        adapter?.apply { updateTile(isEnabled) } ?: updateTile(
-            Tile.STATE_UNAVAILABLE,
-            string.tile_subtitle_unavailable
+    private fun updateTile(adapter: NfcAdapter? = null) {
+        adapter ?: try {
+            NfcAdapter.getDefaultAdapter(this)
+        } catch (e: RuntimeException) {
+            // Supposedly this can happen when the NFC service "has become unresponsive, has been
+            // killed by the system, or is otherwise in an unavailable state". Probably because the
+            // phone is being switched off, or something similar. Google Play reports it as *not*
+            // user-perceived, but it does occur occasionally, so handle it gracefully.
+            Log.e(TAG, "Failed to get default NFC adapter", e)
+            null
+        }?.apply { updateTile(isEnabled) } ?: updateTile(
+            Tile.STATE_UNAVAILABLE, string.tile_subtitle_unavailable
         )
     }
 
