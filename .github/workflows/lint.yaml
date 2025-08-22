@@ -15,6 +15,6 @@ jobs:
       - name: Check Markdown files
         run: npm install markdownlint-cli2 --global && markdownlint-cli2
       - name: Check shell scripts
-        run: find -name '*.sh' -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
+        run: find -name '*.sh' -print -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
       - name: Check YAML files
         run: yamllint --strict .
