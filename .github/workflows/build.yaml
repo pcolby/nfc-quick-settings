@@ -80,6 +80,18 @@ jobs:
           path: ${{ steps.prep-output.outputs.release-filepath }}
           if-no-files-found: error
 
+  merge:
+    name: Merge artifacts
+    needs: build
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Merge build outputs
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: build-outputs
+          pattern: build-outputs-*
+          delete-merged: true
+
   continuous:
     name: Tag continuous release
     permissions:
