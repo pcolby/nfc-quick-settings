@@ -12,7 +12,10 @@ jobs:
     name: Build
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os:
+          - macos-15
+          - ubuntu-24.04
+          - windows-2025
       fail-fast: false
     runs-on: ${{ matrix.os }}
     steps:
