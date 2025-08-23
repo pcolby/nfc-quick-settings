@@ -146,8 +146,9 @@ jobs:
           dst=$(sed -Ee 's/^(.*)\.linux-release(\.apk)$/\1\2/' <<< "${src}")
           mv -nv "${src}" "${dst}"
       - name: Release APKs
-        run: gh release upload "${REF_NAME}" *.apk/*.apk
+        run: gh release upload "${REF_NAME}" ${APK_GLOB}
         env:
+          APK_GLOB: ${{ github.ref_name == 'main' && '*/*.apk' || '*.apk' }}
           GH_REPO: ${{ github.repository }}
           GH_TOKEN: ${{ github.token }}
           REF_NAME: ${{ github.ref_name == 'main' && 'continuous' || github.ref_name }}
