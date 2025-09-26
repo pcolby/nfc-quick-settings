@@ -93,8 +93,21 @@ class NfcTileService : TileService() {
     override fun onClick() {
         super.onClick()
         Log.d(TAG, "onClick")
-        if (!invertNfcState()) startNfcSettingsActivity()
+        if (invertNfcState() != true) startNfcSettingsActivity()
     }
+
+    /**
+     * Gets the default NFC adapter.
+     *
+     * @return the default [NfcAdapter], or null if no adapter was available.
+     */
+    private fun defaultAdapter() = runCatching {
+        NfcAdapter.getDefaultAdapter(this)
+    }.onFailure {
+        // The NFC service "has become unresponsive, has been killed by the system, or is otherwise
+        // in an unavailable state". Not user-perceived, and non-recoverable (by us).
+        Log.e(TAG, "Failed to get default NFC adapter", it)
+    }.getOrNull()
 
     /**
      * Inverts the NFC [adapter]'s current state.
@@ -104,9 +117,21 @@ class NfcTileService : TileService() {
      *
      * @return true if the [adapter]'s new state was successfully requested.
      */
-    private fun invertNfcState(adapter: NfcAdapter? = NfcAdapter.getDefaultAdapter(this)): Boolean {
-        return adapter?.run { setNfcAdapterState(this, !isEnabled) } == true
-    }
+    private fun invertNfcState(adapter: NfcAdapter? = defaultAdapter()) =
+        adapter?.run { isEnabled(this)?.let { setNfcAdapterState(this, !it) } }
+
+    /**
+     * Gets the NFC [adapter]'s current state.
+     *
+     * @return true if the [adapter] is enabled, false if not enabled, or null of not available.
+     */
+    private fun isEnabled(adapter: NfcAdapter) = runCatching {
+        adapter.isEnabled
+    }.onFailure {
+        // "The Android system's NFC service has become unresponsive or terminated". Not
+        // user-perceived, and non-recoverable (by us).
+        Log.e(TAG, "Failed to get NFC adapter state", it)
+    }.getOrNull()
 
     /**
      * Checks if [permission] has been granted to us.
@@ -200,11 +225,13 @@ class NfcTileService : TileService() {
     /**
      * Updates the Quick Settings tile to show as active or not.
      *
-     * @param active If true show the tile as active, otherwise show as inactive.
+     * @param active If true show the tile as active, if false show as inactive, and if null show as
+     * unavailable.
      */
-    private fun updateTile(active: Boolean) {
-        if (active) updateTile(Tile.STATE_ACTIVE, string.tile_subtitle_active)
-        else updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_inactive)
+    private fun updateTile(active: Boolean?) = when (active) {
+        null -> updateTile(Tile.STATE_UNAVAILABLE, string.tile_subtitle_unavailable)
+        true -> updateTile(Tile.STATE_ACTIVE, string.tile_subtitle_active)
+        false -> updateTile(Tile.STATE_INACTIVE, string.tile_subtitle_inactive)
     }
 
     /**
@@ -214,20 +241,8 @@ class NfcTileService : TileService() {
      *
      * @param adapter The adapter to reflect the state of.
      */
-    private fun updateTile(adapter: NfcAdapter? = null) {
-        adapter ?: try {
-            NfcAdapter.getDefaultAdapter(this)
-        } catch (e: RuntimeException) {
-            // Supposedly this can happen when the NFC service "has become unresponsive, has been
-            // killed by the system, or is otherwise in an unavailable state". Probably because the
-            // phone is being switched off, or something similar. Google Play reports it as *not*
-            // user-perceived, but it does occur occasionally, so handle it gracefully.
-            Log.e(TAG, "Failed to get default NFC adapter", e)
-            null
-        }?.apply { updateTile(isEnabled) } ?: updateTile(
-            Tile.STATE_UNAVAILABLE, string.tile_subtitle_unavailable
-        )
-    }
+    private fun updateTile(adapter: NfcAdapter? = defaultAdapter()) =
+        updateTile(adapter?.let { isEnabled(it) })
 
     /**
      * Provides static functions for the NfcTileService class.
