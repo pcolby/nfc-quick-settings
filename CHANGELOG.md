@@ -1,8 +1,8 @@
 # Changelog[^1]
 
-## 1.5.1 (_unreleased_)
+## [1.5.1][] (2025-08-23)
 
-Fixed a potential (not user-perceived) crash when a device's NFC system is unavailable.
+Fixed a rare background crash when a device's NFC system is temporarily unavailable.
 
 ## [1.5.0][] (2025-08-17)
 
@@ -64,6 +64,7 @@ Added translations for 86 languages.
 
 Initial release.
 
+[1.5.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.1
 [1.5.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.0
 [1.4.5]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.5
 [1.4.4]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.4

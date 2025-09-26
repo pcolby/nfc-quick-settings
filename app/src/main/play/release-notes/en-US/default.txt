@@ -1,1 +1,1 @@
-- Fixed a potential (not user-perceived) crash when a device's NFC system is unavailable.
+- Fixed a rare background crash when a device's NFC system is temporarily unavailable.
