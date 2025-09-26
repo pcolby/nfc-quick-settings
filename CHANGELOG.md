@@ -1,5 +1,9 @@
 # Changelog[^1]
 
+## [1.5.2][] (2025-09-26)
+
+Handled potential NFC adapter exceptions.
+
 ## [1.5.1][] (2025-08-23)
 
 Fixed a rare background crash when a device's NFC system is temporarily unavailable.
@@ -24,7 +28,7 @@ Redirected long-tap to NFC Settings when granted `WRITE_SECURE_SETTINGS` permiss
 
 ## [1.4.2][] (2024-07-30)
 
-Handle a rare exception when unregistering the broadcast listener.
+Handled a rare exception when unregistering the broadcast listener.
 
 ## [1.4.1][] (2024-06-29)
 
@@ -64,6 +68,7 @@ Added translations for 86 languages.
 
 Initial release.
 
+[1.5.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.2
 [1.5.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.1
 [1.5.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.0
 [1.4.5]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.4.5
