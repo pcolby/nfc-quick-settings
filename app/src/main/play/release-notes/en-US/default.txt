@@ -1,1 +1,1 @@
-- Fixed a rare background crash when a device's NFC system is temporarily unavailable.
+- Handled potential NFC adapter exceptions.
