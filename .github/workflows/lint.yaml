@@ -17,6 +17,6 @@ jobs:
       - name: Check shell scripts
         run: find . -name '*.sh' -print -execdir shellcheck --check-sourced --enable=all --external-sources --norc {} +
       - name: Check workflow scripts
-        uses: pcolby/check-run-scripts@v0.2
+        uses: pcolby/check-run-scripts@v0.3
       - name: Check YAML files
         run: yamllint --strict .
