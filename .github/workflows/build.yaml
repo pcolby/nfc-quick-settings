@@ -66,19 +66,19 @@ jobs:
         env:
           MATRIX_OS: ${{ matrix.os }}
       - name: Upload build outputs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: build-outputs-${{ matrix.os }}
           path: ${{ runner.temp }}/build-outputs
           if-no-files-found: error
       - name: Upload debug APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ steps.prep-output.outputs.debug-filename }}
           path: ${{ steps.prep-output.outputs.debug-filepath }}
           if-no-files-found: error
       - name: Upload release APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ steps.prep-output.outputs.release-filename }}
           path: ${{ steps.prep-output.outputs.release-filepath }}
@@ -90,7 +90,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Merge build outputs
-        uses: actions/upload-artifact/merge@v4
+        uses: actions/upload-artifact/merge@v5
         with:
           name: build-outputs
           pattern: build-outputs-*
@@ -147,7 +147,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Download APKs
-        uses: actions/download-artifact@v5
+        uses: actions/download-artifact@v6
         with:
           pattern: ${{ github.ref_name == 'main' && '*.apk' || '*.linux-release.apk' }}
       - name: Remove old APKs
