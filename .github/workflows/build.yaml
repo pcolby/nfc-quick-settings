@@ -147,7 +147,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Download APKs
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           pattern: ${{ github.ref_name == 'main' && '*.apk' || '*.linux-release.apk' }}
       - name: Remove old APKs
