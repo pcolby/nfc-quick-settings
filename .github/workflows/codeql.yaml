@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os:
-          - macos-15
+          # macos-15 \todo Restore when https://github.com/github/codeql/issues/20661 is resolved.
           - ubuntu-24.04
           - windows-2025
       fail-fast: false
