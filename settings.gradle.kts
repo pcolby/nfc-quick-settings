@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "NFC Quick Settings"
-include ':app'
+include(":app")
