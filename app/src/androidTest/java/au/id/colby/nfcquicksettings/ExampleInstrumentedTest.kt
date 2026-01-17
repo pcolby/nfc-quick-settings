@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2023-2025 Paul Colby <git@colby.id.au>
+// SPDX-FileCopyrightText: 2023-2026 Paul Colby <git@colby.id.au>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 package au.id.colby.nfcquicksettings
