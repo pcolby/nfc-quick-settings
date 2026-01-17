@@ -1,4 +1,4 @@
-<!-- SPDX-FileCopyrightText: 2023-2025 Paul Colby <git@colby.id.au> -->
+<!-- SPDX-FileCopyrightText: 2023-2026 Paul Colby <git@colby.id.au> -->
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
