@@ -1,3 +1,8 @@
 ---
+engines:
+  checkstyle:
+    exclude_paths:
+      - app/gradle.lockfile
+
 exclude_paths:
   - COPYING.md
