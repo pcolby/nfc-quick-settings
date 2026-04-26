@@ -1,8 +1,8 @@
 plugins {
-    id("com.android.application") version "9.0.0" apply false
-    id("com.android.library") version "9.0.0" apply false
-    id("org.jetbrains.dokka") version "2.1.0" apply false
-    id("org.sonarqube") version "7.2.2.6593"
+    id("com.android.application") version "9.2.0" apply false
+    id("com.android.library") version "9.2.0" apply false
+    id("org.jetbrains.dokka") version "2.2.0" apply false
+    id("org.sonarqube") version "7.2.3.7755"
 }
 
 sonar {
