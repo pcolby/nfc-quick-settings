@@ -26,12 +26,12 @@ android {
         }
     }
     namespace = "au.id.colby.nfcquicksettings"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "au.id.colby.nfcquicksettings"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 19
         versionName = "1.5.3-pre"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
