@@ -90,6 +90,19 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
+
+    constraints {
+        implementation("org.bouncycastle:bcprov-jdk18on:1.84") {
+            because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/45")
+            version {
+              reject("[1.71, 1.84)")
+              reject("1.79")
+            }
+        }
+        implementation("io.netty:netty-codec-http2:4.1.132.Final") {
+            because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/42")
+        }
+    }
 }
 
 dependencyLocking {
