@@ -12,3 +12,9 @@ sonar {
         property("sonar.host.url", "https://sonarcloud.io")
     }
 }
+
+buildscript {
+    configurations.classpath {
+        resolutionStrategy.activateDependencyLocking()
+    }
+}
