@@ -37,6 +37,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        resValues = true
+    }
+
     buildTypes {
         getByName("debug") {
             applicationIdSuffix = ".debug"
