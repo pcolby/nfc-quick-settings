@@ -95,20 +95,52 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
 
+    //implementation("com.android.tools.utp:android-test-plugin-result-listener-gradle:32.2.1")
+    //implementation("org.bouncycastle:bcutil-jdk18on:1.84")
     constraints {
-        implementation("org.bouncycastle:bcprov-jdk18on:1.84") {
+        implementation("org.bouncycastle:bcutil-jdk18on") {
             because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/45")
             version {
               reject("[1.71, 1.84)")
               reject("1.79")
             }
         }
-        implementation("io.netty:netty-codec-http2:4.1.132.Final") {
-            because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/42")
-        }
+        //implementation("org.bouncycastle:bcprov-jdk18on:1.84") {
+        //    because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/45")
+        //    version {
+        //      reject("[1.71, 1.84)")
+        //      reject("1.79")
+        //    }
+       // }
+        //api("org.bouncycastle:bcprov-jdk18on:1.84") {
+        //    because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/45")
+        //    version {
+        //      reject("[1.71, 1.84)")
+        //      reject("1.79")
+        //    }
+        //}
+        //implementation("io.netty:netty-codec-http2:4.1.132.Final") {
+        //    because("https://github.com/pcolby/nfc-quick-settings/security/dependabot/42")
+       // }
     }
 }
 
 dependencyLocking {
     lockAllConfigurations()
+}
+
+allprojects {
+    dependencyLocking {
+        lockAllConfigurations()
+    }
+}
+
+
+configurations {
+    androidLintTool {
+        resolutionStrategy {
+            resolutionStrategy.activateDependencyLocking()
+            //force 'org.bouncycastle:bcutil-jdk18on:1.84' // Example version force
+        }
+    }
 }
