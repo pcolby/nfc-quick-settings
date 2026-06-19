@@ -1,1 +1,1 @@
-- Handled potential NFC adapter exceptions.
+- Support for Android 17.

@@ -1,5 +1,11 @@
 # Changelog[^1]
 
+## [1.5.3][] (2026-06-20)
+
+Support for Android 17.
+
+Numerous build and CI/CD tweaks, and dependency updates.
+
 ## [1.5.2][] (2025-09-26)
 
 Handled potential NFC adapter exceptions.
@@ -68,6 +74,7 @@ Added translations for 86 languages.
 
 Initial release.
 
+[1.5.3]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.3
 [1.5.2]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.2
 [1.5.1]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.1
 [1.5.0]: https://github.com/pcolby/nfc-quick-settings/releases/tag/v1.5.0
