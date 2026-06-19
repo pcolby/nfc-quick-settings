@@ -11,7 +11,7 @@ jobs:
     name: Lint checks
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Check Markdown files
         run: npm install markdownlint-cli2 --global --ignore-scripts && markdownlint-cli2
       - name: Check shell scripts

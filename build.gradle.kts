@@ -5,7 +5,7 @@ plugins {
     id("com.android.library") version "9.2.1" apply false
     id("com.github.ben-manes.versions") version "0.54.0"
     id("org.jetbrains.dokka") version "2.2.0" apply false
-    id("org.sonarqube") version "7.3.0.8198"
+    id("org.sonarqube") version "7.3.1.8318"
 }
 
 sonar {
