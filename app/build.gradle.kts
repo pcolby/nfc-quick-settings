@@ -32,8 +32,8 @@ android {
         applicationId = "au.id.colby.nfcquicksettings"
         minSdk = 24
         targetSdk = 37
-        versionCode = 19
-        versionName = "1.5.3"
+        versionCode = 20
+        versionName = "1.5.4-pre"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
