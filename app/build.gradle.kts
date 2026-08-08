@@ -99,3 +99,23 @@ dependencies {
 dependencyLocking {
     lockAllConfigurations()
 }
+
+fun useMinimumVersion(
+    dependency: DependencyResolveDetails, group: String,
+    name: String, minVersion: String, reason: String,
+) {
+    if (dependency.requested.group != group || dependency.requested.name != name) return
+    val requestedVersion = GradleVersion.version(dependency.requested.version ?: "0")
+    if (requestedVersion >= GradleVersion.version(minVersion)) return
+    dependency.useVersion(minVersion)
+    dependency.because(reason)
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency {
+        useMinimumVersion(
+            this, "org.bouncycastle", "bcpkix-jdk18on", "1.80.2",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/66"
+        )
+    }
+}
