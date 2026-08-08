@@ -118,4 +118,10 @@ configurations.all {
             "https://github.com/pcolby/nfc-quick-settings/security/dependabot/66"
         )
     }
+
+    resolutionStrategy {
+        // Many Dependabot vulnerability alerts. Not sure why useMinimumVersion won't work for these.
+        force("io.netty:netty-codec-http2:4.1.136.Final")
+        force("io.netty:netty-handler-proxy:4.1.136.Final")
+    }
 }
