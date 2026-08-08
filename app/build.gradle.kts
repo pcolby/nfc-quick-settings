@@ -114,6 +114,10 @@ fun useMinimumVersion(
 configurations.all {
     resolutionStrategy.eachDependency {
         useMinimumVersion(
+            this, "com.fasterxml.jackson.core", "jackson-databind", "2.18.9",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/65"
+        )
+        useMinimumVersion(
             this, "org.bouncycastle", "bcpkix-jdk18on", "1.80.2",
             "https://github.com/pcolby/nfc-quick-settings/security/dependabot/66"
         )
