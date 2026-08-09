@@ -118,8 +118,12 @@ configurations.all {
             "https://github.com/pcolby/nfc-quick-settings/security/dependabot/65"
         )
         useMinimumVersion(
-            this, "org.bouncycastle", "bcpkix-jdk18on", "1.80.2",
-            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/66"
+            this, "org.bouncycastle", "bcpkix-jdk18on", "1.84",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/43"
+        )
+        useMinimumVersion(
+            this, "org.bouncycastle", "bcprov-jdk18on", "1.84",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/44"
         )
     }
 
