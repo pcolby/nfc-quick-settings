@@ -118,6 +118,14 @@ configurations.all {
             "https://github.com/pcolby/nfc-quick-settings/security/dependabot/65"
         )
         useMinimumVersion(
+            this, "org.apache.commons", "commons-lang3", "3.18.0",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/33"
+        )
+        useMinimumVersion(
+            this, "org.apache.httpcomponents", "httpclient", "4.5.13",
+            "https://github.com/pcolby/nfc-quick-settings/security/dependabot/24"
+        )
+        useMinimumVersion(
             this, "org.bouncycastle", "bcpkix-jdk18on", "1.84",
             "https://github.com/pcolby/nfc-quick-settings/security/dependabot/43"
         )
