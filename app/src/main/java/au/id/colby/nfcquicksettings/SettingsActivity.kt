@@ -30,7 +30,7 @@ private const val TAG = "SettingsActivity"
 /**
  * An activity for managing user preferences for NFC Quick Settings.
  *
- * Currently this is really just an initial placeholder (because Google Play Support has begun
+ * Currently, this is really just an initial placeholder (because Google Play Support has begun
  * rejecting updates because they "can't see the app" 🙄), but eventually will extend to support a
  * range of preferences, such as:
  *  - what actions to take when tapping / long-tapping the tile

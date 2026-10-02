@@ -8,7 +8,7 @@
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=pcolby_nfc-quick-settings&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=pcolby_nfc-quick-settings)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=pcolby_nfc-quick-settings&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=pcolby_nfc-quick-settings)
 
-NFC Quick Settings is a really basic Android app with no GUI of it's own, that simply adds an NFC tile to the tiles
+NFC Quick Settings is a really basic Android app with no GUI of its own, that simply adds an NFC tile to the tiles
 available to the [Quick Settings panel][].
 
 The Quick Settings tile indicates the current NFC status (enabled, or disabled), but the action it takes when tapped
@@ -26,7 +26,7 @@ page (assuming the device has one). This is actually the best that can be done u
 ## Advanced Mode
 
 The advanced mode requires special permissions (see below), but once enabled, tapping the NFC Quick Settings tile will
-turn the NFC service on or off directly, without having to open the NFC settings page at all. Unfortunately, to acheive
+turn the NFC service on or off directly, without having to open the NFC settings page at all. Unfortunately, to achieve
 this _advanced_ mode, NFC Quick Settings needs to use APIs not intended for third-party applications (specifically
 [`NfcAdapter::enable()`][] and [`NfcAdapter::disable()`][]), and to use those methods the tile needs the special
 [`WRITE_SECURE_SETTINGS`][] permission.
@@ -49,7 +49,7 @@ granted via the [Android Debug Bridge (`adb`)][] tool.
 
 4. [Connect your device via Wi-Fi](https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi), either:
 
-   * _Android Studio_: via [Android Studio][]'s [Pair Devices Using Wifi](
+   * _Android Studio_: via [Android Studio][]'s [Pair Devices Using Wi-Fi](
      https://developer.android.com/tools/adb#connect-to-a-device-over-wi-fi) menu option; or
    * _Standalone_: via the `adb` [command line](
      https://developer.android.com/tools/adb#wireless-android11-command-line).

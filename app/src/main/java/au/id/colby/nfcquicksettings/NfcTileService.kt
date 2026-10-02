@@ -263,7 +263,7 @@ class NfcTileService : TileService() {
         /**
          * Called when a broadcast message is received.
          *
-         * This override simply reflects the event back to the [context] for which it the
+         * This override simply reflects the event back to the [context] for which the
          * receiver was registered.
          */
         override fun onReceive(context: Context, intent: Intent) {
